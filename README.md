@@ -19,7 +19,7 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 5. Restore packages: `dotnet restore`.
 6. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
 7. Run the koans in watch mode: `dotnet watch run`.
-8. Follow along with the instructions printed to your console. Each time you save a *.cs file, the project will be run again for you and your progress will be displayed again.
+8. Follow along with the instructions printed to your console. Each time you save a *.cs file, the project will be built and run again for you automatically.
 
 
 ### About Koans
