@@ -5,13 +5,14 @@ using Microsoft.Extensions.Logging;
 using Xunit.Sdk;
 using DotNetCoreKoans.Koans;
 using System.Text;
+using NLog.Extensions.Logging;
 
 namespace DotNetCoreKoans.Engine
 {
     public class Program
     {
         static ILogger Logger = new LoggerFactory()
-            .AddConsole()
+            .AddNLog()
             .CreateLogger<Program>();
         static int KOAN_FAILED = 0;
 
@@ -30,6 +31,8 @@ namespace DotNetCoreKoans.Engine
                 foreach (var step in path)
                 {
                     progress.Append($"{Take(step)}");
+                    if (KOAN_FAILED != 0) { break; }
+
                 }
             }
             catch (Exception e)
@@ -56,7 +59,7 @@ namespace DotNetCoreKoans.Engine
                                 .Cast<KoanAttribute>().Single().Position)
                 .ToArray();
 
-            var highestKoanNumber = queue.Length + 1;
+            var highestKoanNumber = queue.Length;
             var numberOfTestsActuallyRun = 0;
 			var numberOfTestsPassed = 0;
                         
