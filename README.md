@@ -6,7 +6,7 @@ The .NET Core Koans walk you along the path to enlightenment in order to learn C
 
 The koans are broken out into areas by file, arrays are covered in AboutArrays.cs, lambdas are introduced in AboutLambdas.cs, etc. They are presented in order in the PathToEnlightenment.cs file.
 
-Each koan builds up your knowledge of Ruby and builds upon itself. It will stop at the first place you need to correct.
+Each koan builds up your knowledge of C# and builds upon itself. It will stop at the first place you need to correct.
 
 Some koans simply need to have the correct answer substituted for an incorrect one. Some, however, require you to supply your own answer. If you see the object FILL_ME_IN listed, it is a hint to you to supply your own code in order to make it work correctly.
 
