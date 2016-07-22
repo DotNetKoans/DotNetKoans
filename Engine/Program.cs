@@ -73,7 +73,7 @@ namespace DotNetCoreKoans.Engine
 
             if (numberOfTestsActuallyRun != highestKoanNumber)
             {
-                Logger.LogCritical("!!!!WARNING - Some Koans appear disabled. The highest koan found was {highestKoanNumber} but we ran {numberOfTestsActuallyRun} koan(s)");
+                Logger.LogCritical($"!!!!WARNING - Some Koans appear disabled. The highest koan found was {highestKoanNumber} but we ran {numberOfTestsActuallyRun} koan(s)");
             }
             
              return $"{numberOfTestsPassed}/{numberOfTestsActuallyRun}";          
@@ -91,7 +91,7 @@ namespace DotNetCoreKoans.Engine
                 if (e.InnerException is XunitException)
                 {
                     Report(koan, e.InnerException as XunitException);
-                    //KOAN_FAILED = 1;
+                    KOAN_FAILED = 1;
                 }
             }
         }
