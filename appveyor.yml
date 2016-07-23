@@ -18,5 +18,5 @@ after_build:
 #- dotnet test -c %CONFIGURATION%
 cache:
 - '%USERPROFILE%\.nuget\packages'
-on_finish:
-- dotnet artifacts\Koans\DotNetCoreKoans.dll
+#on_finish:
+#- dotnet artifacts\Koans\DotNetCoreKoans.dll
