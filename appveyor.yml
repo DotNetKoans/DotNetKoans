@@ -14,9 +14,9 @@ build_script:
 - dotnet build . -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 after_build:
 - dotnet publish . -c %CONFIGURATION% --no-build --version-suffix %LABEL% -o artifacts\Koans
-#test_script:
-#- dotnet test  -c %CONFIGURATION%
+test_script:
+- dotnet test . -c %CONFIGURATION%
 cache:
 - '%USERPROFILE%\.nuget\packages'
-on_finish: # Run the demo to show that it works
+on_finish:
 - dotnet artifacts\Koans\DotNetCoreKoans.dll

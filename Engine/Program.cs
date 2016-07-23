@@ -23,13 +23,14 @@ namespace DotNetCoreKoans.Engine
             var progress = new StringBuilder();
             try
             {
-                Logger.LogInformation("");
-                Logger.LogInformation("");
+                Console.Clear(); 
                 Logger.LogInformation("*******************************************************************");
                 Logger.LogInformation("*******************************************************************");
 
                 foreach (var step in path)
                 {
+                    Logger.LogInformation($"Current Koan: {step.Name}");
+
                     progress.Append($"{Take(step)}");
                     if (KOAN_FAILED != 0) { break; }
 
@@ -40,11 +41,10 @@ namespace DotNetCoreKoans.Engine
                 Logger.LogInformation($"Karma has killed the runner. Exception was: {e.ToString()}");
 				return -1;
             }
-            Logger.LogInformation($"Koan progress:{progress}");
+            Logger.LogInformation($"Koan Progress:{progress}");
 			Logger.LogInformation("*******************************************************************");
 			Logger.LogInformation("*******************************************************************");
-			Logger.LogInformation("");
-			Logger.LogInformation("");
+
 			return KOAN_FAILED;
         }
 
