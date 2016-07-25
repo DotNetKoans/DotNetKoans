@@ -1,9 +1,29 @@
 {
   "version": "1.0.0-*",
+  "description": "A set of Koans to teach the C# language on .NET Core.",
   "testRunner": "xunit",
+  "packOptions": {
+    "owners": [
+      "Bobby Johnson"
+    ],
+    "iconUrl": "",
+    "tags": [
+      "C#",
+      "Koans",
+      "Learning"
+    ],
+    "licenseUrl": "https://github.com/NotMyself/DotNetCoreKoans/blob/master/LICENSE",
+    "requireLicenseAcceptance": false,
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/NotMyself/DotNetCoreKoans"
+    }
+  },
   "buildOptions": {
     "debugType": "portable",
-    "include": ["xunit.runner.json"],
+    "include": [
+      "xunit.runner.json"
+    ],
     "emitEntryPoint": true,
     "nowarn": [
       "CS0162",
@@ -13,31 +33,31 @@
     ]
   },
   "publishOptions": {
-        "include": [
-            "nlog.config"
-        ]
-    },
+    "include": [
+      "nlog.config"
+    ]
+  },
   "dependencies": {
-    "System.Collections.NonGeneric":"4.0.1",
+    "System.Collections.NonGeneric": "4.0.1",
     "Microsoft.Extensions.DependencyInjection": "1.0.0-*",
     "Microsoft.Extensions.Logging": "1.0.0-*",
     "Microsoft.Extensions.Logging.Console": "1.0.0-*",
     "NLog.Extensions.Logging": "1.0.0-*",
-    "xunit": "2.2.0-beta2-build3300",
-    "dotnet-test-xunit": "2.2.0-preview2-build1029"
+    "dotnet-test-xunit": "2.2.0-*",
+    "xunit": "2.2.0-*"
   },
   "tools": {
     "Microsoft.DotNet.Watcher.Tools": "1.0.0-*"
   },
   "frameworks": {
     "netcoreapp1.0": {
+      "imports": "dnxcore50",
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
           "version": "1.0.0"
         }
-      },
-      "imports": "dnxcore50"
+      }
     }
   }
 }
