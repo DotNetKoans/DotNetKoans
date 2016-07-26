@@ -91,15 +91,12 @@ namespace DotNetCoreKoans.Engine
             }
             catch (TargetInvocationException e)
             {
-                if (e.InnerException is XunitException)
-                {
-                    Report(koan, e.InnerException as XunitException);
-                    KOAN_FAILED = 1;
-                }
+                Report(koan, e.InnerException);
+                KOAN_FAILED = 1;
             }
         }
 
-        private static void Report(MethodInfo koan, XunitException e = null)
+        private static void Report(MethodInfo koan, Exception e = null)
         {
             if (e != null)
             {
