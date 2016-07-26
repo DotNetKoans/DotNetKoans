@@ -11,7 +11,7 @@ namespace DotNetCoreKoans.Koans
 {
     public class AboutArrays : Koan
     {
-        [Koan(1)]
+        [Step(1)]
         public void CreatingArrays()
         {
             var empty_array = new object[] { };
@@ -23,7 +23,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, empty_array.Length);
         }
 
-        [Koan(2)]
+        [Step(2)]
         public void ArrayLiterals()
         {
             //You don't have to specify a type if the arguments can be inferred
@@ -52,7 +52,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal((new int[] { 42, (int)FILL_ME_IN}), dynamicArray.ToArray());
         }
 
-        [Koan(3)]
+        [Step(3)]
         public void AccessingArrayElements()
         {
             var array = new[] { "peanut", "butter", "and", "jelly" };
@@ -63,7 +63,7 @@ namespace DotNetCoreKoans.Koans
             //This doesn't work: Assert.Equal(FILL_ME_IN, array[-1]);
         }
 
-        [Koan(4)]
+        [Step(4)]
         public void SlicingArrays()
         {
             var array = new[] { "peanut", "butter", "and", "jelly" };
@@ -72,7 +72,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(new string[] { (string)FILL_ME_IN, (string)FILL_ME_IN }, array.Skip(1).Take(2).ToArray());
         }
 
-        [Koan(5)]
+        [Step(5)]
         public void PushingAndPopping()
         {
             var array = new[] { 1, 2 };
@@ -84,7 +84,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, stack.ToArray());
         }
 
-        [Koan(6)]
+        [Step(6)]
         public void Shifting()
         {
             //Shift == Remove First Element

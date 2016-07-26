@@ -2,18 +2,12 @@ using Xunit;
 
 namespace DotNetCoreKoans.Engine.Tests
 {
-    public class RealityTests
+    public class SensiTests
     {
         [Fact]
         public void TrueShouldBeTrue()
         {
             Assert.True(true);
-        }
-        
-        [Fact]
-        public void TrueShouldNotBeFalse()
-        {
-            Assert.NotEqual(false, true);
         }
     }
 }

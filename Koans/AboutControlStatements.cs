@@ -7,7 +7,7 @@ namespace DotNetCoreKoans.Koans
 {
     public class AboutControlStatements : Koan
     {
-        [Koan(1)]
+        [Step(1)]
         public void IfThenElseStatementsWithBrackets()
         {
             bool b;
@@ -23,7 +23,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, b);
         }
 
-        [Koan(2)]
+        [Step(2)]
         public void IfThenElseStatementsWithoutBrackets()
         {
             bool b;
@@ -36,7 +36,7 @@ namespace DotNetCoreKoans.Koans
 
         }
 
-        [Koan(3)]
+        [Step(3)]
         public void IfThenStatementsWithBrackets()
         {
             bool b = false;
@@ -48,7 +48,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, b);
         }
 
-        [Koan(4)]
+        [Step(4)]
         public void IfThenStatementsWithoutBrackets()
         {
             bool b = false;
@@ -58,7 +58,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, b);
         }
 
-        [Koan(5)]
+        [Step(5)]
         public void WhyItsWiseToAlwaysUseBrackets()
         {
             bool b1 = false;
@@ -74,7 +74,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, b2);
         }
 
-        [Koan(6)]
+        [Step(6)]
         public void TernaryOperators()
         {
             Assert.Equal(FILL_ME_IN, (true ? 1 : 0));
@@ -82,7 +82,7 @@ namespace DotNetCoreKoans.Koans
         }
 
         //This is out of place for control statements, but necessary for Koan 8
-        [Koan(7)]
+        [Step(7)]
         public void NullableTypes()
         {
             int i = 0;
@@ -93,7 +93,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Null(FILL_ME_IN);
         }
 
-        [Koan(8)]
+        [Step(8)]
         public void AssignIfNullOperator()
         {
             int? nullableInt = null;
@@ -103,7 +103,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, x);
         }
 
-        [Koan(9)]
+        [Step(9)]
         public void IsOperators()
         {
             bool isKoan = false;
@@ -127,7 +127,7 @@ namespace DotNetCoreKoans.Koans
 
         }
 
-        [Koan(10)]
+        [Step(10)]
         public void WhileStatement()
         {
             int i = 1;
@@ -140,7 +140,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, result);
         }
 
-        [Koan(11)]
+        [Step(11)]
         public void BreakStatement()
         {
             int i = 1;
@@ -154,7 +154,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, result);
         }
 
-        [Koan(12)]
+        [Step(12)]
         public void ContinueStatement()
         {
             int i = 0;
@@ -168,7 +168,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, result);
         }
 
-        [Koan(13)]
+        [Step(13)]
         public void ForStatement()
         {
             var list = new List<string> { "fish", "and", "chips" };
@@ -179,7 +179,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, list);
         }
 
-        [Koan(14)]
+        [Step(14)]
         public void ForEachStatement()
         {
             var list = new List<string> { "fish", "and", "chips" };
@@ -192,7 +192,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, finalList);
         }
 
-        [Koan(15)]
+        [Step(15)]
         public void ModifyingACollectionDuringForEach()
         {
             var list = new List<string> { "fish", "and", "chips" };
@@ -209,7 +209,7 @@ namespace DotNetCoreKoans.Koans
             }
         }
 
-        [Koan(16)]
+        [Step(16)]
         public void CatchingModificationExceptions()
         {
             string whoCaughtTheException = "No one";

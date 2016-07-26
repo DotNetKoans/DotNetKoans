@@ -55,26 +55,26 @@ namespace DotNetCoreKoans.Koans
             }
         }
 
-        [Koan(1)]
+        [Step(1)]
         public void SubclassesHaveTheParentAsAnAncestor()
         {
             Assert.True(typeof(FillMeIn).IsAssignableFrom(typeof(Chihuahua)));
         }
 
-        [Koan(2)]
+        [Step(2)]
         public void AllClassesUltimatelyInheritFromAnObject()
         {
             Assert.True(typeof(FillMeIn).IsAssignableFrom(typeof(Chihuahua)));
         }
 
-        [Koan(3)]
+        [Step(3)]
         public void SubclassesInheritBehaviorFromParentClass()
         {
             var chico = new Chihuahua("Chico");
             Assert.Equal(FILL_ME_IN, chico.Name);
         }
 
-        [Koan(4)]
+        [Step(4)]
         public void SubclassesAddNewBehavior()
         {
             var chico = new Chihuahua("Chico");
@@ -90,7 +90,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Null(dog.GetType().GetMethod("Wag"));
         }
 
-        [Koan(5)]
+        [Step(5)]
         public void SubclassesCanModifyExistingBehavior()
         {
             var chico = new Chihuahua("Chico");
@@ -121,14 +121,14 @@ namespace DotNetCoreKoans.Koans
 
         }
 
-        [Koan(6)]
+        [Step(6)]
         public void SubclassesCanRedefineBehaviorThatIsNotVirtual()
         {
             ReallyYippyChihuahua suzie = new ReallyYippyChihuahua("Suzie");
             Assert.Equal(FILL_ME_IN, suzie.Wag());
         }
 
-        [Koan(7)]
+        [Step(7)]
         public void NewingAMethodDoesNotChangeTheBaseBehavior()
         {
             //This is vital to understand. In Koan 6, you saw that the Wag
@@ -152,7 +152,7 @@ namespace DotNetCoreKoans.Koans
             }
         }
 
-        [Koan(8)]
+        [Step(8)]
         public void SubclassesCanInvokeParentBehaviorUsingBase()
         {
             var ralph = new BullDog("Ralph");
@@ -168,7 +168,7 @@ namespace DotNetCoreKoans.Koans
             }
         }
 
-        [Koan(9)]
+        [Step(9)]
         public void YouCanCallBaseEvenFromOtherMethods()
         {
             var george = new GreatDane("George");

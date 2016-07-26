@@ -12,7 +12,7 @@ namespace DotNetCoreKoans.Koans
         //This isn't available in C#, but there are a few interesting assignment
         //tricks we can pick up.
 
-        [Koan(1)]
+        [Step(1)]
         public void ImplicitAssignment()
         {
             //Even though we don't specify types explicitly, the compiler
@@ -27,7 +27,7 @@ namespace DotNetCoreKoans.Koans
             //name = 42;
         }
 
-        [Koan(2)]
+        [Step(2)]
         public void ImplicitArrayAssignmentWithSameTypes()
         {
             //Even though we don't specify types explicitly, the compiler
@@ -39,7 +39,7 @@ namespace DotNetCoreKoans.Koans
             //var array = new[] { "John", 1 };
         }
 
-        [Koan(3)]
+        [Step(3)]
         public void MultipleAssignmentsOnSingleLine()
         {
             //You can do multiple assignments on one line, but you 

@@ -32,17 +32,9 @@
       "CS0219"
     ]
   },
-  "publishOptions": {
-    "include": [
-      "nlog.config"
-    ]
-  },
   "dependencies": {
     "System.Collections.NonGeneric": "4.0.1",
-    "Microsoft.Extensions.DependencyInjection": "1.0.0-*",
-    "Microsoft.Extensions.Logging": "1.0.0-*",
-    "Microsoft.Extensions.Logging.Console": "1.0.0-*",
-    "NLog.Extensions.Logging": "1.0.0-*",
+    "Microsoft.DotNet.Cli.Utils": "1.0.0-*",
     "dotnet-test-xunit": "2.2.0-*",
     "xunit": "2.2.0-*"
   },
