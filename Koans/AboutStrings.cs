@@ -60,8 +60,8 @@ namespace DotNetCoreKoans.Koans
             var verbatimString = @"I
 am a
 broken line";
-            Assert.Equal(20, verbatimString.Length);
             var literalString = FILL_ME_IN;
+            Assert.Equal((int)FILL_ME_IN, verbatimString.Length);
             Assert.Equal(literalString, verbatimString);
         }
 
@@ -167,7 +167,7 @@ broken line";
 		[Step(17)]
 		public void CurrencyDesignatorsCanBeAdded()
 		{
-			var str = string.Format("{0:n}", 123456);
+			var str = string.Format("{0:c}", 123456);
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
@@ -193,7 +193,7 @@ broken line";
 		}
 
 		[Step(21)]
-		public void CustomeDateFormaters()
+		public void CustomDateFormaters()
 		{
 			var str = string.Format("{0:t m}", DateTime.Parse("12/16/2011 2:35:02 PM"));
 			Assert.Equal(FILL_ME_IN, str);
