@@ -167,7 +167,7 @@ broken line";
 		[Koan(17)]
 		public void CurrencyDesignatorsCanBeAdded()
 		{
-			var str = string.Format("{0:n}", 123456);
+			var str = string.Format("{0:c}", 123456);
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
