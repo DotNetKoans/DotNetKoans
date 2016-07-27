@@ -12,28 +12,28 @@ namespace DotNetCoreKoans.Koans
         //to concatenation and newlines, and is one of the biggest
         //causes of memory leaks in .NET applications
 
-        [Koan(1)]
+        [Step(1)]
         public void DoubleQuotedStringsAreStrings()
         {
             var str = "Hello, World";
             Assert.Equal(typeof(FillMeIn), str.GetType());
         }
 
-        [Koan(2)]
+        [Step(2)]
         public void SingleQuotedStringsAreNotStrings()
         {
             var str = 'H';
 			Assert.Equal(typeof(FillMeIn), str.GetType());
         }
 
-        [Koan(3)]
+        [Step(3)]
         public void CreateAStringWhichContainsDoubleQuotes()
         {
             var str = "Hello, \"World\"";
             Assert.Equal(FILL_ME_IN, str.Length);
         }
 
-        [Koan(4)]
+        [Step(4)]
         public void AnotherWayToCreateAStringWhichContainsDoubleQuotes()
         {
             //The @ symbol creates a 'verbatim string literal'. 
@@ -42,7 +42,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, str.Length);
         }
 
-        [Koan(5)]
+        [Step(5)]
         public void VerbatimStringsCanHandleFlexibleQuoting()
         {
             var strA = @"Verbatim Strings can handle both ' and "" characters (when escaped)";
@@ -50,7 +50,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, strA.Equals(strB));
         }
 
-        [Koan(6)]
+        [Step(6)]
         public void VerbatimStringsCanHandleMultipleLinesToo()
         {
             //Tip: What you create for the literal string will have to 
@@ -65,7 +65,7 @@ broken line";
             Assert.Equal(literalString, verbatimString);
         }
 
-        [Koan(7)]
+        [Step(7)]
         public void ACrossPlatformWayToHandleLineEndings()
         {
             //Since line endings are different on different platforms
@@ -77,14 +77,14 @@ broken line";
             Assert.Equal(literalString, vebatimString);
         }
 
-        [Koan(8)]
+        [Step(8)]
         public void PlusWillConcatenateTwoStrings()
         {
             var str = "Hello, " + "World";
             Assert.Equal(FILL_ME_IN, str);
         }
 
-        [Koan(9)]
+        [Step(9)]
         public void PlusConcatenationWillNotModifyOriginalStrings()
         {
             var strA = "Hello, ";
@@ -94,7 +94,7 @@ broken line";
             Assert.Equal(FILL_ME_IN, strB);
         }
 
-        [Koan(10)]
+        [Step(10)]
         public void PlusEqualsWillModifyTheTargetString()
         {
             var strA = "Hello, ";
@@ -104,7 +104,7 @@ broken line";
             Assert.Equal(FILL_ME_IN, strB);
         }
 
-        [Koan(11)]
+        [Step(11)]
         public void StringsAreReallyImmutable()
         {
             //So here's the thing. Concatenating strings is cool
@@ -127,7 +127,7 @@ broken line";
             //when dealing with lots of concatenation
         }
 
-		[Koan(12)]
+		[Step(12)]
 		public void YouDoNotNeedConcatenationToInsertVariablesInAString()
 		{
 			var world = "World";
@@ -135,14 +135,14 @@ broken line";
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
-		[Koan(13)]
+		[Step(13)]
 		public void AnyExpressionCanBeUsedInFormatString()
 		{
 			var str = String.Format("The square root of 9 is {0}", Math.Sqrt(9));
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
-		[Koan(14)]
+		[Step(14)]
 		public void StringsCanBePaddedToTheLeft()
 		{
 			//You can modify the value inserted into the result
@@ -150,49 +150,49 @@ broken line";
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
-		[Koan(15)]
+		[Step(15)]
 		public void StringsCanBePaddedToTheRight()
 		{
 			var str = string.Format("{0,-3:}", "x");
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
-		[Koan(16)]
+		[Step(16)]
 		public void SeperatorsCanBeAdded()
 		{
 			var str = string.Format("{0:n}", 123456);
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
-		[Koan(17)]
+		[Step(17)]
 		public void CurrencyDesignatorsCanBeAdded()
 		{
 			var str = string.Format("{0:c}", 123456);
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
-		[Koan(18)]
+		[Step(18)]
 		public void NumberOfDisplayedDecimalsCanBeControled()
 		{
 			var str = string.Format("{0:.##}", 12.3456);
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
-		[Koan(19)]
+		[Step(19)]
 		public void MinimumNumberOfDisplayedDecimalsCanBeControled()
 		{
 			var str = string.Format("{0:.00}", 12.3);
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
-		[Koan(20)]
+		[Step(20)]
 		public void BuiltInDateFormaters()
 		{
 			var str = string.Format("{0:t}", DateTime.Parse("12/16/2011 2:35:02 PM"));
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
-		[Koan(21)]
+		[Step(21)]
 		public void CustomDateFormaters()
 		{
 			var str = string.Format("{0:t m}", DateTime.Parse("12/16/2011 2:35:02 PM"));
@@ -200,7 +200,7 @@ broken line";
 		}
 		//These are just a few of the formatters available. Dig some and you may find what you need.
 
-        [Koan(22)]
+        [Step(22)]
         public void ABetterWayToConcatenateLotsOfStrings()
         {
             //Concatenating lots of strings is a Bad Idea(tm). If you need to do that, then consider StringBuilder.
@@ -220,7 +220,7 @@ broken line";
             //String.Format and StringBuilder will be more efficent that concatenation. Prefer them.
         }
 
-		[Koan(22)]
+		[Step(22)]
 		public void StringBuilderCanUseFormatAsWell()
 		{
 			var strBuilder = new System.Text.StringBuilder();
@@ -231,28 +231,28 @@ broken line";
 			Assert.Equal(FILL_ME_IN, str);
 		}
 		
-        [Koan(23)]
+        [Step(23)]
         public void LiteralStringsInterpretsEscapeCharacters()
         {
             var str = "\n";
             Assert.Equal(FILL_ME_IN, str.Length);
         }
 
-        [Koan(24)]
+        [Step(24)]
         public void VerbatimStringsDoNotInterpretEscapeCharacters()
         {
             var str = @"\n";
             Assert.Equal(FILL_ME_IN, str.Length);
         }
 
-        [Koan(25)]
+        [Step(25)]
         public void VerbatimStringsStillDoNotInterpretEscapeCharacters()
         {
             var str = @"\\\";
             Assert.Equal(FILL_ME_IN, str.Length);
         }
 
-        [Koan(28)]
+        [Step(28)]
         public void YouCanGetASubstringFromAString()
         {
             var str = "Bacon, lettuce and tomato";
@@ -260,14 +260,14 @@ broken line";
             Assert.Equal(FILL_ME_IN, str.Substring(7, 3));
         }
 
-        [Koan(29)]
+        [Step(29)]
         public void YouCanGetASingleCharacterFromAString()
         {
             var str = "Bacon, lettuce and tomato";
             Assert.Equal(FILL_ME_IN, str[0]);
         }
 
-        [Koan(30)]
+        [Step(30)]
         public void SingleCharactersAreRepresentedByIntegers()
         {
             Assert.Equal(97, 'a');
@@ -275,7 +275,7 @@ broken line";
             Assert.Equal(FILL_ME_IN, 'b' == ('a' + 1));
         }
 
-        [Koan(31)]
+        [Step(31)]
         public void StringsCanBeSplit()
         {
             var str = "Sausage Egg Cheese";
@@ -283,7 +283,7 @@ broken line";
             Assert.Equal(new[] { FILL_ME_IN }, words);
         }
 
-        [Koan(32)]
+        [Step(32)]
         public void StringsCanBeSplitUsingCharacters()
         {
             var str = "the:rain:in:spain";
@@ -291,7 +291,7 @@ broken line";
             Assert.Equal(new[] { FILL_ME_IN }, words);
         }
 
-        [Koan(33)]
+        [Step(33)]
         public void StringsCanBeSplitUsingRegularExpressions()
         {
             var str = "the:rain:in:spain";

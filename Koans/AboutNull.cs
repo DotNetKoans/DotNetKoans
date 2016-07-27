@@ -6,13 +6,13 @@ namespace DotNetCoreKoans.Koans
 {
     public class AboutNull : Koan
     {
-        [Koan(1)]
+        [Step(1)]
         public void NullIsNotAnObject()
         {
             Assert.True(typeof(object).IsAssignableFrom(null)); //not everything is an object
         }
 
-        [Koan(2)]
+        [Step(2)]
         public void YouGetNullPointerErrorsWhenCallingMethodsOnNull()
         {
             //What is the Exception that is thrown when you call a method on a null object?
@@ -33,21 +33,21 @@ namespace DotNetCoreKoans.Koans
             }
         }
 
-        [Koan(3)]
+        [Step(3)]
         public void CheckingThatAnObjectIsNull()
         {
             object obj = null;
             Assert.True(obj == FILL_ME_IN);
         }
 
-        [Koan(4)]
+        [Step(4)]
         public void ABetterWayToCheckThatAnObjectIsNull()
         {
             object obj = null;
             Assert.Null(FILL_ME_IN);
         }
 
-        [Koan(5)]
+        [Step(5)]
         public void AWayNotToCheckThatAnObjectIsNull()
         {
             object obj = null;

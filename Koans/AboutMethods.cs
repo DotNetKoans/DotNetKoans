@@ -37,19 +37,19 @@ namespace DotNetCoreKoans.Koans
         //DotNetKoans.CSharp namespace, AboutMethods can automatically
         //find them
 
-        [Koan(1)]
+        [Step(1)]
         public void ExtensionMethodsShowUpInTheCurrentClass()
         {
             Assert.Equal(FILL_ME_IN, this.HelloWorld());
         }
 
-        [Koan(2)]
+        [Step(2)]
         public void ExtensionMethodsWithParameters()
         {
             Assert.Equal(FILL_ME_IN, this.SayHello("Cory"));
         }
 
-        [Koan(3)]
+        [Step(3)]
         public void ExtensionMethodsWithVariableParameters()
         {
             Assert.Equal(FILL_ME_IN, this.MethodWithVariableArguments("Cory", "Will", "Corey"));
@@ -59,7 +59,7 @@ namespace DotNetCoreKoans.Koans
         //the name of the class they are extending. For example, 
         //we can "extend" the string class like so:
 
-        [Koan(4)]
+        [Step(4)]
         public void ExtendingCoreClasses()
         {
             Assert.Equal(FILL_ME_IN, "Cory".SayHi());
@@ -73,7 +73,7 @@ namespace DotNetCoreKoans.Koans
             return names;
         }
 
-        [Koan(5)]
+        [Step(5)]
         public void LocalMethodsWithVariableParams()
         {
             Assert.Equal(FILL_ME_IN, this.LocalMethodWithVariableParameters("Cory", "Will", "Corey"));
@@ -82,7 +82,7 @@ namespace DotNetCoreKoans.Koans
         //Note how we called the method by saying "this.LocalMethodWithVariableParameters"
         //That isn't necessary for local methods
 
-        [Koan(6)]
+        [Step(6)]
         public void LocalMethodsWithoutExplicitReceiver()
         {
             Assert.Equal(FILL_ME_IN, LocalMethodWithVariableParameters("Cory", "Will", "Corey"));
@@ -108,7 +108,7 @@ namespace DotNetCoreKoans.Koans
 
         //Static methods don't require an instance of the object
         //in order to be called. 
-        [Koan(7)]
+        [Step(7)]
         public void CallingStaticMethodsWithoutAnInstance()
         {
             Assert.Equal(FILL_ME_IN, InnerSecret.Key());
@@ -120,7 +120,7 @@ namespace DotNetCoreKoans.Koans
         //Assert.Equal(FILL_ME_IN, secret.Key());
 
         
-        [Koan(8)]
+        [Step(8)]
         public void CallingPublicMethodsOnAnInstance()
         {
             InnerSecret secret = new InnerSecret();
@@ -131,7 +131,7 @@ namespace DotNetCoreKoans.Koans
         //We're going to call the public method called
         //InformationLeak of the StateSecret class which returns
         //the value from the protected method SuperSecret
-        [Koan(9)]
+        [Step(9)]
         public void CallingProtectedMethodsOnAnInstance()
         {
             StateSecret secret = new StateSecret();
@@ -145,7 +145,7 @@ namespace DotNetCoreKoans.Koans
         //Ok, well, that isn't entirely true. Reflection can get
         //you just about anything, and though it's way out of scope
         //for this...
-        [Koan(10)]
+        [Step(10)]
         public void SubvertPrivateMethods()
         {
             InnerSecret secret = new InnerSecret();
@@ -165,7 +165,7 @@ namespace DotNetCoreKoans.Koans
             return p1;
         }
 
-        [Koan(11)]
+        [Step(11)]
         public void CallingGenericMethods()
         {
             Assert.Equal(typeof(FillMeIn), GiveMeBack<int>(1).GetType());
