@@ -60,8 +60,8 @@ namespace DotNetCoreKoans.Koans
             var verbatimString = @"I
 am a
 broken line";
-            Assert.Equal(20, verbatimString.Length);
             var literalString = FILL_ME_IN;
+            Assert.Equal((int)FILL_ME_IN, verbatimString.Length);
             Assert.Equal(literalString, verbatimString);
         }
 
