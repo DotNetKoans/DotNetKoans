@@ -4,7 +4,7 @@ namespace DotNetCoreKoans.Engine
 {
     public class Koan
     {
-        public static object FILL_ME_IN = new Object();
+        public static dynamic FILL_ME_IN = new Object();
         public virtual void Setup() { }
         public virtual void TearDown() { }
 
