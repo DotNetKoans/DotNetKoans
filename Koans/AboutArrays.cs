@@ -32,7 +32,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(new int[] { 42 }, array);
 
             //Are arrays 0-based or 1-based?
-            Assert.Equal(42, array[((int)FILL_ME_IN)]);
+            Assert.Equal(42, array[FILL_ME_IN]);
 
             //This is important because...
             //TODO:Add back once this bug is fixed: https://github.com/dotnet/corefx/issues/9998
@@ -49,7 +49,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(array, dynamicArray.ToArray());
 
             dynamicArray.Add(13);
-            Assert.Equal((new int[] { 42, (int)FILL_ME_IN}), dynamicArray.ToArray());
+            Assert.Equal((new int[] { 42, FILL_ME_IN}), dynamicArray.ToArray());
         }
 
         [Step(3)]
@@ -68,8 +68,8 @@ namespace DotNetCoreKoans.Koans
         {
             var array = new[] { "peanut", "butter", "and", "jelly" };
 
-			Assert.Equal(new string[] { (string)FILL_ME_IN, (string)FILL_ME_IN }, array.Take(2).ToArray());
-			Assert.Equal(new string[] { (string)FILL_ME_IN, (string)FILL_ME_IN }, array.Skip(1).Take(2).ToArray());
+			Assert.Equal(new string[] { FILL_ME_IN, FILL_ME_IN }, array.Take(2).ToArray());
+			Assert.Equal(new string[] { FILL_ME_IN, FILL_ME_IN }, array.Skip(1).Take(2).ToArray());
         }
 
         [Step(5)]
