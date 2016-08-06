@@ -76,8 +76,8 @@ namespace DotNetCoreKoans.Koans
         public void PushingAndPopping()
         {
             var array = new[] { 1, 2 };
-            var stack = new Stack(array);
-            stack.Push("last");
+            var stack = new Stack<int>(array);
+            stack.Push(3);
             Assert.Equal(FILL_ME_IN, stack.ToArray());
             var poppedValue = stack.Pop();
             Assert.Equal(FILL_ME_IN, poppedValue);
