@@ -1,6 +1,5 @@
 using Xunit;
 using DotNetCoreKoans.Engine;
-using System.Reflection;
 
 namespace DotNetCoreKoans.Koans
 {
@@ -9,7 +8,10 @@ namespace DotNetCoreKoans.Koans
         [Step(1)]
         public void NullIsNotAnObject()
         {
-            Assert.True(typeof(object).IsAssignableFrom(null)); //not everything is an object
+            Assert.True(null is object);
+
+            // The `is` operator returns false if the object (first parameter)
+            // is null, no matter what the type (second parameter) is.
         }
 
         [Step(2)]
