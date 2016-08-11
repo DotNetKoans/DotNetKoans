@@ -1,0 +1,2 @@
+[alias]
+  pl = pull —rebase
