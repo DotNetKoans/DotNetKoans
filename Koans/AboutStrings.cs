@@ -303,5 +303,14 @@ broken line";
             //of this tutorial. The book "Mastering Regular Expressions"
             //is highly recommended to be on your bookshelf
         }
+
+        [Step(34)]
+        public void YouCanInterpolateVariablesIntoAString()
+        {
+            var name = "John Doe";
+            var age = 33;
+            var str= $"Mr. {name} is {age} years old";
+            Assert.Equal(FILL_ME_IN, str);
+        }
     }
 }
