@@ -7,10 +7,11 @@ namespace DotNetCoreKoans.Engine
     {
         public static int Main(string[] args)
         {
+            var reporter = Reporter.Output;
+            var sensei = new Sensei(reporter);
             var path = new PathToEnlightenment();
-            var sensei = new Sensei(Reporter.Output);
-
-            return path.Walk(sensei, AnsiConsole.GetOutput());
+            
+            return path.Walk(sensei);
         }
     }
 }

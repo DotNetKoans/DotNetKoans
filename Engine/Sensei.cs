@@ -30,7 +30,7 @@ namespace DotNetCoreKoans.Engine
             }
         }
 
-        public void Instruct(AnsiConsole console)
+        public void Instruct()
         {
             if (Failed())
             {

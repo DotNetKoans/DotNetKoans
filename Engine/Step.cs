@@ -1,13 +1,14 @@
 using System;
+using System.Linq;
 using System.Reflection;
 using Microsoft.DotNet.Cli.Utils;
 using Xunit.Sdk;
 
 namespace DotNetCoreKoans.Engine
 {
-
     public class Step
     {
+
         public Step(TypeInfo typeInfo, MethodInfo methodInfo)
         {
             TypeInfo = typeInfo;
@@ -21,11 +22,22 @@ namespace DotNetCoreKoans.Engine
         public StepResult Meditate()
         {
             var koan = GetKoan();
+            var results = new[] {
+                Try(() => koan.Setup()),
+                Try(() => MethodInfo.Invoke(koan, Array.Empty<object>())),
+                Try(() => koan.TearDown())
+            };
+
+            return results.Any(r => r is FailedStepResult) ? 
+                results.First(r => r is FailedStepResult) :
+                results.FirstOrDefault();
+        }
+
+        public StepResult Try(Action throwable)
+        {
             try
             {
-                koan.Setup();
-                MethodInfo.Invoke(koan, Array.Empty<object>());
-          
+                throwable();          
             }
             catch (TargetInvocationException e)
             {
@@ -38,10 +50,6 @@ namespace DotNetCoreKoans.Engine
             catch (Exception e) 
             {
                 return new FailedStepResult{ Step = this, Exception = e };
-            }
-            finally
-            {
-                koan.TearDown();
             }
 
             return new SuccessStepResult{ Step = this };

@@ -11,7 +11,7 @@ namespace DotNetCoreKoans.Engine
     {
         internal Type[] Types;
 
-        public int Walk(Sensei sensei, AnsiConsole console)
+        public int Walk(Sensei sensei)
         {
             try
             {
@@ -22,7 +22,7 @@ namespace DotNetCoreKoans.Engine
             catch(SenseiException e)
             { }
             
-            sensei.Instruct(console);
+            sensei.Instruct();
 
             return sensei.Failed() ? -1 : 0;
         }
