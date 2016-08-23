@@ -29,7 +29,7 @@ namespace DotNetCoreKoans.Koans
         }
 
 
-        [Step(5)]
+        [Step(4)]
         public void UnsignedIntCanStoreNumberHigherThanSignedIntCan()
         {
             uint biggerUnsignedInt = (uint)2147483747+100;
