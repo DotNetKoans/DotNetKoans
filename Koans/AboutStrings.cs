@@ -1,6 +1,7 @@
 using Xunit;
 using DotNetCoreKoans.Engine;
 using System;
+using System.Globalization;
 
 namespace DotNetCoreKoans.Koans
 {
@@ -188,14 +189,14 @@ broken line";
 		[Step(20)]
 		public void BuiltInDateFormaters()
 		{
-			var str = string.Format("{0:t}", DateTime.Parse("12/16/2011 2:35:02 PM"));
+			var str = string.Format("{0:t}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
 			Assert.Equal(FILL_ME_IN, str);
 		}
 
 		[Step(21)]
 		public void CustomDateFormaters()
 		{
-			var str = string.Format("{0:t m}", DateTime.Parse("12/16/2011 2:35:02 PM"));
+			var str = string.Format("{0:t m}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
 			Assert.Equal(FILL_ME_IN, str);
 		}
 		//These are just a few of the formatters available. Dig some and you may find what you need.
