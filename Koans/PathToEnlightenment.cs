@@ -13,11 +13,11 @@ namespace DotNetCoreKoans.Koans
 				typeof(AboutArrays),
 				typeof(AboutArrayAssignment),
 				typeof(AboutStrings),
+                typeof(AboutIntegers),
 				typeof(AboutInheritance),
                 typeof(AboutMethods),
                 typeof(AboutControlStatements),
-                typeof(AboutGenericContainers),
-                typeof(AboutIntegers)
+                typeof(AboutGenericContainers)
                 //TODO: disabled due to missing functionality in netcoreapp1.0
                 // it will be available in 1.1 see:
                 // https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Array.cs#L1005
