@@ -3,7 +3,6 @@ using System.Linq;
 using System.Reflection;
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.DotNet.Cli.Utils;
 
 namespace DotNetCoreKoans.Engine
 {
