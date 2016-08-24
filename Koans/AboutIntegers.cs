@@ -28,12 +28,21 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN,val);
         }
 
-
         [Step(4)]
         public void UnsignedIntCanStoreNumberHigherThanSignedIntCan()
         {
             uint biggerUnsignedInt = (uint)2147483747+100;
             Assert.Equal(FILL_ME_IN,biggerUnsignedInt);            
+        }
+
+        [Step(5)]
+        public void ValueLargetThanTheMaximumIntThrowsOverFlowException()
+        {
+            var biggerIntText = uint.MaxValue.ToString();
+            Assert.Throws(typeof(System.OverflowException),()=> 
+            {
+                 int val=int.Parse(biggerIntText); 
+            } );
         }
     }
 }
