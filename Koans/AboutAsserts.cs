@@ -13,10 +13,9 @@ namespace DotNetCoreKoans.Koans
         }
 
         //Enlightenment may be more easily achieved with appropriate messages
-        [Step(2)]
         public void AssertTruthWithMessage() 
         {
-            Assert.True(false, "This should be true -- Please fix this");
+            Assert.True(true.Equals("This should be true -- Please fix this"));
         }
 
         //To understand reality, we must compare our expectations against reality
