@@ -68,10 +68,12 @@ namespace DotNetCoreKoans.Engine
         public bool IsSuccess { get; set; }
         public bool IsFailure => !IsSuccess;
         public Step Step { get; set; }
+        public Exception Exception { get; set; }
 
         public virtual void Report(Reporter console) 
         {
             console.WriteLine($"{Step.Name} has damaged your karma.".Bold().Red());
+            console.WriteLine($"There was an error, {Exception}".Bold().Yellow());
         }
     }
 
@@ -90,7 +92,7 @@ namespace DotNetCoreKoans.Engine
 
     public class FailedStepResult : StepResult
     {
-        public Exception Exception { get; set; }
+        
     }
 
     public class AssertionFailedStepResult : FailedStepResult
