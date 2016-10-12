@@ -35,21 +35,39 @@ namespace DotNetCoreKoans.Engine
 
         public StepResult Try(Action throwable)
         {
+           
+           
+           
             try
             {
                 throwable();          
             }
+          
+
             catch (TargetInvocationException e)
             {
+                  if(e.InnerException is System.Exception)
+                  {
+
+                         Console.WriteLine($"Sensei say run time error: Description:  {e.InnerException}");
+                       return new AssertionFailedStepResult{ Step= this, Exception = e.InnerException };
+                  }
+
                 if (e.InnerException is XunitException)
                 {
+                   
+               
                     return new AssertionFailedStepResult{ Step= this, Exception = e.InnerException };
+
                 }
+
                 return new FailedStepResult{ Step = this, Exception = e.InnerException ?? e };
             }
             catch (Exception e) 
             {
+              
                 return new FailedStepResult{ Step = this, Exception = e };
+                
             }
 
             return new SuccessStepResult{ Step = this };
@@ -62,16 +80,17 @@ namespace DotNetCoreKoans.Engine
             return Instance ?? (Instance = Activator.CreateInstance(TypeInfo.AsType()) as Koan);
         }
     }
-
-    public abstract class StepResult
+public abstract class StepResult
     {
         public bool IsSuccess { get; set; }
         public bool IsFailure => !IsSuccess;
         public Step Step { get; set; }
+        public Exception Exception { get; set; }
 
         public virtual void Report(Reporter console) 
         {
             console.WriteLine($"{Step.Name} has damaged your karma.".Bold().Red());
+            console.WriteLine($"There was an error, {Exception}".Bold().Yellow());
         }
     }
 
@@ -88,9 +107,9 @@ namespace DotNetCoreKoans.Engine
         }
     }
 
-    public class FailedStepResult : StepResult
+ public class FailedStepResult : StepResult
     {
-        public Exception Exception { get; set; }
+
     }
 
     public class AssertionFailedStepResult : FailedStepResult
