@@ -22,13 +22,6 @@ namespace DotNetCoreKoans.Koans
             //unlike Integers which are whole numbers.
             //Here f is set to 1.5, and retains the value of 1.5
             //without rounding or truncating the stored number.
-        
-            //They're called "Floating Point" because of how they work:
-            //They store all the digits in the number: in this case "15"
-            //Then they store the position of the decimal point.
-            //The only difference, to a float, between "150", "15.0" and "1.50"
-            //is the position of the point. The point is able to "float" around.
-            //This allows for very efficient binary based math on decimal numbers.
         }
 
         [Step(3)]
