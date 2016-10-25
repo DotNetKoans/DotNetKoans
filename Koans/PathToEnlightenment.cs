@@ -13,6 +13,7 @@ namespace DotNetCoreKoans.Koans
 				typeof(AboutArrays),
 				typeof(AboutArrayAssignment),
 				typeof(AboutStrings),
+                typeof(AboutFloats),
 				typeof(AboutInheritance),
                 typeof(AboutMethods),
                 typeof(AboutControlStatements),
