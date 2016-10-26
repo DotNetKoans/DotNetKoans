@@ -63,7 +63,7 @@ am a
 broken line";
             var literalString = FILL_ME_IN;
             Assert.Equal(FILL_ME_IN, verbatimString.Length);
-            Assert.Equal(literalString, verbatimString.Replace(System.Environment.NewLine, @"\r\n"));
+            Assert.Equal(literalString, verbatimString);
         }
 
         [Step(7)]
