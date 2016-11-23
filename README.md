@@ -18,7 +18,8 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 4. Change directory into the cloned repository `cd DotNetCoreKoans`.
 5. Restore packages: `dotnet restore`.
 6. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
-7. Run the koans in watch mode: `dotnet watch run`.
+7. Run the koans in watch mode: `dotnet watch --quiet run`.
+    - **Note:** The `--quiet` flag is used here to suppress mesages from the watch framework.
 8. Follow along with the instructions printed to your console. Each time you save a *.cs file, the project will be built and run again for you automatically.
 
 ### Contributing
