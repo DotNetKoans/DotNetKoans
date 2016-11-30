@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-*",
+  "version": "1.1.0-*",
   "description": "A set of Koans to teach the C# language on .NET Core.",
   "testRunner": "xunit",
   "packOptions": {
@@ -39,15 +39,15 @@
     "xunit": "2.2.0-*"
   },
   "tools": {
-    "Microsoft.DotNet.Watcher.Tools": "1.0.0-*"
+    "Microsoft.DotNet.Watcher.Tools": "1.1.0-*"
   },
   "frameworks": {
-    "netcoreapp1.0": {
+    "netcoreapp1.1": {
       "imports": "dnxcore50",
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0"
+          "version": "1.1.0"
         }
       }
     }
