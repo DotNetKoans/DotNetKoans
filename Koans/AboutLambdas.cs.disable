@@ -6,7 +6,7 @@ namespace DotNetCoreKoans.Koans
 {
     public class AboutLambdas : Koan
 	{
-		[Koan(1)]
+		[Step(1)]
 		public void UsingAnonymousMethods()
 		{
 			//The AboutDelegates Koans introduced you to delegates. In all of those koans, 
@@ -23,7 +23,7 @@ namespace DotNetCoreKoans.Koans
 
 			Assert.Equal(FILL_ME_IN, result);
 		}
-		[Koan(2)]
+		[Step(2)]
 		public void AnonymousMethodsCanAccessOuterVariables()
 		{
 			//Anonymous methods can access variable defined in the scope of the method where they are defined.
@@ -35,7 +35,7 @@ namespace DotNetCoreKoans.Koans
 														return x == toFind;
 													}));
 		}
-		[Koan(3)]
+		[Step(3)]
 		public void AccessEvenAfterVariableIsOutOfScope()
 		{
 			Predicate<int> criteria;
@@ -52,7 +52,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, Array.FindIndex(numbers, criteria));
 		}
 		
-		[Koan(4)]
+		[Step(4)]
 		public void LambdaExpressionsAreShorthand()
 		{
 			var numbers = new[] { 1, 2, 3, 4 };
@@ -75,7 +75,7 @@ namespace DotNetCoreKoans.Koans
 			//The => pair is spoken as "going into". If you were talking about this 
 			//code with a peer, you would say "x going into..."
 		}
-		[Koan(5)]
+		[Step(5)]
 		public void TypeCanBeInferred()
 		{
 			//Fortunately the above form of a Lambda is the most verbose form. 
@@ -94,7 +94,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, anonymous);
 		}
 
-		[Koan(6)]
+		[Step(6)]
 		public void ParensNotNeededOnSingleParemeterLambdas()
 		{
 			var numbers = new[] { 1, 2, 3, 4 };
@@ -111,7 +111,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, anonymous);
 		}
 
-		[Koan(7)]
+		[Step(7)]
 		public void BlockNotNeededOnSingleStatementLambdas()
 		{
 			var numbers = new[] { 1, 2, 3, 4 };

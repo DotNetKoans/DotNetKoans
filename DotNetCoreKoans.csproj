@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>A set of Koans to teach the C# language on .NET Core.</Description>
+    <VersionPrefix>1.1.0</VersionPrefix>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <NoWarn>$(NoWarn);CS0162;CS0168;CS0184;CS0219</NoWarn>
+    <DebugType>portable</DebugType>
+    <AssemblyName>DotNetCoreKoans</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>DotNetCoreKoans</PackageId>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <PackageTags>C#;Koans;Learning</PackageTags>
+    <PackageLicenseUrl>https://github.com/NotMyself/DotNetCoreKoans/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/NotMyself/DotNetCoreKoans</RepositoryUrl>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <RuntimeFrameworkVersion>1.1.0</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Koans\AboutDelegates.cs.disable" />
+    <Compile Include="Koans\AboutLambdas.cs.disable" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0-msbuild3-final" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.Cli.Utils" Version="1.0.0-rc4-004771" />
+    <PackageReference Include="Microsoft.TestPlatform.TestHost" Version="15.0.0" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
