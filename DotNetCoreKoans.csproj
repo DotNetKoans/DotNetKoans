@@ -19,8 +19,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Koans\AboutDelegates.cs.disable" />
-    <Compile Include="Koans\AboutLambdas.cs.disable" />
+    <None Remove="Koans\AboutDelegates.cs.disable" />
+    <None Remove="Koans\AboutLambdas.cs.disable" />
   </ItemGroup>
 
   <ItemGroup>
