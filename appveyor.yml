@@ -58,10 +58,9 @@ build:
 #---------------------------------#
 #       tests configuration       #
 #---------------------------------#
+
 test_script:
-  - dotnet test -c %CONFIGURATION%
-test_script:
-  - dotnet test DotNetCoreKoans.csproj --configuration Release 
+  - dotnet test DotNetCoreKoans.csproj --configuration %CONFIGURATION%
   
 test:
   assemblies:
