@@ -16,11 +16,12 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 2. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
 3. Clone the repository: `git clone https://github.com/NotMyself/DotNetCoreKoans.git`.
 4. Change directory into the cloned repository `cd DotNetCoreKoans`.
-5. Restore packages: `dotnet restore`.
-6. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
-7. Run the koans in watch mode: `dotnet watch --quiet run`.
+5. Migrate to a .NET Core SDK project: `dotnet migrate` 
+6. Restore packages: `dotnet restore`.
+7. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
+8. Run the koans in watch mode: `dotnet watch --quiet run`.
     - **Note:** The `--quiet` flag is used here to suppress mesages from the watch framework.
-8. Follow along with the instructions printed to your console. Each time you save a *.cs file, the project will be built and run again for you automatically.
+9. Follow along with the instructions printed to your console. Each time you save a *.cs file, the project will be built and run again for you automatically.
 
 ### Contributing
 
@@ -38,4 +39,4 @@ This project is based on the work of [Cory Foy](https://github.com/CoryFoy) and 
 
 Programming Koans came about because of the most enlightened [Ruby Koans](https://github.com/edgecase/ruby_koans) by [Jim Weirich](https://github.com/jimweirich). Jim was a great teacher & programmer whom I had the pleasure of meeting, learning from and playing games with. Rest in peace, sir. We will continue your effort to bring a love of the craft to anyone willing to learn.
 
-For a fuller explination of what is going here, see the blog post [Learn C# on Windows, OSX or Linux with the .NET Core Koans](http://iamnotmyself.com/2016/07/22/learn-c-on-windows-osx-or-linux-with-the-net-core-koans-2/)
+For a fuller explanation of what is going here, see the blog post [Learn C# on Windows, OSX or Linux with the .NET Core Koans](http://iamnotmyself.com/2016/07/22/learn-c-on-windows-osx-or-linux-with-the-net-core-koans-2/)
