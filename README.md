@@ -2,11 +2,6 @@
 
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
 
-## Current Project Status
-
-With the release of Visual Studio 2017, .NET Core migrated over to the new MSBuild based project system. The new VSTest functionality apparently injects a `static void Main()` at build time. This causes this project to fail to build. My choices are to refactory the project into two projects with one containing the koans and the other containing the tests, or wait for a resolution from xunit or vstest. The first option kinda defeats my goal of a simple single project that does not require visual studio or deep knowledge of soutions and csproj files... The second leave the project's viability in the hands of others. This issue is documented [here](https://github.com/NotMyself/DotNetCoreKoans/issues/36).
-
-
 ### The Structure
 
 The koans are broken out into areas by file, arrays are covered in AboutArrays.cs, lambdas are introduced in AboutLambdas.cs, etc. They are presented in order in the PathToEnlightenment.cs file.
