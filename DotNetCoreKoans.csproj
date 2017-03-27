@@ -22,4 +22,8 @@
   <ItemGroup>    
     <DotNetCliToolReference Include="microsoft.dotnet.watcher.tools" Version="1.0.0" />
   </ItemGroup>
+
+  <PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
 </Project>
