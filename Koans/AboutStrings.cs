@@ -61,9 +61,14 @@ namespace DotNetCoreKoans.Koans
             var verbatimString = @"I
 am a
 broken line";
+
+            // Make sure to use a literal string.
+            // Escaped characters in verbatim strings are covered later.
             var literalString = FILL_ME_IN;
             Assert.Equal(FILL_ME_IN, verbatimString.Length);
             Assert.Equal(literalString, verbatimString);
+
+
         }
 
         [Step(7)]
