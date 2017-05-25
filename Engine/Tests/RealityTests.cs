@@ -13,7 +13,7 @@ namespace DotNetCoreKoans.Engine.Tests
         [Fact]
         public void TrueShouldNotBeFalse()
         {
-            Assert.NotEqual(false, true);
+            Assert.False(true);
         }
     }
 }
