@@ -29,34 +29,34 @@ namespace DotNetCoreKoans.Koans
 				return lhs - rhs;
 			}
 		}
-		[Koan(1)]
+		[Step(1)]
 		public void DelegatesAreReferenceTypes()
 		{
 			//If you don't initialize a delegate it will be a null value, just as any other refrence type.
 			BinaryOp op;
 			Assert.Null(FILL_ME_IN);
 		}
-		[Koan(2)]
+		[Step(2)]
 		public void DelegatesCanBeInstantiated()
 		{
 			MyMath math = new MyMath();
 			BinaryOp op = new BinaryOp(math.Add);
 			Assert.Equal(FILL_ME_IN, op.GetMethodInfo().Name);
 		}
-		[Koan(3)]
+		[Step(3)]
 		public void DelegatesCanBeAssigned()
 		{
 			MyMath math = new MyMath();
 			BinaryOp op = math.Add;
 			Assert.Equal(FILL_ME_IN, op.GetMethodInfo().Name);
 		}
-		[Koan(4)]
+		[Step(4)]
 		public void DelegatesCanReferenceStaticMethods()
 		{
 			BinaryOp op = MyMath.Subtract;
 			Assert.Equal(FILL_ME_IN, op.GetMethodInfo().Name);
 		}
-		[Koan(5)]
+		[Step(5)]
 		public void MethodsCalledViaDelegate()
 		{
 			MyMath math = new MyMath();
@@ -67,20 +67,20 @@ namespace DotNetCoreKoans.Koans
 		{
             Assert.Equal(FILL_ME_IN, passed(3,3));
         }
-		[Koan(6)]
+		[Step(6)]
 		public void DelegatesCanBePassed()
 		{
 			MyMath math = new MyMath();
 			BinaryOp op = math.Add;
 			PassMeTheDelegate(op);
 		}
-		[Koan(7)]
+		[Step(7)]
 		public void MethodCanBePassedDirectly()
 		{
 			MyMath math = new MyMath();
 			PassMeTheDelegate(math.Add);
 		}
-		[Koan(8)]
+		[Step(8)]
 		public void DelegatesAreImmutable()
 		{
 			//Like strings it looks like you can change what a delegate references, but really they are immutable objects
@@ -104,7 +104,7 @@ namespace DotNetCoreKoans.Koans
 				return x + 10;
 			}
 		}
-		[Koan(9)]
+		[Step(9)]
 		public void DelegatesHaveAnInvocationList()
 		{
 			FunctionalTricks f = new FunctionalTricks();
@@ -115,7 +115,7 @@ namespace DotNetCoreKoans.Koans
 			adding += f.Add10;
 			Assert.Equal(FILL_ME_IN, adding.GetInvocationList().Length);
 		}
-		[Koan(10)]
+		[Step(10)]
 		public void OnlyLastResultReturned()
 		{
 			FunctionalTricks f = new FunctionalTricks();
@@ -124,7 +124,7 @@ namespace DotNetCoreKoans.Koans
 			//Delegates may have more than one method attached, but only the result of the last method is returned.
 			Assert.Equal(FILL_ME_IN, adding(5));
 		}
-		[Koan(11)]
+		[Step(11)]
 		public void RemovingMethods()
 		{
 			FunctionalTricks f = new FunctionalTricks();
@@ -149,7 +149,7 @@ namespace DotNetCoreKoans.Koans
 			int y = int.Parse(s);
 			Assert.Equal(42, x + y);
 		}
-		[Koan(12)]
+		[Step(12)]
 		public void BuiltInActionDelegateTakesInt()
 		{
 			//With the release of generics in .Net 2.0 we got some delegates which will cover most of our needs. 
@@ -160,14 +160,14 @@ namespace DotNetCoreKoans.Koans
 			Action<int> i = AssertIntEqualsFourtyTwo;
 			i((int)FILL_ME_IN);
 		}
-		[Koan(13)]
+		[Step(13)]
 		public void BuiltInActionDelegateTakesString()
 		{
 			// Because the delegate is a template, it also works with any other type. 
 			Action<string> s = AssertStringEqualsFourtyTwo;
 			s((string)FILL_ME_IN);
 		}
-		[Koan(14)]
+		[Step(14)]
 		public void BuiltInActionDelegateIsOverloaded()
 		{
 			//Action is an overloaded delegate so it can take more than one paramter
@@ -186,7 +186,7 @@ namespace DotNetCoreKoans.Koans
 				_letters.Append(letter);
 			}
 		}
-		[Koan(15)]
+		[Step(15)]
 		public void ActionInTheBcl()
 		{
 			//You will find Action used within the BCL, often when iterating over a container
@@ -206,7 +206,7 @@ namespace DotNetCoreKoans.Koans
 		{
 			return "42" == s;
 		}
-		[Koan(16)]
+		[Step(16)]
 		public void BuiltInPredicateDelegateIntSatisfied()
 		{
 			//The Predicate<T> delegate 
@@ -217,7 +217,7 @@ namespace DotNetCoreKoans.Koans
 			Predicate<int> i = (Predicate<int>)FILL_ME_IN;
 			Assert.True(i(42));
 		}
-		[Koan(17)]
+		[Step(17)]
 		public void BuiltInPredicateDelegateStringSatisfied()
 		{
 			//Because it is a template, you can work with any type
@@ -233,7 +233,7 @@ namespace DotNetCoreKoans.Koans
 		{
 			return country.StartsWith("S");
 		}
-		[Koan(18)]
+		[Step(18)]
 		public void FindingWithPredicate()
 		{
 			//Predicate can be used to find an element in an array
@@ -247,7 +247,7 @@ namespace DotNetCoreKoans.Koans
 			var countries = new[] { "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "French Guiana", "Guyana", "Paraguay", "Peru", "Suriname", "Uruguay", "Venezuela" };
 			return countries.Contains(country);
 		}
-		[Koan(19)]
+		[Step(19)]
 		public void ValidationWithPredicate()
 		{
 			//Predicate can also be used when verifying 
@@ -264,7 +264,7 @@ namespace DotNetCoreKoans.Koans
 		{
 			return x + y;
 		}
-		[Koan(20)]
+		[Step(20)]
 		public void FuncWithNoParameters()
 		{
 			//The Func<> delegate 
@@ -277,7 +277,7 @@ namespace DotNetCoreKoans.Koans
 			Func<string> d = FirstMonth;
 			Assert.Equal(FILL_ME_IN, d());
 		}
-		[Koan(21)]
+		[Step(21)]
 		public void FunctionReturnsInt()
 		{
 			//Like Action<>, Func<> is overloaded and can take a variable number of parameters.
@@ -303,7 +303,7 @@ namespace DotNetCoreKoans.Koans
 		{
 			return lhs.Model.CompareTo(rhs.Model);
 		}
-		[Koan(22)]
+		[Step(22)]
 		public void SortingWithComparison()
 		{
 			//You could make classes sortable by implementing IComparable or IComparer. But the Comparison<> delegate makes it easier
@@ -320,7 +320,7 @@ namespace DotNetCoreKoans.Koans
 		{
 			return x.ToString();
 		}
-		[Koan(23)]
+		[Step(23)]
 		public void ChangingTypesWithConverter()
 		{
 			//The Converter<> delegate
