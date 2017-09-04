@@ -9,11 +9,5 @@ namespace DotNetCoreKoans.Engine.Tests
         {
             Assert.True(true);
         }
-        
-        [Fact]
-        public void TrueShouldNotBeFalse()
-        {
-            Assert.NotEqual(false, true);
-        }
     }
 }

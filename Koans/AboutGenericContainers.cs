@@ -37,7 +37,7 @@ namespace DotNetCoreKoans.Koans
 			list.Add(42);
 			int x = 0;
 			//x = (int)list[0];
-			Assert.Equal(x, 42);
+			Assert.Equal(42,x);
 		}
 		[Step(4)]
 		public void ArrayListIsNotStronglyTyped()

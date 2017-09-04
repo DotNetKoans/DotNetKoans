@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>A set of Koans to teach the C# language on .NET Core.</Description>
-    <VersionPrefix>1.1.0</VersionPrefix>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <VersionPrefix>2.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
     <NoWarn>$(NoWarn);CS0162;CS0168;CS0184;CS0219</NoWarn>
     <AssemblyName>DotNetCoreKoans</AssemblyName>
     <OutputType>Exe</OutputType>
@@ -13,14 +13,14 @@
     <RepositoryUrl>https://github.com/NotMyself/DotNetCoreKoans</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="microsoft.dotnet.cli.utils" Version="1.0.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
-    <PackageReference Include="xunit" Version="2.2.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+    <PackageReference Include="microsoft.dotnet.cli.utils" Version="2.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="xunit" Version="2.3.0-beta5-build3769" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-beta5-build3769" />
   </ItemGroup>
 
   <ItemGroup>    
-    <DotNetCliToolReference Include="microsoft.dotnet.watcher.tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="microsoft.dotnet.watcher.tools" Version="2.0.0" />
   </ItemGroup>
 
   <PropertyGroup>
