@@ -13,14 +13,14 @@
     <RepositoryUrl>https://github.com/NotMyself/DotNetCoreKoans</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="microsoft.dotnet.cli.utils" Version="2.0.0-preview1-005977" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170517-02" />
-    <PackageReference Include="xunit" Version="2.3.0-beta2-build3683" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-beta2-build1317" />
+    <PackageReference Include="microsoft.dotnet.cli.utils" Version="2.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="xunit" Version="2.3.0-beta5-build3769" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-beta5-build3769" />
   </ItemGroup>
 
   <ItemGroup>    
-    <DotNetCliToolReference Include="microsoft.dotnet.watcher.tools" Version="2.0.0-preview1-final" />
+    <DotNetCliToolReference Include="microsoft.dotnet.watcher.tools" Version="2.0.0" />
   </ItemGroup>
 
   <PropertyGroup>
