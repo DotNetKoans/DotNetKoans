@@ -73,7 +73,9 @@ namespace DotNetCoreKoans.Engine
 
         private void EndScreen()
         {
-            
+            Console.WriteLine(string.Empty);
+            Console.WriteLine("The Master says:");
+            Console.WriteLine("  You have reached enlightenment.".Cyan());
         }
     }
 
