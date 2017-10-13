@@ -21,7 +21,7 @@ namespace DotNetCoreKoans.Engine
             catch(SenseiException e)
             { }
             
-            sensei.Instruct();
+            sensei.Instruct(this);
 
             return sensei.Failed() ? -1 : 0;
         }
