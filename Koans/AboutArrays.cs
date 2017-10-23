@@ -35,8 +35,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(42, array[FILL_ME_IN]);
 
             //This is important because...
-            //TODO:Add back once this bug is fixed: https://github.com/dotnet/corefx/issues/9998
-            //Assert.True(array.IsFixedSize);
+            Assert.True(array.IsFixedSize);
 
             //...it means we can't do this: array[1] = 13;
             Assert.Throws(typeof(FillMeIn), delegate() { array[1] = 13; });
