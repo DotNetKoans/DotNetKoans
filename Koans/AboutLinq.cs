@@ -38,7 +38,7 @@ namespace DotNetCoreKoans.Koans
                 select n;
 
             // 3. Query execution.
-            Assert.Equal(FILL_ME_IN, lowNums.Count());
+            Assert.Equal(FILL_ME_IN, lowNums[0]);
         }
 
         [Step(2)]
