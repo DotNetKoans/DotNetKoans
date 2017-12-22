@@ -73,7 +73,7 @@ namespace DotNetCoreKoans.Koans
             string[] words = { "believe", "relief", "receipt", "field" };
 
             bool iAfterE = words.Any(w => w.Contains("ei")); //Check if any of your words contain 'ei'
-            Assert.True(FILL_ME_IN);
+            Assert.Equal(FILL_ME_IN, iAfterE);
         }
     }
 }
