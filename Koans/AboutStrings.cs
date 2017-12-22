@@ -147,6 +147,15 @@ broken line";
         }
 
         [Step(14)]
+        public void VariablesCanBeInsertedInAStringInACoolerWay()
+        {
+            var firstName = "Matt";
+            var lastName = "Groves";
+            var str = $"My name is {firstName} {lastName}";
+            Assert.Equal(FILL_ME_IN, str);
+        }
+
+        [Step(15)]
         public void StringsCanBePaddedToTheLeft()
         {
             //You can modify the value inserted into the result
@@ -154,49 +163,49 @@ broken line";
             Assert.Equal(FILL_ME_IN, str);
         }
 
-        [Step(15)]
+        [Step(16)]
         public void StringsCanBePaddedToTheRight()
         {
             var str = string.Format("{0,-3:}", "x");
             Assert.Equal(FILL_ME_IN, str);
         }
 
-        [Step(16)]
+        [Step(17)]
         public void SeperatorsCanBeAdded()
         {
             var str = string.Format("{0:n}", 123456);
             Assert.Equal(FILL_ME_IN, str);
         }
 
-        [Step(17)]
+        [Step(18)]
         public void CurrencyDesignatorsCanBeAdded()
         {
             var str = string.Format("{0:c}", 123456);
             Assert.Equal(FILL_ME_IN, str);
         }
 
-        [Step(18)]
+        [Step(19)]
         public void NumberOfDisplayedDecimalsCanBeControled()
         {
             var str = string.Format("{0:.##}", 12.3456);
             Assert.Equal(FILL_ME_IN, str);
         }
 
-        [Step(19)]
+        [Step(20)]
         public void MinimumNumberOfDisplayedDecimalsCanBeControled()
         {
             var str = string.Format("{0:.00}", 12.3);
             Assert.Equal(FILL_ME_IN, str);
         }
 
-        [Step(20)]
+        [Step(21)]
         public void BuiltInDateFormaters()
         {
             var str = string.Format("{0:t}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
             Assert.Equal(FILL_ME_IN, str);
         }
 
-        [Step(21)]
+        [Step(22)]
         public void CustomDateFormaters()
         {
             var str = string.Format("{0:t m}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
@@ -204,7 +213,7 @@ broken line";
         }
         //These are just a few of the formatters available. Dig some and you may find what you need.
 
-        [Step(22)]
+        [Step(23)]
         public void ABetterWayToConcatenateLotsOfStrings()
         {
             //Concatenating lots of strings is a Bad Idea(tm). If you need to do that, then consider StringBuilder.
@@ -224,7 +233,7 @@ broken line";
             //String.Format and StringBuilder will be more efficent that concatenation. Prefer them.
         }
 
-        [Step(22)]
+        [Step(24)]
         public void StringBuilderCanUseFormatAsWell()
         {
             var strBuilder = new System.Text.StringBuilder();
@@ -235,21 +244,21 @@ broken line";
             Assert.Equal(FILL_ME_IN, str);
         }
 
-        [Step(23)]
+        [Step(25)]
         public void LiteralStringsInterpretsEscapeCharacters()
         {
             var str = "\n";
             Assert.Equal(FILL_ME_IN, str.Length);
         }
 
-        [Step(24)]
+        [Step(26)]
         public void VerbatimStringsDoNotInterpretEscapeCharacters()
         {
             var str = @"\n";
             Assert.Equal(FILL_ME_IN, str.Length);
         }
 
-        [Step(25)]
+        [Step(27)]
         public void VerbatimStringsStillDoNotInterpretEscapeCharacters()
         {
             var str = @"\\\";
