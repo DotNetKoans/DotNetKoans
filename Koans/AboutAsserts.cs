@@ -28,7 +28,7 @@ namespace DotNetCoreKoans.Koans
             Assert.True(expectedValue == actualValue);
         }
 
-        //Some wasy of asserting equality are better than others
+        //Some ways of asserting equality are better than others
         [Step(4)]
         public void ABetterWayOfAssertingEquality() 
         {
