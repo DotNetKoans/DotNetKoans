@@ -58,7 +58,7 @@ namespace DotNetCoreKoans.Engine
 
         private void GuideThroughError()
         {
-            
+
         }
 
         private void AZenlikeStatement()
@@ -82,7 +82,7 @@ namespace DotNetCoreKoans.Engine
                 "Doubt everything. Find your own light.",
                 "It is a man's own mind, not his enemy or foe, that lures him to evil ways"
             };
-            
+
             Console.WriteLine(String.Format("  \"{0}\"", statements[rand.Next(statements.Count())]));
         }
 
@@ -91,7 +91,7 @@ namespace DotNetCoreKoans.Engine
             int stepCount = 0;
             path.ForEachStep(s => stepCount++);
 
-            Console.WriteLine(String.Format("  {0} steps remain on the path.", stepCount - Observations.Count(o => o.IsSuccess)).Green());
+            Console.WriteLine(String.Format("  {0} (of " + stepCount + ") steps remain on the path.", stepCount - Observations.Count(o => o.IsSuccess)).Green());
         }
 
         private void EndScreen()
