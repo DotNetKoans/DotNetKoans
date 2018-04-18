@@ -101,7 +101,7 @@ namespace DotNetCoreKoans.Koans
             //when we try to 4 >> 1
             //it becomes 0010
             //then it will become 2
-            int x = 4 & 4;
+            int x = 12 >> 2;
             Assert.Equal(FILL_ME_IN, x);
         }
 
@@ -138,11 +138,12 @@ namespace DotNetCoreKoans.Koans
         public void AdditionWithoutPlusOrMinusOperator()
         {
             //Solve this problem without using + or -
-            //This is complicate problem if doesn't know how to solve it try to google online.
+            //This is complicated problem, if you don't 
+            //know how to solve it try to Google it.
             int a = 15;
             int b = 4;
 
-            // here goes your implementation to set value to Fill_Me_In
+            //Here goes your implementation to set value to FILL_ME_IN
             Assert.Equal(FILL_ME_IN, 19);
         }
     }

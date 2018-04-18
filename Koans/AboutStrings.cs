@@ -162,7 +162,7 @@ broken line";
         }
 
         [Step(16)]
-        public void SeperatorsCanBeAdded()
+        public void SeparatorsCanBeAdded()
         {
             var str = string.Format("{0:n}", 123456);
             Assert.Equal(FILL_ME_IN, str);
@@ -176,7 +176,7 @@ broken line";
         }
 
         [Step(18)]
-        public void NumberOfDisplayedDecimalsCanBeControled()
+        public void NumberOfDisplayedDecimalsCanBeControlled()
         {
             var str = string.Format("{0:.##}", 12.3456);
             Assert.Equal(FILL_ME_IN, str);
@@ -190,14 +190,14 @@ broken line";
         }
 
         [Step(20)]
-        public void BuiltInDateFormaters()
+        public void BuiltInDateFormatters()
         {
             var str = string.Format("{0:t}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
             Assert.Equal(FILL_ME_IN, str);
         }
 
         [Step(21)]
-        public void CustomDateFormaters()
+        public void CustomDateFormatters()
         {
             var str = string.Format("{0:t m}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
             Assert.Equal(FILL_ME_IN, str);

@@ -11,7 +11,7 @@ namespace DotNetCoreKoans.Koans
 	{
 		//A delegate is a user defined type just like a class. 
 		//A delegate lets you reference methods with the same signature and return type.
-		//Once you have the reference to the method, pass them as paramters or call it via the delegate.
+		//Once you have the reference to the method, pass them as parameters or call it via the delegate.
 		//In other languages this is known as functions as first class citizens.
 
 		//Here is a delegate declaration
@@ -309,7 +309,7 @@ namespace DotNetCoreKoans.Koans
 			//You could make classes sortable by implementing IComparable or IComparer. But the Comparison<> delegate makes it easier
 			//	public delegate int Comparison<T>(T x, T y);
 			//All you need is a method which takes two of the same type and returns -1, 0, or 1 depending upon what order they should go in.
-			var cars = new[] { new Car("Alfa Romero", "GTV-6", 1986), new Car("BMC", "Mini", 1959) };
+			var cars = new[] { new Car("BMC", "Mini", 1959), new Car("Alfa Romero", "GTV-6", 1986) };
 			Comparison<Car> by = SortByModel;
 			Array.Sort(cars, by);
 
@@ -324,7 +324,7 @@ namespace DotNetCoreKoans.Koans
 		public void ChangingTypesWithConverter()
 		{
 			//The Converter<> delegate
-			//	public delegeate U Converter<T, U>(T from);
+			//	public delegate U Converter<T, U>(T from);
 			//Can be used to change an object from one type to another
 			var numbers = new[] { 1, 2, 3, 4 };
 			Converter<int, string> c = Stringify;
