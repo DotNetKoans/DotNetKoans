@@ -52,7 +52,8 @@ namespace DotNetCoreKoans.Koans
                  orderby cust ascending //You can also use descending here for reverse order.
                  select cust;
 
-            Assert.Equal(FILL_ME_IN, customers[0]);
+            Assert.Equal(FILL_ME_IN, orderedCustomers.First());
+            Assert.Equal(FILL_ME_IN, orderedCustomers.Last());
         }
 
         [Step(3)]
