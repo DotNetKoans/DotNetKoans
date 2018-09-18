@@ -6,14 +6,16 @@ namespace DotNetCoreKoans.Koans
     public class AboutFloats : Koan
     {
         [Step(1)]
-        public void UnquotedNumbersEndingInFAreFloats() {
+        public void UnquotedNumbersEndingInFAreFloats()
+        {
             var f = 1f;
 
             Assert.Equal(typeof(FillMeIn), f.GetType());
         }
 
         [Step(2)]
-        public void FloatsPreserveDecimalPoints() {
+        public void FloatsPreserveDecimalPoints()
+        {
             float f = 1.5f;
 
             Assert.Equal(f, FILL_ME_IN);
@@ -25,7 +27,8 @@ namespace DotNetCoreKoans.Koans
         }
 
         [Step(3)]
-        public void FloatsAreSingles() {
+        public void FloatsAreSingles()
+        {
             Assert.Equal(typeof(float), typeof(FillMeIn));
             
             //.NET Core doesn't have a type called `float`
@@ -36,7 +39,8 @@ namespace DotNetCoreKoans.Koans
         }
 
         [Step(4)]
-        public void FloatingPointMathOutputsFloats() {
+        public void FloatingPointMathOutputsFloats()
+        {
             var result = 1 * 2f; //One's an integer, one's a float (even though it's a whole number)!
 
             //what will the result type be?
