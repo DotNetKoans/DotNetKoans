@@ -297,8 +297,11 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, dictionary.ContainsValue("dos"));
 		}
 		[Step(29)]
-		public void f()
+		public void AddingDataViaSubscript()
 		{
+			//The Dictionary also has some smarts built-in... You can use
+			//the subscript operator, [], to add data to it. Consider
+			//carefully the foreach loop below.
 			Dictionary<string, int> one = new Dictionary<string, int>();
 			one["jim"] = 53;
 			one["amy"] = 20;
