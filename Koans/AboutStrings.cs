@@ -183,7 +183,7 @@ broken line";
         }
 
         [Step(19)]
-        public void MinimumNumberOfDisplayedDecimalsCanBeControled()
+        public void MinimumNumberOfDisplayedDecimalsCanBeControlled()
         {
             var str = string.Format("{0:.00}", 12.3);
             Assert.Equal(FILL_ME_IN, str);
