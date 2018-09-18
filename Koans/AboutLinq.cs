@@ -24,7 +24,7 @@ namespace DotNetCoreKoans.Koans
         [Step(1)]
         public void FilterArrayData()
         {
-            //This sample uses where to find all elements of an array less than 5.
+            //This sample uses "where" to find all elements of an array less than 5.
 
             // The Three Parts of a LINQ Query:
 

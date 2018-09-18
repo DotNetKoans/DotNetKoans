@@ -77,8 +77,8 @@ broken line";
             //the hardcoded escape sequence. A much better way
             //(We'll handle concatenation and better ways of that in a bit)
             var literalString = "I" + System.Environment.NewLine + "am a" + System.Environment.NewLine + "broken line";
-            var vebatimString = FILL_ME_IN;
-            Assert.Equal(literalString, vebatimString);
+            var verbatimString = FILL_ME_IN;
+            Assert.Equal(literalString, verbatimString);
         }
 
         [Step(8)]

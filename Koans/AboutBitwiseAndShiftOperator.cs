@@ -26,7 +26,7 @@ namespace DotNetCoreKoans.Koans
             //Example
             //1 in binary is 0001
             //3 in binary is 0011
-            //With | it will take any 1 if either one coantins 1,so 1 & 3 it becomes 0011.
+            //With | it will take any 1 if either one contains 1,so 1 & 3 it becomes 0011.
             //When 0011 convert to int it becomes 3
             int x = 4 | 4;
             Assert.Equal(FILL_ME_IN, x);
@@ -138,8 +138,8 @@ namespace DotNetCoreKoans.Koans
         public void AdditionWithoutPlusOrMinusOperator()
         {
             //Solve this problem without using + or -
-            //This is complicated problem, if you don't 
-            //know how to solve it try to Google it.
+            //This is a complicated problem. If you don't 
+            //know how to solve it, try to Google it.
             int a = 15;
             int b = 4;
 
