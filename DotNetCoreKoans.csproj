@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Description>A set of Koans to teach the C# language on .NET Core.</Description>
     <VersionPrefix>2.0.0</VersionPrefix>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <NoWarn>$(NoWarn);CS0162;CS0168;CS0184;CS0219;xUnit2015;xUnit2013</NoWarn>
     <AssemblyName>DotNetCoreKoans</AssemblyName>
     <OutputType>Exe</OutputType>
@@ -11,12 +11,13 @@
     <PackageLicenseUrl>https://github.com/NotMyself/DotNetCoreKoans/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/NotMyself/DotNetCoreKoans</RepositoryUrl>
+    <ReleaseVersion>2.1.0.0</ReleaseVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="microsoft.dotnet.cli.utils" Version="2.0.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
-    <PackageReference Include="xunit" Version="2.3.0-beta5-build3769" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-beta5-build3769" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="xunit" Version="2.4.1-pre.build.4059" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1-pre.build.4059" />
   </ItemGroup>
 
   <PropertyGroup>

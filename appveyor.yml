@@ -5,7 +5,7 @@
 #---------------------------------#
 
 # version format
-version: 1.1.0.{build}
+version: 2.1.0.{build}
 
 # Skipping commits affecting specific files (GitHub only). More details here: /docs/appveyor-yml
 skip_commits:
