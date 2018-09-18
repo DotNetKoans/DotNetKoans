@@ -1,4 +1,4 @@
-# .Net Core Koans [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master) [![Join the chat at https://gitter.im/dotnetcorekoans/Lobby](https://badges.gitter.im/dotnetcorekoans/Lobby.svg)](https://gitter.im/dotnetcorekoans/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+# .Net Core Koans [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master)
 
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
 
@@ -12,7 +12,7 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 
 ### Getting Started
 
-1. Install [.NET Core SDK 2.0](https://www.microsoft.com/net/core).
+1. Install [.NET Core SDK 2.1](https://www.microsoft.com/net/core).
 2. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
 3. Clone the repository: `git clone https://github.com/NotMyself/DotNetCoreKoans.git`.
 4. Change directory into the cloned repository `cd DotNetCoreKoans`.
