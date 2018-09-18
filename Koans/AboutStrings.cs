@@ -221,7 +221,7 @@ broken line";
             var str = strBuilder.ToString();
             Assert.Equal(FILL_ME_IN, str);
 
-            //String.Format and StringBuilder will be more efficent that concatenation. Prefer them.
+            //String.Format and StringBuilder will be more efficient that concatenation. Prefer them.
         }
 
         [Step(23)]
