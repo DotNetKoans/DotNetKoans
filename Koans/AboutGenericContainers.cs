@@ -46,7 +46,7 @@ namespace DotNetCoreKoans.Koans
 			//ArrayList can hold more than one type. 
 			ArrayList list = new ArrayList();
 			list.Add(42);
-			list.Add("fourty two");
+			list.Add("forty two");
 			Assert.Equal(FILL_ME_IN, list[0]);
 			Assert.Equal(FILL_ME_IN, list[1]);
 
@@ -62,13 +62,13 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(s.GetType(), os.GetType());
 			Assert.Equal(s, os);
 
-			//While this it is true that everything is an object and all the above passes. Not everything is quite as it seems.
+			//While it is true that everything is an object and all the above passes, not everything is quite as it seems.
 			//Under the covers .Net allocates memory for all value type objects (int, double, bool,...) on the stack. This is 
 			//considerably more efficient than a heap allocation. .Net also has the ability to put a value type onto the heap.
-			//(for calling methods and other reasons). The process of putting stack data into the heap is called "boxing" the 
+			//(for calling methods and other reasons). The process of putting stack data into the heap is called "boxing". The 
 			//process of taking the value type off the heap is called "unboxing". We won't go into the details (see Jeffrey 
 			//Richter's book if you want details). This subject comes up because every time you put a value type into an 
-			//ArrayList it must be boxed. Every time you read it from the ArrayList it must be unboxed. This can be a significat
+			//ArrayList it must be boxed. Every time you read it from the ArrayList it must be unboxed. This can be a significant
 			//cost.
 		}
 		[Step(6)]
@@ -76,7 +76,7 @@ namespace DotNetCoreKoans.Koans
 		{
 			//ArrayList is a .Net 1.0 container. With .Net 2.0 generics were introduced and with it a new set of collections in
 			//System.Collections.Generic The array like container is List<T>. List<T> (read "list of T") is a generic class. 
-			//The "T" in the definition of List<T> is the type argument. You cannot declare an instace of List<T> without also
+			//The "T" in the definition of List<T> is the type argument. You cannot declare an instance of List<T> without also
 			//supplying a type in place of T.
 			var list = new List<int>();
 			Assert.Equal(FILL_ME_IN, list.Count);
@@ -85,7 +85,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, list.Count);
 
 			//Now just like int[], you can have a type safe dynamic sized container
-			//list.Add("fourty two"); //<--Unlike ArrayList this is illegal.
+			//list.Add("forty two"); //<--Unlike ArrayList this is illegal.
 			
 			//List<T> also solves the boxing/unboxing issues of ArrayList. Unfortunately, you'll have to take Microsoft's word for it
 			//as I can't find a way to prove it without some ugly MSIL beyond the scope of these Koans.

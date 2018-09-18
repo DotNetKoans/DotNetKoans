@@ -77,8 +77,8 @@ broken line";
             //the hardcoded escape sequence. A much better way
             //(We'll handle concatenation and better ways of that in a bit)
             var literalString = "I" + System.Environment.NewLine + "am a" + System.Environment.NewLine + "broken line";
-            var vebatimString = FILL_ME_IN;
-            Assert.Equal(literalString, vebatimString);
+            var verbatimString = FILL_ME_IN;
+            Assert.Equal(literalString, verbatimString);
         }
 
         [Step(8)]
@@ -183,7 +183,7 @@ broken line";
         }
 
         [Step(19)]
-        public void MinimumNumberOfDisplayedDecimalsCanBeControled()
+        public void MinimumNumberOfDisplayedDecimalsCanBeControlled()
         {
             var str = string.Format("{0:.00}", 12.3);
             Assert.Equal(FILL_ME_IN, str);
@@ -221,7 +221,7 @@ broken line";
             var str = strBuilder.ToString();
             Assert.Equal(FILL_ME_IN, str);
 
-            //String.Format and StringBuilder will be more efficent that concatenation. Prefer them.
+            //String.Format and StringBuilder will be more efficient that concatenation. Prefer them.
         }
 
         [Step(23)]

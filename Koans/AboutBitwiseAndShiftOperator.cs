@@ -15,8 +15,8 @@ namespace DotNetCoreKoans.Koans
             //3 in binary is 0011
             //With & only taking the same one else take 0,so 1 & 3 it becomes 0001.
             //When 0001 convert to int it becomes 1
-
             int x = 4 & 4;
+            
             Assert.Equal(FILL_ME_IN, x);
         }
 
@@ -26,9 +26,10 @@ namespace DotNetCoreKoans.Koans
             //Example
             //1 in binary is 0001
             //3 in binary is 0011
-            //With | it will take any 1 if either one coantins 1,so 1 & 3 it becomes 0011.
+            //With | it will take any 1 if either one contains 1,so 1 & 3 it becomes 0011.
             //When 0011 convert to int it becomes 3
             int x = 4 | 4;
+            
             Assert.Equal(FILL_ME_IN, x);
         }
 
@@ -68,6 +69,7 @@ namespace DotNetCoreKoans.Koans
         public void Combination2()
         {
             int x = 4 | 4 & 8;
+
             Assert.Equal(FILL_ME_IN, x);
         }
 
@@ -78,7 +80,6 @@ namespace DotNetCoreKoans.Koans
 
             Assert.Equal(FILL_ME_IN, x);
         }
-
 
         [Step(8)]
         public void BitwiseLeftShift()
@@ -108,17 +109,14 @@ namespace DotNetCoreKoans.Koans
         [Step(10)]
         public void Combination4()
         {
-
             int x = (5 << 2) & 8 ^ 3;
 
             Assert.Equal(FILL_ME_IN, x);
         }
 
-        
         [Step(11)]
         public void Combination5()
         {
-
             int x = (5 >> 2) & (~8) ^ 8;
 
             Assert.Equal(FILL_ME_IN, x);
@@ -127,19 +125,17 @@ namespace DotNetCoreKoans.Koans
         [Step(12)]
         public void Combination6()
         {
-
             int x = (8 << 2) & (~5) & 8 | 10 | (5 >> 1);
 
             Assert.Equal(FILL_ME_IN, x);
         }
 
-
-        [Step(10)]
+        [Step(13)]
         public void AdditionWithoutPlusOrMinusOperator()
         {
             //Solve this problem without using + or -
-            //This is complicated problem, if you don't 
-            //know how to solve it try to Google it.
+            //This is a complicated problem. If you don't 
+            //know how to solve it, try to Google it.
             int a = 15;
             int b = 4;
 

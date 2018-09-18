@@ -55,7 +55,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, this.MethodWithVariableArguments("Cory", "Will", "Corey"));
         }
 
-        //Extension methods can extend any class my referencing 
+        //Extension methods can extend any class by referencing 
         //the name of the class they are extending. For example, 
         //we can "extend" the string class like so:
 

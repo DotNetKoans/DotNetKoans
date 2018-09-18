@@ -24,7 +24,7 @@ namespace DotNetCoreKoans.Koans
         [Step(1)]
         public void FilterArrayData()
         {
-            //This sample uses where to find all elements of an array less than 5.
+            //This sample uses "where" to find all elements of an array less than 5.
 
             // The Three Parts of a LINQ Query:
 
@@ -44,7 +44,6 @@ namespace DotNetCoreKoans.Koans
         [Step(2)]
         public void PutYourDataInOrderUsingOrderBy()
         {
-
             string[] customers = { "John", "Bill", "Maria", "George", "Anna" };
 
             var orderedCustomers =
@@ -59,7 +58,6 @@ namespace DotNetCoreKoans.Koans
         [Step(3)]
         public void GetJustTheDataYouWantUsingTake()
         {
-
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
 
              //Get just the 3 first numbers.
