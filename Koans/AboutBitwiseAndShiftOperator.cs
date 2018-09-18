@@ -130,7 +130,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, x);
         }
 
-        [Step(10)]
+        [Step(13)]
         public void AdditionWithoutPlusOrMinusOperator()
         {
             //Solve this problem without using + or -
