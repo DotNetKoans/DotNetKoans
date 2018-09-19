@@ -172,5 +172,75 @@ namespace DotNetCoreKoans.Koans
 
             Assert.Equal(FILL_ME_IN, GiveMeBack<string>("Hi!"));
         }
+
+        private int ChangeInt(int x)
+        {
+            x = x + 10;
+            return x;
+        }
+
+        private string ChangeString(string str)
+        {
+            str = str + " second";
+            return str;
+        }
+
+        private class HeapObject
+        {
+            public string Value { get; set; }
+        }
+
+        private struct ValueObject
+        {
+            public string Value { get; set; }
+        }
+
+        private void ChangeHeapObject(HeapObject obj)
+        {
+            obj.Value = "changed";
+        }
+
+        private void ChangeValueObject(ValueObject obj)
+        {
+            obj.Value = "changed";
+        }
+
+        [Step(12)]
+        public void SimpleTypesAsArguments()
+        {
+            int x = 9;
+            int result = ChangeInt(x);
+            Assert.Equal(FILL_ME_IN, result);
+            Assert.Equal(FILL_ME_IN, x);
+        }
+
+        [Step(13)]
+        public void StringsAsArguments()
+        {
+            string first = "first";
+            string result = ChangeString(first);
+            Assert.Equal(FILL_ME_IN, first);
+            Assert.Equal(FILL_ME_IN, result);
+        }
+
+        [Step(14)]
+        public void ReferenceTypesAsArguments()
+        {
+            //Seek oneness like the heap object,
+            //and you will find inner peace.
+            var heapObject = new HeapObject { Value = "original" };
+            ChangeHeapObject(heapObject);
+            Assert.Equal(FILL_ME_IN, heapObject.Value);
+        }
+
+        [Step(15)]
+        public void ValueTypesAsArguments()
+        {
+            //Karma states that when a value types is passed
+            //as a parameter, a new one will be created.
+            var valueObject = new ValueObject { Value = "original" };
+            ChangeValueObject(valueObject);
+            Assert.Equal(FILL_ME_IN, valueObject.Value);
+        }
     }
 }
