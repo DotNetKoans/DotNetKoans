@@ -195,14 +195,16 @@ namespace DotNetCoreKoans.Koans
             public string Value { get; set; }
         }
 
-        private void ChangeHeapObject(HeapObject obj)
+        private HeapObject ChangeHeapObject(HeapObject obj)
         {
             obj.Value = "changed";
+            return obj;
         }
 
-        private void ChangeValueObject(ValueObject obj)
+        private ValueObject ChangeValueObject(ValueObject obj)
         {
             obj.Value = "changed";
+            return obj;
         }
 
         [Step(12)]
@@ -229,18 +231,20 @@ namespace DotNetCoreKoans.Koans
             //Seek oneness like the heap object,
             //and you will find inner peace.
             var heapObject = new HeapObject { Value = "original" };
-            ChangeHeapObject(heapObject);
+            var result = ChangeHeapObject(heapObject);
             Assert.Equal(FILL_ME_IN, heapObject.Value);
+            Assert.Equal(FILL_ME_IN, result.Value);
         }
 
         [Step(15)]
         public void ValueTypesAsArguments()
         {
-            //Karma states that when a value types is passed
+            //Karma states that when a value type is passed
             //as a parameter, a new one will be created.
             var valueObject = new ValueObject { Value = "original" };
-            ChangeValueObject(valueObject);
+            var result = ChangeValueObject(valueObject);
             Assert.Equal(FILL_ME_IN, valueObject.Value);
+            Assert.Equal(FILL_ME_IN, result.Value);
         }
     }
 }
