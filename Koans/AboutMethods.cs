@@ -206,10 +206,18 @@ namespace DotNetCoreKoans.Koans
             obj.Value = "changed";
             return obj;
         }
+        
+        //When creating a new variable (int, string, List<T>, YourCustomObject)
+        //it will always be created in one of two places: the stack, or the heap.
+        //This will determine exactly how C# passes the data represented by your
+        //variable into methods when passed into them
 
         [Step(12)]
         public void SimpleTypesAsArguments()
         {
+            //Built-in types, such as ints, chars, and floats are value types,
+            //so they are created on the stack. This means that when they are
+            //passed as arguments into a method, a new one is created
             int x = 9;
             int result = ChangeInt(x);
             Assert.Equal(FILL_ME_IN, result);
@@ -219,6 +227,9 @@ namespace DotNetCoreKoans.Koans
         [Step(13)]
         public void StringsAsArguments()
         {
+            //As we learned earlier, strings are immutable, which means they
+            //cannot be changed. Therefore, if they are passed into a method
+            //and the method tries to modify it, a new string will be created
             string first = "first";
             string result = ChangeString(first);
             Assert.Equal(FILL_ME_IN, first);
@@ -234,6 +245,15 @@ namespace DotNetCoreKoans.Koans
             var result = ChangeHeapObject(heapObject);
             Assert.Equal(FILL_ME_IN, heapObject.Value);
             Assert.Equal(FILL_ME_IN, result.Value);
+            
+            //Objects created from classes are allocated on the heap. This
+            //means that when they are passed into a method, the reference
+            //that was created to represent the data of the object when we
+            //called new is what actually gets passed into said method.
+            //Therefore, any changes made to the object in the method will
+            //apply to the object that was created outside the method as
+            //well (in reality, there's always just one object and we've
+            //simply passed a "reference" to the object into the method)
         }
 
         [Step(15)]
@@ -245,6 +265,12 @@ namespace DotNetCoreKoans.Koans
             var result = ChangeValueObject(valueObject);
             Assert.Equal(FILL_ME_IN, valueObject.Value);
             Assert.Equal(FILL_ME_IN, result.Value);
+            
+            //Structs are custom objects that are created on the stack,
+            //similarly to built-in types. Therefore, a new copy of
+            //the object is passed into the method, leaving the original
+            //unchanged when the method tries to modify the object
+            //passed into it
         }
     }
 }
