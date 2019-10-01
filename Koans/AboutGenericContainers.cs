@@ -21,6 +21,7 @@ namespace DotNetCoreKoans.Koans
 			list.Add(42);
 			Assert.Equal(FILL_ME_IN, list.Count);
 		}
+
 		[Step(2)]
 		public void ArrayListHoldsObjects()
 		{
@@ -28,6 +29,7 @@ namespace DotNetCoreKoans.Koans
 			System.Reflection.MethodInfo method = list.GetType().GetMethod("Add");
 			Assert.Equal(typeof(FillMeIn), method.GetParameters()[0].ParameterType);
 		}
+
 		[Step(3)]
 		public void MustCastWhenRetrieving()
 		{
@@ -39,6 +41,7 @@ namespace DotNetCoreKoans.Koans
 			//x = (int)list[0];
 			Assert.Equal(42,x);
 		}
+
 		[Step(4)]
 		public void ArrayListIsNotStronglyTyped()
 		{
@@ -54,6 +57,7 @@ namespace DotNetCoreKoans.Koans
 			//anytime your code works with an array list you have to check that the element is 
 			//of the type you expect.
 		}
+
 		[Step(5)]
 		public void Boxing()
 		{
@@ -71,6 +75,7 @@ namespace DotNetCoreKoans.Koans
 			//ArrayList it must be boxed. Every time you read it from the ArrayList it must be unboxed. This can be a significant
 			//cost.
 		}
+
 		[Step(6)]
 		public void ABetterDynamicSizeContainer()
 		{
@@ -90,9 +95,11 @@ namespace DotNetCoreKoans.Koans
 			//List<T> also solves the boxing/unboxing issues of ArrayList. Unfortunately, you'll have to take Microsoft's word for it
 			//as I can't find a way to prove it without some ugly MSIL beyond the scope of these Koans.
 		}
+
 		public class Widget
 		{
 		}
+
 		[Step(7)]
 		public void ListWorksWithAnyType()
 		{
@@ -101,6 +108,7 @@ namespace DotNetCoreKoans.Koans
 			list.Add(new Widget());
 			Assert.Equal(FILL_ME_IN, list.Count);
 		}
+
 		[Step(8)]
 		public void InitializingWithValues()
 		{
@@ -108,6 +116,7 @@ namespace DotNetCoreKoans.Koans
 			var list = new List<int> { 1, 2, 3 };
 			Assert.Equal(FILL_ME_IN, list.Count);
 		}
+
 		[Step(9)]
 		public void AddMultipleItems()
 		{
@@ -116,6 +125,7 @@ namespace DotNetCoreKoans.Koans
 			list.AddRange(new[] { 1, 2, 3 });
 			Assert.Equal(FILL_ME_IN, list.Count);
 		}
+
 		[Step(10)]
 		public void RandomAccess()
 		{
@@ -123,6 +133,7 @@ namespace DotNetCoreKoans.Koans
 			List<int> list = new List<int> { 5, 6, 7 };
 			Assert.Equal(FILL_ME_IN, list[2]);
 		}
+
 		[Step(11)]
 		public void BeyondTheLimits()
 		{
@@ -130,12 +141,14 @@ namespace DotNetCoreKoans.Koans
 			//You cannot attempt to get data that doesn't exist
 			Assert.Throws(typeof(FillMeIn), delegate() { int x = list[3]; });
 		}
+
 		[Step(12)]
 		public void ConvertingToFixedSize()
 		{
 			List<int> list = new List<int> { 1, 2, 3 };
 			Assert.Equal(FILL_ME_IN, list.ToArray());
 		}
+
 		[Step(13)]
 		public void InsertingInTheMiddle()
 		{
@@ -143,6 +156,7 @@ namespace DotNetCoreKoans.Koans
 			list.Insert(1, 6);
 			Assert.Equal(FILL_ME_IN, list.ToArray());
 		}
+
 		[Step(14)]
 		public void RemovingItems()
 		{
@@ -150,6 +164,7 @@ namespace DotNetCoreKoans.Koans
 			list.Remove(2);
 			Assert.Equal(FILL_ME_IN, list.ToArray());
 		}
+
 		[Step(15)]
 		public void StackPushPop()
 		{
@@ -164,6 +179,7 @@ namespace DotNetCoreKoans.Koans
 
 			Assert.Equal(FILL_ME_IN, stack.Count);
 		}
+
 		[Step(16)]
 		public void StackOrder()
 		{
@@ -174,6 +190,7 @@ namespace DotNetCoreKoans.Koans
 
 			Assert.Equal(FILL_ME_IN, stack.ToArray());
 		}
+
 		[Step(17)]
 		public void PeekingIntoAQueue()
 		{
@@ -183,6 +200,7 @@ namespace DotNetCoreKoans.Koans
 			queue.Enqueue("two");
 			Assert.Equal(FILL_ME_IN, queue.Peek());
 		}
+
 		[Step(18)]
 		public void RemovingItemsFromTheQueue()
 		{
@@ -192,6 +210,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, queue.Dequeue());
 			Assert.Equal(FILL_ME_IN, queue.Count);
 		}
+
 		[Step(19)]
 		public void AddingToADictionary()
 		{
@@ -201,6 +220,7 @@ namespace DotNetCoreKoans.Koans
 			dictionary[1] = "one";
 			Assert.Equal(FILL_ME_IN, dictionary.Count);
 		}
+
 		[Step(20)]
 		public void AccessingData()
 		{
@@ -211,6 +231,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, dictionary["one"]);
 			Assert.Equal(FILL_ME_IN, dictionary["two"]);
 		}
+
 		[Step(21)]
 		public void AccessingDataNotAdded()
 		{
@@ -218,6 +239,7 @@ namespace DotNetCoreKoans.Koans
 			dictionary["one"] = "uno";
 			Assert.Throws(typeof(FillMeIn), delegate() { string s = dictionary["two"]; });
 		}
+
 		[Step(22)]
 		public void CatchingMissingData()
 		{
@@ -235,6 +257,7 @@ namespace DotNetCoreKoans.Koans
 			}
 			Assert.Equal(FILL_ME_IN, result);
 		}
+
 		[Step(23)]
 		public void PreCheckForMissingData()
 		{
@@ -251,6 +274,7 @@ namespace DotNetCoreKoans.Koans
 			}
 			Assert.Equal(FILL_ME_IN, result);
 		}
+
 		[Step(24)]
 		public void TryGetValueForMissingData()
 		{
@@ -263,6 +287,7 @@ namespace DotNetCoreKoans.Koans
 			}
 			Assert.Equal(FILL_ME_IN, result);
 		}
+
 		[Step(25)]
 		public void InitializingADictionary()
 		{
@@ -271,6 +296,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, dictionary["one"]);
 			Assert.Equal(FILL_ME_IN, dictionary["two"]);
 		}
+
 		[Step(26)]
 		public void ModifyingData()
 		{
@@ -280,6 +306,7 @@ namespace DotNetCoreKoans.Koans
 			dictionary["one"] = "ein";
 			Assert.Equal(FILL_ME_IN, dictionary["one"]);
 		}
+
 		[Step(27)]
 		public void KeyExists()
 		{
@@ -288,6 +315,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, dictionary.ContainsKey("one"));
 			Assert.Equal(FILL_ME_IN, dictionary.ContainsKey("two"));
 		}
+
 		[Step(28)]
 		public void ValueExists()
 		{
@@ -296,6 +324,7 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, dictionary.ContainsValue("uno"));
 			Assert.Equal(FILL_ME_IN, dictionary.ContainsValue("dos"));
 		}
+
 		[Step(29)]
 		public void AddingDataViaSubscript()
 		{
