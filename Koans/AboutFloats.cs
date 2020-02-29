@@ -10,7 +10,7 @@ namespace DotNetCoreKoans.Koans
         {
             var f = 1f;
 
-            Assert.Equal(typeof(FillMeIn), f.GetType());
+            Assert.Equal(typeof(float), f.GetType());
         }
 
         [Step(2)]
@@ -18,7 +18,7 @@ namespace DotNetCoreKoans.Koans
         {
             float f = 1.5f;
 
-            Assert.Equal(f, FILL_ME_IN);
+            Assert.Equal(f, 1.5f);
 
             //Floating Point numbers are able to keep data beyond the decimal point
             //unlike Integers which are whole numbers.
@@ -29,7 +29,7 @@ namespace DotNetCoreKoans.Koans
         [Step(3)]
         public void FloatsAreSingles()
         {
-            Assert.Equal(typeof(float), typeof(FillMeIn));
+            Assert.Equal(typeof(float), typeof(float));
             
             //.NET Core doesn't have a type called `float`
             //Instead, it has a "Single Precision Floating Point Number" type:
@@ -44,7 +44,7 @@ namespace DotNetCoreKoans.Koans
             var result = 1 * 2f; //One's an integer, one's a float (even though it's a whole number)!
 
             //what will the result type be?
-            Assert.Equal(typeof(FillMeIn), result.GetType());
+            Assert.Equal(typeof(float), result.GetType());
 
             //.NET Core kindly stores the result of the math in a float
             //so you don't lose the extra information in your floating point value
@@ -53,14 +53,14 @@ namespace DotNetCoreKoans.Koans
         [Step(5)]
         public void FloatsHaveLimitedMaximumAndMinimumValues()
         {
-            Assert.Equal(FILL_ME_IN, 3.40282347E+38f);
-            Assert.Equal(FILL_ME_IN, -3.40282347E+38f);
+            Assert.Equal(3.40282346638529E+38f, 3.40282347E+38f);
+            Assert.Equal(-3.40282346638529E+38f, -3.40282347E+38f);
         }
 
         [Step(6)]
         public void ValueLargerThanTheMaximumFloatThrows()
         {
-            Assert.Throws(typeof(FillMeIn), () =>
+            Assert.Throws(typeof(System.OverflowException), () =>
             {
                 var f = float.Parse("3.5E+38");
             });
@@ -72,8 +72,8 @@ namespace DotNetCoreKoans.Koans
             var sevenDigits = 0.9999999f;
             var eightDigits = 0.99999999f;
         
-            Assert.Equal(sevenDigits, FILL_ME_IN);
-            Assert.Equal(eightDigits, FILL_ME_IN);
+            Assert.Equal(sevenDigits, 0.9999999f);
+            Assert.Equal(eightDigits, 0.99999999f);
 
             //Remember how floats are "Single Precision"?
             //What does that actually mean?
@@ -98,7 +98,7 @@ namespace DotNetCoreKoans.Koans
         {
             var f = 0.3f + 0.6f;
 
-            Assert.True(f == 0.9f);
+            Assert.False(f == 0.9f);
 
             //Math with floating point numbers doesn't always behave how humans expect.
             //This is because floating point numbers are stored in binary,
