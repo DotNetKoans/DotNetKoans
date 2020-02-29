@@ -17,21 +17,21 @@ namespace DotNetCoreKoans.Koans
         public void DoubleQuotedStringsAreStrings()
         {
             var str = "Hello, World";
-            Assert.Equal(typeof(FillMeIn), str.GetType());
+            Assert.Equal(typeof(string), str.GetType());
         }
 
         [Step(2)]
         public void SingleQuotedStringsAreNotStrings()
         {
             var str = 'H';
-            Assert.Equal(typeof(FillMeIn), str.GetType());
+            Assert.Equal(typeof(char), str.GetType());
         }
 
         [Step(3)]
         public void CreateAStringWhichContainsDoubleQuotes()
         {
             var str = "Hello, \"World\"";
-            Assert.Equal(FILL_ME_IN, str.Length);
+            Assert.Equal(14, str.Length);
         }
 
         [Step(4)]
@@ -40,7 +40,7 @@ namespace DotNetCoreKoans.Koans
             //The @ symbol creates a 'verbatim string literal'. 
             //Here's one thing you can do with it:
             var str = @"Hello, ""World""";
-            Assert.Equal(FILL_ME_IN, str.Length);
+            Assert.Equal(14, str.Length);
         }
 
         [Step(5)]
@@ -48,7 +48,7 @@ namespace DotNetCoreKoans.Koans
         {
             var strA = @"Verbatim Strings can handle both ' and "" characters (when escaped)";
             var strB = "Verbatim Strings can handle both ' and \" characters (when escaped)";
-            Assert.Equal(FILL_ME_IN, strA.Equals(strB));
+            Assert.Equal(true, strA.Equals(strB));
         }
 
         [Step(6)]
@@ -64,8 +64,8 @@ broken line";
 
             // Make sure to use a literal string.
             // Escaped characters in verbatim strings are covered later.
-            var literalString = FILL_ME_IN;
-            Assert.Equal(FILL_ME_IN, verbatimString.Length);
+            var literalString = "I\r\nam a\r\nbroken line";
+            Assert.Equal(20, verbatimString.Length);
             Assert.Equal(literalString, verbatimString);
         }
 
@@ -77,7 +77,9 @@ broken line";
             //the hardcoded escape sequence. A much better way
             //(We'll handle concatenation and better ways of that in a bit)
             var literalString = "I" + System.Environment.NewLine + "am a" + System.Environment.NewLine + "broken line";
-            var verbatimString = FILL_ME_IN;
+            var verbatimString = @"I
+am a
+broken line";
             Assert.Equal(literalString, verbatimString);
         }
 
