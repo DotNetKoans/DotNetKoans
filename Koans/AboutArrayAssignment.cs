@@ -18,7 +18,7 @@ namespace DotNetCoreKoans.Koans
             //Even though we don't specify types explicitly, the compiler
             //will pick one for us
             var name = "John";
-            Assert.Equal(typeof(FillMeIn), name.GetType());
+            Assert.Equal(typeof(string), name.GetType());
 
             //but only if it can. So this doesn't work
             //var array = null;
@@ -33,7 +33,7 @@ namespace DotNetCoreKoans.Koans
             //Even though we don't specify types explicitly, the compiler
             //will pick one for us
             var names = new[] { "John", "Smith" };
-            Assert.Equal(typeof(FillMeIn), names.GetType());
+            Assert.Equal(typeof(string[]), names.GetType());
 
             //but only if it can. So this doesn't work
             //var array = new[] { "John", 1 };
@@ -45,8 +45,8 @@ namespace DotNetCoreKoans.Koans
             //You can do multiple assignments on one line, but you 
             //still have to be explicit
             string firstName = "John", lastName = "Smith";
-            Assert.Equal(FILL_ME_IN, firstName);
-            Assert.Equal(FILL_ME_IN, lastName);
+            Assert.Equal("John", firstName);
+            Assert.Equal("Smith", lastName);
         }
     }
 }
