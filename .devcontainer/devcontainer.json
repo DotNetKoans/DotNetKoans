@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "files.exclude": {
+        "**/CODE_OF_CONDUCT.md": true,
+        "**/CONTRIBUTING.md": true,
+        "**/appveyor.yml": true,
+        "**/.all-contributorssrc": true,
+    }
+}
+}
