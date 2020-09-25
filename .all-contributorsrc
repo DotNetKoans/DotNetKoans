@@ -76,6 +76,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "LUS1N",
+      "name": "Lukas Sinkus",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/10304156?v=4",
+      "profile": "https://www.linkedin.com/in/lukas-sinkus/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
