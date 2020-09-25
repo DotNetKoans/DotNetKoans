@@ -22,6 +22,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "euronay",
+      "name": "James Naylor",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3864985?v=4",
+      "profile": "https://jamesnaylor.dev",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
