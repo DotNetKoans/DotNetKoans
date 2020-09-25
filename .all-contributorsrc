@@ -85,6 +85,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "dutts",
+      "name": "Richard D",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2182427?v=4",
+      "profile": "http://www.dutton.me.uk",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
