@@ -1,6 +1,6 @@
 # .Net Core Koans [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://stackoverflow.com/users/1453907/john-hoerr"><img src="https://avatars1.githubusercontent.com/u/1151206?v=4" width="100px;" alt=""/><br /><sub><b>John Hoerr</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=jhoerr" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/vgrigoriu"><img src="https://avatars3.githubusercontent.com/u/95696?v=4" width="100px;" alt=""/><br /><sub><b>Victor Grigoriu</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=vgrigoriu" title="Code">💻</a></td>
+    <td align="center"><a href="https://jamesnaylor.dev"><img src="https://avatars0.githubusercontent.com/u/3864985?v=4" width="100px;" alt=""/><br /><sub><b>James Naylor</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=euronay" title="Code">💻</a></td>
   </tr>
 </table>
 
