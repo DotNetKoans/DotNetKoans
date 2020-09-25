@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "jhoerr",
+      "name": "John Hoerr",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1151206?v=4",
+      "profile": "http://stackoverflow.com/users/1453907/john-hoerr",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "DotNetCoreKoans",
+  "projectOwner": "NotMyself",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
