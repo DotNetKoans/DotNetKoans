@@ -31,6 +31,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "samqty",
+      "name": "Samuel Cherinet",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1375088?v=4",
+      "profile": "http://samcherinet.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
