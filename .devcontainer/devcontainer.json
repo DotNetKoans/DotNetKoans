@@ -1,5 +1,8 @@
 {
   "name": ".net core koans",
+  "extensions": [
+    "vsls-contrib.codetour"
+  ],
   "settings": {
     "files.exclude": {
         "**/CODE_OF_CONDUCT.md": true,
