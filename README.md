@@ -35,12 +35,6 @@ If you have never contributed to an open source project, let this be your first.
 
 If you think a topic is missing, propose it's inclusion by [submitting an issue](https://github.com/NotMyself/DotNetCoreKoans/issues/new) yourself. Or better yet submit the issue and an accompanying pull request with how you think the topic should be introduced. Think about beginners in your effort; be clear and informative, be concise and most of all be playful with your examples.
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
 ### About Koans
 
 This project is based on the work of [Cory Foy](https://github.com/CoryFoy) and his original multi-language project [DotNetKoans](https://github.com/CoryFoy/DotNetKoans). If you are interested in learning VB.NET or the Full .NET Framework (windows only), please look at his fine work.
