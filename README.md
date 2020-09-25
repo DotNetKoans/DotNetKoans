@@ -1,6 +1,6 @@
 # .Net Core Koans [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
@@ -60,6 +60,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/cmdkeen"><img src="https://avatars3.githubusercontent.com/u/54735?v=4" width="100px;" alt=""/><br /><sub><b>Chris</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=cmdkeen" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/delainewendling"><img src="https://avatars2.githubusercontent.com/u/12090406?v=4" width="100px;" alt=""/><br /><sub><b>Delaine Wendling</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=delainewendling" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/allenz0810"><img src="https://avatars0.githubusercontent.com/u/5561722?v=4" width="100px;" alt=""/><br /><sub><b>Allen</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=allenz0810" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/beforan"><img src="https://avatars0.githubusercontent.com/u/1846005?v=4" width="100px;" alt=""/><br /><sub><b>Jonathan Couldridge</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=beforan" title="Code">💻</a></td>
   </tr>
 </table>
 
