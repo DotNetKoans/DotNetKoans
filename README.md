@@ -1,6 +1,6 @@
 # .Net Core Koans [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
@@ -69,6 +69,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/agustashd"><img src="https://avatars2.githubusercontent.com/u/22988154?v=4" width="100px;" alt=""/><br /><sub><b>Agustin</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=agustashd" title="Code">💻</a></td>
     <td align="center"><a href="https://www.pontifex-tech.com"><img src="https://avatars2.githubusercontent.com/u/1691149?v=4" width="100px;" alt=""/><br /><sub><b>Matthew Parsons</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=OranguTech" title="Code">💻</a></td>
     <td align="center"><a href="http://macleod.in"><img src="https://avatars0.githubusercontent.com/u/8996312?v=4" width="100px;" alt=""/><br /><sub><b>Jamie MacLeod</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=macleodmac" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/pezholio"><img src="https://avatars0.githubusercontent.com/u/109774?v=4" width="100px;" alt=""/><br /><sub><b>Stuart Harrison</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=pezholio" title="Code">💻</a></td>
   </tr>
 </table>
 
