@@ -176,6 +176,15 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "dsschnau",
+      "name": "Dan Schnau",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1373329?v=4",
+      "profile": "https://github.com/dsschnau",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
