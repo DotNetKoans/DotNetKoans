@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Microsoft.DotNet.Cli.Utils;
 
 namespace DotNetCoreKoans.Engine
@@ -24,7 +25,7 @@ namespace DotNetCoreKoans.Engine
         public void Observe(StepResult result)
         {
             Observations.Add(result);
-            if(result.IsFailure)
+            if (result.IsFailure)
             {
                 throw new SenseiException();
             }
@@ -41,6 +42,7 @@ namespace DotNetCoreKoans.Engine
                 Encourage();
                 GuideThroughError();
                 AZenlikeStatement();
+                Console.WriteLine();
                 ShowProgressOn(path);
             }
             else
@@ -88,10 +90,28 @@ namespace DotNetCoreKoans.Engine
 
         private void ShowProgressOn(Path path)
         {
+
             int stepCount = 0;
             path.ForEachStep(s => stepCount++);
+            int stepsNotCompleted = stepCount - Observations.Count(o => o.IsSuccess);
 
-            Console.WriteLine(String.Format("  {0} (of " + stepCount + ") steps remain on the path.", stepCount - Observations.Count(o => o.IsSuccess)).Green());
+            var graph = GenerateGraph(stepCount - stepsNotCompleted, stepCount);
+
+            Console.WriteLine(graph.Green());
+            Console.WriteLine($"  {stepsNotCompleted} of {stepCount} steps remain on the path.".Green());
+        }
+
+        private string GenerateGraph(int completed, int all, int scale = 60)
+        {
+            int stepCompletedRatio = completed == 0 ? 1 : (int)Math.Round(((float)completed / (float)all) * scale);
+
+            var sb = new StringBuilder();
+            sb.Append("  [");
+            sb.Append('#', stepCompletedRatio);
+            sb.Append('_', scale - stepCompletedRatio);
+            sb.Append(']');
+
+            return sb.ToString();
         }
 
         private void EndScreen()
