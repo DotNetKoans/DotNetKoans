@@ -11,7 +11,7 @@ namespace DotNetCoreKoans.Koans
         public void ConstantsMustBeInitalizedAsDeclared()
         {
             const int months = 12;
-            Assert.Equal(FILL_ME_IN, 1);
+            Assert.Equal(FILL_ME_IN, 12);
         }
 
         [Step(2)]
@@ -70,7 +70,7 @@ namespace DotNetCoreKoans.Koans
         public void NestedClassesInheritConstantsFromEnclosingClasses()
         {
             var nestedAnimal = new Animal.NestedAnimal();
-            Assert.Equal(4, nestedAnimal.LegsInNestedAnimal());
+            Assert.Equal(FILL_ME_IN, nestedAnimal.LegsInNestedAnimal());
         }
 
         class Reptile : Animal
@@ -85,7 +85,7 @@ namespace DotNetCoreKoans.Koans
         public void SubclassesInheritConstantsFromParentClasses()
         {
             var reptile = new Reptile();
-            Assert.Equal(4, reptile.LegsInReptile());
+            Assert.Equal(FILL_ME_IN, reptile.LegsInReptile());
         }
 
         class MyAnimals
@@ -105,7 +105,7 @@ namespace DotNetCoreKoans.Koans
         public void WhoWinsWithBothNestedAndInheritedConstants()
         {
             var bird = new MyAnimals.Bird();
-            Assert.Equal(2, bird.LegsInBird());
+            Assert.Equal(FILL_ME_IN, bird.LegsInBird());
 
             /* QUESTION: Which has precedence: The constant in the lexical scope,
                or the constant from the inheritance hierarchy? */
