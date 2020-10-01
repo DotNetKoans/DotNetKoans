@@ -1,6 +1,10 @@
 {
   "name": ".net core koans",
-  "extensions": ["vsls-contrib.codetour", "ms-dotnettools.csharp"],
+  "extensions": [
+    "vsls-contrib.codetour", 
+    "ms-dotnettools.csharp",
+    "GitHub.vscode-pull-request-github"
+  ],
   "settings": {
     "files.exclude": {
       "**/CODE_OF_CONDUCT.md": true,

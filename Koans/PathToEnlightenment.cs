@@ -10,6 +10,7 @@ namespace DotNetCoreKoans.Koans
             Types = new Type[] {
         typeof(AboutAsserts),
         typeof(AboutConstants),
+        typeof(AboutBooleans),
         typeof(AboutNull),
         typeof(AboutArrays),
         typeof(AboutArrayAssignment),
