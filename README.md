@@ -1,7 +1,7 @@
 # .Net Core Koans [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-19-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
@@ -75,6 +75,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://c-j.tech"><img src="https://avatars0.githubusercontent.com/u/3969086?v=4" width="100px;" alt=""/><br /><sub><b>Chris Jones</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=cmjchrisjones" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Dgaduin"><img src="https://avatars1.githubusercontent.com/u/2265194?v=4" width="100px;" alt=""/><br /><sub><b>Atanas Pashkov</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=Dgaduin" title="Code">💻</a></td>
     <td align="center"><a href="http://ostebaronen.dk"><img src="https://avatars3.githubusercontent.com/u/249719?v=4" width="100px;" alt=""/><br /><sub><b>Tomasz Cielecki</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=Cheesebaron" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SophieLemos"><img src="https://avatars0.githubusercontent.com/u/48099481?v=4" width="100px;" alt=""/><br /><sub><b>SophieLemos</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=SophieLemos" title="Code">💻</a> <a href="https://github.com/NotMyself/DotNetCoreKoans/issues?q=author%3ASophieLemos" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
