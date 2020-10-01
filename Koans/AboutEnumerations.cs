@@ -16,11 +16,11 @@ namespace DotNetCoreKoans.Koans
             structure and syntax looks like, how they are cased, how they are assigned
             values and then move on to the first step.
             */
-            enum Planet
+            enum Shape
             {
-                  Dagobah,
-                  Endor,
-                  Hoth
+                  Square,
+                  Circle,
+                  Triangle
             }
 
             enum LogLevel
@@ -49,20 +49,20 @@ namespace DotNetCoreKoans.Koans
                   Creating an instance of an enum is as easy as assigning a member
                   of the enum to a new variable. For instance:
                   */
-                  var dagobah = Planet.Dagobah;
+                  var square = Shape.Square;
 
                   /*
                   While the underlying type of the instance above will be an integer,
                   enums are first class types in the C# language. The type of the
-                  variable 'dagobah' will be the enum itself.
+                  variable 'square' will be the enum itself.
                   */
-                  Assert.Equal(typeof(FillMeIn), dagobah.GetType());
+                  Assert.Equal(typeof(FillMeIn), square.GetType());
 
                   /*
                   Adding new members to an enum is straight-forward and as you'd expect.
-                  Try adding a new member to the 'Planet' enum called 'Tantooine'.
+                  Try adding a new member to the 'Shape' enum.
                   */
-                  Assert.True(Enum.IsDefined(typeof(Planet), "Tantooine"));
+                  Assert.True(Enum.IsDefined(typeof(Shape), "Trapezoid"));
             }
 
             [Step(2)]
@@ -76,7 +76,7 @@ namespace DotNetCoreKoans.Koans
                   Note that the associated constant value of members start with zero
                   and increase by one.
                   */
-                  var forestPlanet = (Planet)1;
+                  var forestPlanet = (Shape)1;
                   Assert.Equal(FILL_ME_IN, forestPlanet);
 
                   /*
@@ -99,7 +99,7 @@ namespace DotNetCoreKoans.Koans
                   and incrementing by one. Perhaps you want them incrementing by 100.
                   */
                   var logLevel = LogLevel.Verbose;
-                  Assert.Equal(300, (int)logLevel);
+                  Assert.Equal(FILL_ME_IN, (int)logLevel);
             }
 
             [Step(4)]
@@ -117,8 +117,6 @@ namespace DotNetCoreKoans.Koans
                   */
 
                   var workWeek = DayOfTheWeek.Monday | DayOfTheWeek.Tuesday | DayOfTheWeek.Wednesday | DayOfTheWeek.Thursday;
-
-                  Assert.True(workWeek.HasFlag(DayOfTheWeek.Monday));
                   Assert.True(workWeek.HasFlag(DayOfTheWeek.Friday)); // Assuming you work Fridays :)
             }
 
