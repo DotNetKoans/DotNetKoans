@@ -157,6 +157,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Cheesebaron",
+      "name": "Tomasz Cielecki",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/249719?v=4",
+      "profile": "http://ostebaronen.dk",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
