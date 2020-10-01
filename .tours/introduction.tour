@@ -6,9 +6,9 @@
       "description": "# Introduction\n\nWelcome to .net core koans!\n\nThe goal of this project is to teach you the basics of the c# programming language by the best possible method; doing.\n\nThe basic steps are as follows:\n\n1. Run the application\n2. Examine the output\n3. Locate and fix the code so that it works\n4. Run the applicaiton again for the next problem\n\n[**Next →**][#2]"
     },
     {
-      "title": "Introduction",
+      "title": "Koans Location",
       "directory": "Koans",
-      "description": "# Introduction\n\nAll of the code that you will be working with is located in the Koans directory. Each file represents an individual topic in the Path to Enlightenment.\n\n[**Next →**][#3]"
+      "description": "# Koans Location\n\nAll of the code that you will be working with is located in the Koans directory. Each file represents an individual topic in the Path to Enlightenment.\n\n[**Next →**][#3]"
     },
     {
       "title": "Path to Enlightenment",
