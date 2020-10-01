@@ -38,6 +38,7 @@ namespace DotNetCoreKoans.Koans
         {
             // bool is a Alias of System.Boolean
             Assert.Equal(typeof(System.Boolean), typeof(FillMeIn));
+        }
 
         [Step(5)]
         public void NoOtherTypeConvertsToBool()
