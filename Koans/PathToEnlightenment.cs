@@ -9,6 +9,7 @@ namespace DotNetCoreKoans.Koans
     {
       Types = new Type[] {
         typeof(AboutAsserts),
+        typeof(AboutBooleans),
         typeof(AboutNull),
         typeof(AboutArrays),
         typeof(AboutArrayAssignment),
@@ -24,7 +25,7 @@ namespace DotNetCoreKoans.Koans
         typeof(AboutLinq),
         typeof(AboutBitwiseAndShiftOperator),
         typeof(AboutGlobalization)
-                };
+      };
     }
   }
 }
