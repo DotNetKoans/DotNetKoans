@@ -58,12 +58,11 @@ namespace DotNetCoreKoans.Koans
         }
 
         [Step(6)]
-        public void ValueLargerThanTheMaximumFloatThrows()
+        public void ValueLargerThanTheMaximumFloatBecomesInfinity()
         {
-            Assert.Throws(typeof(FillMeIn), () =>
-            {
-                var f = float.Parse("3.5E+38");
-            });
+            // If you try to store a number larger than the maximum number a float can store, it will become Infinity or -Infinity
+            var largerThanMaximumFloatValue = float.Parse("3.5E+38");
+            Assert.True(FILL_ME_IN);
         }
 
         [Step(7)]
