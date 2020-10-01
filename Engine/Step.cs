@@ -28,7 +28,7 @@ namespace DotNetCoreKoans.Engine
                 Try(() => koan.TearDown())
             };
 
-            return results.Any(r => r is FailedStepResult) ? 
+            return results.Any(r => r is FailedStepResult) ?
                 results.First(r => r is FailedStepResult) :
                 results.FirstOrDefault();
         }
@@ -37,22 +37,22 @@ namespace DotNetCoreKoans.Engine
         {
             try
             {
-                throwable();          
+                throwable();
             }
             catch (TargetInvocationException e)
             {
                 if (e.InnerException is XunitException)
                 {
-                    return new AssertionFailedStepResult{ Step= this, Exception = e.InnerException };
+                    return new AssertionFailedStepResult { Step = this, Exception = e.InnerException };
                 }
-                return new FailedStepResult{ Step = this, Exception = e.InnerException ?? e };
+                return new FailedStepResult { Step = this, Exception = e.InnerException ?? e };
             }
-            catch (Exception e) 
+            catch (Exception e)
             {
-                return new FailedStepResult{ Step = this, Exception = e };
+                return new FailedStepResult { Step = this, Exception = e };
             }
 
-            return new SuccessStepResult{ Step = this };
+            return new SuccessStepResult { Step = this };
         }
 
         public Koan Instance { get; private set; }
@@ -70,10 +70,20 @@ namespace DotNetCoreKoans.Engine
         public Step Step { get; set; }
         public Exception Exception { get; set; }
 
-        public virtual void Report(Reporter console) 
+        public virtual void Report(Reporter console)
         {
             console.WriteLine($"{Step.Name} has damaged your karma.".Bold().Red());
-            console.WriteLine($"There was an error, {Exception}".Bold().Yellow());
+            console.WriteLine();
+
+            if (Exception is AssertActualExpectedException assertException)
+            {
+                console.WriteLine("The truth you are looking for...".Bold().Green());
+                console.WriteLine($"{assertException.Actual} is not {assertException.Expected}".Bold().Green());
+                console.WriteLine();
+            }
+
+            console.WriteLine("Ponder the meaning in theese lines:".Cyan());
+            console.WriteLine($"{String.Join('\n', Exception.GetStackTracePaths())}".Cyan());
         }
     }
 
@@ -92,12 +102,12 @@ namespace DotNetCoreKoans.Engine
 
     public class FailedStepResult : StepResult
     {
-        
+
     }
 
     public class AssertionFailedStepResult : FailedStepResult
     { }
-    
+
     //This attribute is because we can't guarantee the order
     //of the methods when we walk a class. So this allows us
     //to order them to make sure we evaluate them as intended.
