@@ -157,6 +157,34 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Cheesebaron",
+      "name": "Tomasz Cielecki",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/249719?v=4",
+      "profile": "http://ostebaronen.dk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SophieLemos",
+      "name": "SophieLemos",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/48099481?v=4",
+      "profile": "https://github.com/SophieLemos",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "dsschnau",
+      "name": "Dan Schnau",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1373329?v=4",
+      "profile": "https://github.com/dsschnau",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

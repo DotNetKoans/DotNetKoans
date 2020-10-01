@@ -25,7 +25,8 @@ namespace DotNetCoreKoans.Koans
         typeof(AboutBitwiseAndShiftOperator),
         typeof(AboutGlobalization),
         typeof(AboutIteration)
-                };
+        };
+      }
     }
   }
 }
