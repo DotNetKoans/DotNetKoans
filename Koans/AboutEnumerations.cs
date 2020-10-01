@@ -16,11 +16,11 @@ namespace DotNetCoreKoans.Koans
             structure and syntax looks like, how they are cased, how they are assigned
             values and then move on to the first step.
             */
-            enum Shape
+            enum MeditationForms
             {
-                  Square,
-                  Circle,
-                  Triangle
+                  Mindfulness,
+                  SilentIllumination,
+                  Contemplation
             }
 
             enum LogLevel
@@ -49,20 +49,20 @@ namespace DotNetCoreKoans.Koans
                   Creating an instance of an enum is as easy as assigning a member
                   of the enum to a new variable. For instance:
                   */
-                  var square = Shape.Square;
+                  var mindfulness = MeditationForms.Mindfulness;
 
                   /*
                   While the underlying type of the instance above will be an integer,
                   enums are first class types in the C# language. The type of the
-                  variable 'square' will be the enum itself.
+                  variable 'mindfulness' will be the enum itself.
                   */
-                  Assert.Equal(typeof(FillMeIn), square.GetType());
+                  Assert.Equal(typeof(FillMeIn), mindfulness.GetType());
 
                   /*
                   Adding new members to an enum is straight-forward and as you'd expect.
-                  Try adding a new member to the 'Shape' enum.
+                  Try adding a new member to the 'MeditationForms' enum.
                   */
-                  Assert.True(Enum.IsDefined(typeof(Shape), "Trapezoid"));
+                  Assert.True(Enum.IsDefined(typeof(MeditationForms), "Observation"));
             }
 
             [Step(2)]
@@ -76,7 +76,7 @@ namespace DotNetCoreKoans.Koans
                   Note that the associated constant value of members start with zero
                   and increase by one.
                   */
-                  var forestPlanet = (Shape)1;
+                  var forestPlanet = (MeditationForms)1;
                   Assert.Equal(FILL_ME_IN, forestPlanet);
 
                   /*
