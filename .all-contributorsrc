@@ -185,6 +185,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "JoshuaBelden",
+      "name": "Joshua Belden",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1337406?v=4",
+      "profile": "http://www.joshuabelden.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
