@@ -76,8 +76,8 @@ namespace DotNetCoreKoans.Koans
                   Note that the associated constant value of members start with zero
                   and increase by one.
                   */
-                  var forestPlanet = (MeditationForms)1;
-                  Assert.Equal(FILL_ME_IN, forestPlanet);
+                  var quietForm = (MeditationForms)1;
+                  Assert.Equal(FILL_ME_IN, quietForm);
 
                   /*
                   Why would casting integers to enums be valuable? You may want to
@@ -85,7 +85,7 @@ namespace DotNetCoreKoans.Koans
                   an integer and when querying for those values, you'd be handed an
                   integer back. For instance:
 
-                  var usersHomePlanet = (Planets)row['planet'];
+                  var usersPreferredForm = (MeditationForms)row['usersPreferredForm'];
 
                   Handling integer values as enumerations improves readability.
                   */
