@@ -9,25 +9,27 @@ namespace DotNetCoreKoans.Koans
         {
             Types = new Type[] {
         typeof(AboutAsserts),
-        typeof(AboutConstants),
         typeof(AboutBooleans),
-        typeof(AboutNull),
-        typeof(AboutArrays),
-        typeof(AboutArrayAssignment),
         typeof(AboutStrings),
         typeof(AboutFloats),
         typeof(AboutDecimals),
+        typeof(AboutNull),
+        typeof(AboutConstants),
+        typeof(AboutArrays),
+        typeof(AboutArrayAssignment),
         typeof(AboutEnumerations),
         typeof(AboutInheritance),
         typeof(AboutMethods),
         typeof(AboutControlStatements),
+        typeof(AboutIteration),
         typeof(AboutGenericContainers),
         typeof(AboutDelegates),
         typeof(AboutLambdas),
         typeof(AboutLinq),
         typeof(AboutBitwiseAndShiftOperator),
         typeof(AboutGlobalization)
-                };
-        }
-    }
+        
+        };
+      }
+   }
 }
