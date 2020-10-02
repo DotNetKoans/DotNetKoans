@@ -1,7 +1,7 @@
 # .Net Core Koans [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-22-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
@@ -78,6 +78,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/SophieLemos"><img src="https://avatars0.githubusercontent.com/u/48099481?v=4" width="100px;" alt=""/><br /><sub><b>SophieLemos</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=SophieLemos" title="Code">💻</a> <a href="https://github.com/NotMyself/DotNetCoreKoans/issues?q=author%3ASophieLemos" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/dsschnau"><img src="https://avatars1.githubusercontent.com/u/1373329?v=4" width="100px;" alt=""/><br /><sub><b>Dan Schnau</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/issues?q=author%3Adsschnau" title="Bug reports">🐛</a></td>
     <td align="center"><a href="http://www.joshuabelden.com"><img src="https://avatars3.githubusercontent.com/u/1337406?v=4" width="100px;" alt=""/><br /><sub><b>Joshua Belden</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=JoshuaBelden" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://shawn.vause.us"><img src="https://avatars1.githubusercontent.com/u/8197405?v=4" width="100px;" alt=""/><br /><sub><b>Shawn Vause</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=napalm684" title="Code">💻</a></td>
   </tr>
 </table>
 
