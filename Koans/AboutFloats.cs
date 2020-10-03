@@ -30,7 +30,7 @@ namespace DotNetCoreKoans.Koans
         public void FloatsAreSingles()
         {
             Assert.Equal(typeof(float), typeof(FillMeIn));
-            
+
             //.NET Core doesn't have a type called `float`
             //Instead, it has a "Single Precision Floating Point Number" type:
             //`System.Single`
@@ -70,7 +70,7 @@ namespace DotNetCoreKoans.Koans
         {
             var sevenDigits = 0.9999999f;
             var eightDigits = 0.99999999f;
-        
+
             Assert.Equal(sevenDigits, FILL_ME_IN);
             Assert.Equal(eightDigits, FILL_ME_IN);
 
@@ -78,12 +78,12 @@ namespace DotNetCoreKoans.Koans
             //What does that actually mean?
             //It means that they are actually only precisely accurate up to 7 significant digits,
             //because they only use so much memory (32 bits) to store their value and decimal position.
-            
+
             //.NET Core does have a more precise (64 bits) floating point type called `System.Double`
             //or `double` in C#.
-            
+
             //Floating point numbers round values that are beyond their precision.
-            
+
             //The required precision for a given application is a major factor in choosing an appropriate
             //number type.
             //If no decimal precision is required, use `int`

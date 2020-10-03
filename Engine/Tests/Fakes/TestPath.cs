@@ -7,8 +7,8 @@ namespace DotNetCoreKoans.Engine.Tests.Fakes
         public TestPath()
         {
             Types = new Type[] {
-				typeof(TestKoan)				
+                typeof(TestKoan)
                 };
-        } 
+        }
     }
 }

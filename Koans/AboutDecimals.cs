@@ -23,9 +23,9 @@ namespace DotNetCoreKoans.Koans
             int n = 7;
 
             var result = d + n;
-            
+
             Assert.Equal(FILL_ME_IN, result);
-            
+
             // Notice that the result is a decimal when you do this
         }
 
@@ -70,10 +70,10 @@ namespace DotNetCoreKoans.Koans
         {
             var twentyEightDigits = 0.9999999999999999999999999999m;
             var twentyNineDigits = 0.99999999999999999999999999999m;
-            
+
             Assert.Equal(FILL_ME_IN, twentyEightDigits);
             Assert.Equal(FILL_ME_IN, twentyNineDigits);
-            
+
             //Decimals use 128 bits to store their data, therefore they can store
             //up to 28 significant digits
         }
@@ -83,9 +83,9 @@ namespace DotNetCoreKoans.Koans
         {
             var d = 0.1m;
             var result = d + d + d + d + d + d + d;
-            
+
             Assert.False(result == 0.7m);
-            
+
             //The zen of the decimal is quite exceptional indeed. Unlike
             //floats, they are able to handle math the way humans expect. 
         }

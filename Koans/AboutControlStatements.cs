@@ -27,7 +27,7 @@ namespace DotNetCoreKoans.Koans
         public void IfThenElseStatementsWithoutBrackets()
         {
             bool b;
-            if(true)
+            if (true)
                 b = true;
             else
                 b = false;
@@ -68,10 +68,10 @@ namespace DotNetCoreKoans.Koans
 
             if (counter == 0)
                 b1 = true;
-                b2 = true;
+            b2 = true;
 
-			Assert.Equal(FILL_ME_IN, b1);
-			Assert.Equal(FILL_ME_IN, b2);
+            Assert.Equal(FILL_ME_IN, b1);
+            Assert.Equal(FILL_ME_IN, b2);
         }
 
         [Step(6)]
@@ -89,8 +89,8 @@ namespace DotNetCoreKoans.Koans
             //i = null; //You can't do this
 
             int? nullableInt = null; //but you can do this
-			Assert.NotNull(FILL_ME_IN);
-			Assert.Null(FILL_ME_IN);
+            Assert.NotNull(FILL_ME_IN);
+            Assert.Null(FILL_ME_IN);
         }
 
         [Step(8)]
@@ -149,7 +149,7 @@ namespace DotNetCoreKoans.Koans
             {
                 if (i > 3) { break; }
                 result = result + i;
-                i += 1;    
+                i += 1;
             }
             Assert.Equal(FILL_ME_IN, result);
         }
@@ -159,7 +159,7 @@ namespace DotNetCoreKoans.Koans
         {
             int i = 0;
             var result = new List<int>();
-            while(i < 10)
+            while (i < 10)
             {
                 i += 1;
                 if ((i % 2) == 0) { continue; }
