@@ -22,6 +22,7 @@ namespace DotNetCoreKoans.Koans
         typeof(AboutMethods),
         typeof(AboutControlStatements),
         typeof(AboutIteration),
+        typeof(AboutExceptions),
         typeof(AboutGenericContainers),
         typeof(AboutDelegates),
         typeof(AboutLambdas),
