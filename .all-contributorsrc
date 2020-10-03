@@ -206,6 +206,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jeannienguyen",
+      "name": "Jeannie Nguyen",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/44417397?v=4",
+      "profile": "https://github.com/jeannienguyen",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
