@@ -124,25 +124,5 @@ namespace DotNetCoreKoans.Koans
 			//When you have only one statement, the curly brackets are not needed. What other two things are also missing?
 			Assert.Equal(FILL_ME_IN, anonymous);
 		}
-
-		[Step(8)]
-		public void HowToWhereWorks()
-		{
-			var numbers = new[] {1, 2, 3, 4};
-			var result = numbers.Where(x => x > 2).ToArray();
-			
-			//What walues will should be in array?
-			Assert.Equal(FILL_ME_IN, result);
-		}
-		
-		[Step(9)]
-		public void HowToSelectWorks()
-		{
-			var numbers = new[] {1, 2, 3, 4};
-			var result = numbers.Select(x => x > 2).ToArray();
-			
-			//What values will should be in array?
-			Assert.Equal(FILL_ME_IN, result);
-		}
 	}
 }

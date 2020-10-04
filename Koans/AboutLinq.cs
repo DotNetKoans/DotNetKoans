@@ -74,5 +74,25 @@ namespace DotNetCoreKoans.Koans
             bool iAfterE = words.Any(w => w.Contains("ei")); //Check if any of your words contain 'ei'
             Assert.Equal(FILL_ME_IN, iAfterE);
         }
+        
+        [Step(5)]
+        public void HowToUseWhereToFilterData()
+        {
+            var numbers = new[] {1, 2, 3, 4};
+            var result = numbers.Where(x => x > 2).ToArray();
+			
+            //What values should be in array?
+            Assert.Equal(FILL_ME_IN, result);
+        }
+		
+        [Step(6)]
+        public void HowToGetInfoIfValueIsGreaterThanUsingSelect()
+        {
+            var numbers = new[] {1, 2, 3, 4};
+            var result = numbers.Select(x => x > 2).ToArray();
+			
+            //What values should be in array?
+            Assert.Equal(FILL_ME_IN, result);
+        }
     }
 }
