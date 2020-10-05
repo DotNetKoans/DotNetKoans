@@ -18,6 +18,7 @@ namespace DotNetCoreKoans.Koans
         typeof(AboutArrays),
         typeof(AboutArrayAssignment),
         typeof(AboutEnumerations),
+        typeof(AboutClasses),
         typeof(AboutInheritance),
         typeof(AboutMethods),
         typeof(AboutControlStatements),
