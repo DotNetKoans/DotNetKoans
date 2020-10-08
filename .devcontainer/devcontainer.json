@@ -1,12 +1,16 @@
 {
-  "name": ".net core koans",
-  "extensions": ["vsls-contrib.codetour", "ms-dotnettools.csharp"],
-  "settings": {
-    "files.exclude": {
-      "**/CODE_OF_CONDUCT.md": true,
-      "**/CONTRIBUTING.md": true,
-      "**/appveyor.yml": true,
-      ".all-contributorsrc": true
-    }
-  }
+	"name": ".net core koans",
+	"extensions": [
+		"vsls-contrib.codetour",
+		"ms-dotnettools.csharp"
+	],
+	"postCreateCommand": "dotnet restore",
+	"settings": {
+		"files.exclude": {
+			"**/CODE_OF_CONDUCT.md": true,
+			"**/CONTRIBUTING.md": true,
+			"**/appveyor.yml": true,
+			".all-contributorsrc": true
+		}
+	}
 }
