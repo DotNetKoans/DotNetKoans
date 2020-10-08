@@ -71,5 +71,50 @@ namespace DotNetCoreKoans.Koans
             bool iAfterE = words.Any(w => w.Contains("ei")); //Check if any of your words contain 'ei'
             Assert.Equal(FILL_ME_IN, iAfterE);
         }
+
+        [Step(5)]
+        public void GetSumOfTheData()
+        {
+            int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //Get sum of the array.
+            var sum = numbers.Sum();
+
+            Assert.Equal(FILL_ME_IN, sum);
+        }
+
+        [Step(6)]
+        public void GetMinimumOfTheData()
+        {
+            int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //Get minumum of the array.
+            var min = numbers.Min();
+
+            Assert.Equal(FILL_ME_IN, min);
+        }
+
+        [Step(7)]
+        public void GetMaximumOfTheData()
+        {
+            int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //Get maximum of the array.
+            var max = numbers.Max();
+
+            Assert.Equal(FILL_ME_IN, max);
+        }
+
+
+        [Step(8)]
+        public void GetAverageOfTheData()
+        {
+            int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //Get average of the array.
+            var average = numbers.Average();
+
+            Assert.Equal(FILL_ME_IN, average);
+        }
     }
 }
