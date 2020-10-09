@@ -224,6 +224,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Benjioe",
+      "name": "Ferrier Benjamin",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16334582?v=4",
+      "profile": "https://www.linkedin.com/in/benjamin-ferrier-95490060/",
+      "contributions": [
+        "question"
+      ]
     }
   ],
   "contributorsPerLine": 7,
