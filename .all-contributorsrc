@@ -148,6 +148,91 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Dgaduin",
+      "name": "Atanas Pashkov",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2265194?v=4",
+      "profile": "https://github.com/Dgaduin",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Cheesebaron",
+      "name": "Tomasz Cielecki",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/249719?v=4",
+      "profile": "http://ostebaronen.dk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SophieLemos",
+      "name": "SophieLemos",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/48099481?v=4",
+      "profile": "https://github.com/SophieLemos",
+      "contributions": [
+        "code",
+        "bug",
+        "design",
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "dsschnau",
+      "name": "Dan Schnau",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1373329?v=4",
+      "profile": "https://github.com/dsschnau",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "JoshuaBelden",
+      "name": "Joshua Belden",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1337406?v=4",
+      "profile": "http://www.joshuabelden.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "napalm684",
+      "name": "Shawn Vause",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/8197405?v=4",
+      "profile": "https://shawn.vause.us",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jeannienguyen",
+      "name": "Jeannie Nguyen",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/44417397?v=4",
+      "profile": "https://github.com/jeannienguyen",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "A-Scratchy",
+      "name": "Adam",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/25309929?v=4",
+      "profile": "https://github.com/A-Scratchy",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Benjioe",
+      "name": "Ferrier Benjamin",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16334582?v=4",
+      "profile": "https://www.linkedin.com/in/benjamin-ferrier-95490060/",
+      "contributions": [
+        "question"
+      ]
     }
   ],
   "contributorsPerLine": 7,

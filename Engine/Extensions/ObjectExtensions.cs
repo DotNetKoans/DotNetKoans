@@ -4,7 +4,7 @@ namespace System
     {
         public static T Cast<T>(this object item) where T : class
         {
-            if( item is T)
+            if (item is T)
                 return (T)item;
 
             return null;

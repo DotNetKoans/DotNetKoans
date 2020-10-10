@@ -16,7 +16,7 @@ namespace DotNetCoreKoans.Koans
             // are represented by a UTF-16 code. Unicode exists for 
             // almost every character throughout the world.
 
-            var str = "﻿ü"; 
+            var str = "﻿ü";
             Assert.Equal("﻿ü", FILL_ME_IN);
         }
 
@@ -74,7 +74,7 @@ namespace DotNetCoreKoans.Koans
 
             Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("sv-SE");
 
-            string[] expectedSVOrder = {"able", "Æble", "apple", "Windows", "Visual Studio", "ångström"};
+            string[] expectedSVOrder = { "able", "Æble", "apple", "Windows", "Visual Studio", "ångström" };
 
             Array.Sort(FILL_ME_IN);
 
