@@ -6,18 +6,25 @@ namespace DotNetCoreKoans.Koans
 {
     public class AboutClasses : Koan
     {
+        // You can create your own custom types by using
+        // struct, class, interface, and enum constructs.
+        // C# is an object-oriented language. Classes and objects are
+        // the two main aspects of object-oriented programming.
+        // A class is a template for objects, and an object is an
+        // instance of a class. Classes are declared by using the
+        // class keyword followed by a unique identifier.
 
         class Foo1
         {
 
         }
 
-        /// <summary>
-        /// Objects instantiation.
-        /// </summary>
         [Step(1)]
         public void InstancesOfAClassesCanBeCreatedWithNew()
         {
+            // A type that is defined as a class is a reference type.
+            // when you declare a variable of a reference type, the variable
+            // contains the value null until you explicitly create an instance
             object foo = null;
             Assert.NotNull(foo);
         }
@@ -26,14 +33,14 @@ namespace DotNetCoreKoans.Koans
         {
             public int Int { get; set; }
             internal string _str;
+
+            private DateTime _canNotSeeMe = DateTime.Now;
         }
 
-        /// <summary>
-        /// Instance members.
-        /// </summary>
         [Step(2)]
         public void InstanceMembersCanBeSetByAssigningToThem()
         {
+            // Try to assign visible class members
             var foo = new Foo2();
             Assert.Equal(1, foo.Int);
             Assert.Equal("Bar", foo._str);
@@ -53,26 +60,20 @@ namespace DotNetCoreKoans.Koans
             }
         }
 
-        /// <summary>
-        /// Accessors.
-        /// </summary>
         [Step(3)]
         public void UseAccessorsToReturnInstanceVariables()
         {
             var foo = new Foo3();
             // make sure it won't explode
             foo.Do();
-
         }
+
         class Foo4
         {
             public string Bar { get; }
             public Foo4(string @value = default(string)) => Bar = @value;
         }
 
-        /// <summary>
-        /// Constructors.
-        /// </summary>
         [Step(4)]
         public void UseConstructorsToDefineInitialValues()
         {
@@ -107,9 +108,6 @@ namespace DotNetCoreKoans.Koans
 
         }
 
-        /// <summary>
-        /// System.Object base class methods
-        /// </summary>
         [Step(6)]
         public void MemberMethodSelfRefersToContainingObject()
         {
