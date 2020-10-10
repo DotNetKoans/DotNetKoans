@@ -62,8 +62,8 @@ namespace DotNetCoreKoans.Koans
             var enemy = new List<string>() { "Joker", "Penguin", "Riddler", "Catwoman" };
             var batman1966 = (firstName: "Bruce", lastName: "Wayne", enemy);
 
-            Assert.Equal(typeof(FILL_ME_IN), batman1966.firstName.GetType());
-            Assert.Equal(typeof(FILL_ME_IN), batman1966.enemy.GetType());
+            Assert.Equal(typeof(FillMeIn), batman1966.firstName.GetType());
+            Assert.Equal(typeof(FillMeIn), batman1966.enemy.GetType());
 
         }
 
