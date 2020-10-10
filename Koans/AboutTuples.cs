@@ -33,7 +33,7 @@ namespace DotNetCoreKoans.Koans
 
 
         [Step(3)]
-        public void YouCanNameValuesInTuple() // You can name values in tuple
+        public void YouCanNameValuesInTuple() // You can name values in the tuple
         {
             var lastName = "Wayne";
             var batman = (firstName: "Bruce", lastName);
@@ -44,7 +44,7 @@ namespace DotNetCoreKoans.Koans
 
 
         [Step(4)]
-        public void TupleCanBeUseInFuction() // One tuple can contains differents types
+        public void TupleCanBeUsedInFuction() // A tuple can be used as a function parameter
         {
             var batman = (firstName: "Bruce", lastName: "Wayne");
 
@@ -57,7 +57,7 @@ namespace DotNetCoreKoans.Koans
         }
 
         [Step(5)]
-        public void TupleCanContainsDifferentTypes() // One tuple can contains differents types
+        public void TupleCanContainDifferentTypes() // One tuple can contain different types
         {
             var enemy = new List<string>() { "Joker", "Penguin", "Riddler", "Catwoman" };
             var batman1966 = (firstName: "Bruce", lastName: "Wayne", enemy);
@@ -75,7 +75,7 @@ namespace DotNetCoreKoans.Koans
         #region 2: equality
 
         [Step(6)]
-        public void TwoTupleAreEquaWhenHaveSameValuesInSameOrder() // Two tuples are equals when they have the sames values
+        public void TwoTupleAreEquaWhenHaveSameValuesInSameOrder() // Two tuples are equal when they have the sames values
         {
             var batman = (firstName: "Bruce", lastName: "Wayne");
 
@@ -90,7 +90,7 @@ namespace DotNetCoreKoans.Koans
         }
 
         [Step(7)]
-        public void ButListStillUsedReferenceEquality() // Two list in a tuple are compare by reference
+        public void ButListStillUsedReferenceEquality() // Two lists in a tuple are compared by reference
         {
             var enemy1966 = new List<string>() { "Joker", "Penguin", "Riddler", "Catwoman" };
             var batman1966 = (firstName: "Bruce", lastName: "Wayne"
@@ -111,7 +111,7 @@ namespace DotNetCoreKoans.Koans
 
 
         [Step(8)]
-        public void TupleReplaceOutParameter() // Two tuples are equals when they have the sames values for array
+        public void TupleReplaceOutParameter()
         {
             var otherEnemies = new List<string>();
             var mainEnemy = extractMainEnemyWithOut("Joker,Penguin,Riddler,Catwoman", out otherEnemies);
@@ -144,7 +144,7 @@ namespace DotNetCoreKoans.Koans
         }
 
         [Step(9)]
-        public void TupleCanReplaceClassWithExtension() // Two tuples are equals when they have the sames values for array
+        public void TupleCanReplaceClassWithExtension()
         {
 
             var batman1966Class = new Movie("Bruce", "Wayne");
@@ -188,7 +188,6 @@ namespace DotNetCoreKoans.Koans
             this.firstName = firstName;
             this.lastName = lastName;
         }
-
 
         public void AddMainEnemy(string name)
         {
@@ -239,8 +238,5 @@ namespace DotNetCoreKoans.Koans
             var enemies = movie.enemies.Append(enemyName).ToList();
             return (movie.firstName, movie.lastName, enemies);
         }
-
-
-
     }
 }
