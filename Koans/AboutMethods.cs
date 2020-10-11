@@ -1,6 +1,5 @@
 using Xunit;
 using DotNetCoreKoans.Engine;
-using System.Reflection;
 using System;
 
 namespace DotNetCoreKoans.Koans
@@ -119,7 +118,7 @@ namespace DotNetCoreKoans.Koans
         //InnerSecret secret = new InnerSecret();
         //Assert.Equal(FILL_ME_IN, secret.Key());
 
-        
+
         [Step(8)]
         public void CallingPublicMethodsOnAnInstance()
         {

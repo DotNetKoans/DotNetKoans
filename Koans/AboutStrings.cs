@@ -66,6 +66,13 @@ broken line";
             // Escaped characters in verbatim strings are covered later.
             var literalString = FILL_ME_IN;
             Assert.Equal(FILL_ME_IN, verbatimString.Length);
+
+            // For verbatim strings, the newline character used will depend on
+            // whether the source file uses a \r\n or a \n ending and they have
+            // to match the ones on the literal string
+            // If you are using Visual Studio Code, you can see which line ending is
+            // in use at the bottom right of the screen
+
             Assert.Equal(literalString, verbatimString);
         }
 

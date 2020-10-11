@@ -1,8 +1,5 @@
 ﻿using DotNetCoreKoans.Engine;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Xunit;
 
 namespace DotNetCoreKoans.Koans
@@ -60,7 +57,7 @@ namespace DotNetCoreKoans.Koans
         {
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
 
-             //Get just the 3 first numbers.
+            //Get just the 3 first numbers.
             var first3Numbers = numbers.Take(3);
 
             Assert.Equal(FILL_ME_IN, first3Numbers.Count());
