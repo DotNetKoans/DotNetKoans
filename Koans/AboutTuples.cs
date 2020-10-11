@@ -12,8 +12,10 @@ namespace DotNetCoreKoans.Koans
 
         #region 1: Tuple can group multiple elements together
 
+
+        // A tuple is a C# class
         [Step(1)]
-        public void TupleIsACSharpClass() // A tuple is a C# class
+        public void TupleIsACSharpClass()
         {
             var batman = new Tuple<string, string>("Bruce", "Wayne");
 
@@ -21,9 +23,9 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, batman.Item2); // LastName
         }
 
-
+        // with some syntax sugar
         [Step(2)]
-        public void WithSomeSyntaxSugar() // with some syntax sugar
+        public void WithSomeSyntaxSugar()
         {
             var batman = ("Bruce", "Wayne");
 
@@ -31,9 +33,9 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, batman.Item2); // LastName
         }
 
-
+        // You can name values in the tuple
         [Step(3)]
-        public void YouCanNameValuesInTuple() // You can name values in the tuple
+        public void YouCanNameValuesInTuple()
         {
             var lastName = "Wayne";
             var batman = (firstName: "Bruce", lastName);
@@ -42,9 +44,9 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, batman.lastName);
         }
 
-
+        // A tuple can be used as a function parameter
         [Step(4)]
-        public void TupleCanBeUsedInFuction() // A tuple can be used as a function parameter
+        public void TupleCanBeUsedInFuction()
         {
             var batman = (firstName: "Bruce", lastName: "Wayne");
 
@@ -56,8 +58,9 @@ namespace DotNetCoreKoans.Koans
             return $"{data.firstName} {data.lastName}";
         }
 
+        // One tuple can contain different types
         [Step(5)]
-        public void TupleCanContainDifferentTypes() // One tuple can contain different types
+        public void TupleCanContainDifferentTypes()
         {
             var enemy = new List<string>() { "Joker", "Penguin", "Riddler", "Catwoman" };
             var batman1966 = (firstName: "Bruce", lastName: "Wayne", enemy);
@@ -74,8 +77,9 @@ namespace DotNetCoreKoans.Koans
 
         #region 2: equality
 
+        // Two tuples are equal when they have the sames values
         [Step(6)]
-        public void TwoTupleAreEquaWhenHaveSameValuesInSameOrder() // Two tuples are equal when they have the sames values
+        public void TwoTupleAreEquaWhenHaveSameValuesInSameOrder()
         {
             var batman = (firstName: "Bruce", lastName: "Wayne");
 
@@ -89,8 +93,9 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, batman == azrael);
         }
 
+        // Two lists in a tuple are compared by reference
         [Step(7)]
-        public void ButListStillUsedReferenceEquality() // Two lists in a tuple are compared by reference
+        public void ButListStillUsedReferenceEquality()
         {
             var enemy1966 = new List<string>() { "Joker", "Penguin", "Riddler", "Catwoman" };
             var batman1966 = (firstName: "Bruce", lastName: "Wayne"
@@ -109,10 +114,12 @@ namespace DotNetCoreKoans.Koans
 
         #region 3: Usage
 
-
+        // A Tuple can replace out parameter
         [Step(8)]
         public void TupleReplaceOutParameter()
         {
+            /// When your function need to return more than one value, you have to use out parameter
+            /// Now, we can use tuples
             var otherEnemies = new List<string>();
             var mainEnemy = extractMainEnemyWithOut("Joker,Penguin,Riddler,Catwoman", out otherEnemies);
 
@@ -143,8 +150,9 @@ namespace DotNetCoreKoans.Koans
             return (mainEnemy, othersEnemies);
         }
 
+        // Tuple with extension can replace class 
         [Step(9)]
-        public void TupleCanReplaceClassWithExtension()
+        public void TupleWithExtensionCanReplaceClass()
         {
 
             var batman1966Class = new Movie("Bruce", "Wayne");
