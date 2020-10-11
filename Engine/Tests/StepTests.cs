@@ -11,7 +11,7 @@ namespace DotNetCoreKoans.Engine.Tests
         [Fact]
         public void KoanBuilderShouldBuildCorrectType()
         {
-            var step = new Step (GetTestTypeInfo(), GetTestMethodInfos().First());
+            var step = new Step(GetTestTypeInfo(), GetTestMethodInfos().First());
 
             var koan = step.GetKoan();
 
@@ -25,7 +25,7 @@ namespace DotNetCoreKoans.Engine.Tests
         [Fact]
         public void StepNameShouldBeBasedOnTypeAndMethod()
         {
-            var step = new Step (GetTestTypeInfo(), GetTestMethodInfos().First());
+            var step = new Step(GetTestTypeInfo(), GetTestMethodInfos().First());
 
             Assert.Contains(GetTestTypeInfo().Name, step.Name);
             Assert.Contains(GetTestMethodInfos().First().Name, step.Name);
@@ -35,7 +35,7 @@ namespace DotNetCoreKoans.Engine.Tests
         [Fact]
         public void PassingStepShouldBeSuccessful()
         {
-            var step = new Step (GetTestTypeInfo(), GetTestMethodInfos().First());
+            var step = new Step(GetTestTypeInfo(), GetTestMethodInfos().First());
 
             var result = step.Meditate();
 
@@ -48,7 +48,7 @@ namespace DotNetCoreKoans.Engine.Tests
         [Fact]
         public void FailingAssertionStepShouldFail()
         {
-            var step = new Step (GetTestTypeInfo(), GetTestMethodInfos()[1]);
+            var step = new Step(GetTestTypeInfo(), GetTestMethodInfos()[1]);
 
             var result = step.Meditate();
 
@@ -62,7 +62,7 @@ namespace DotNetCoreKoans.Engine.Tests
         [Fact]
         public void RandomExceptionStepShouldFail()
         {
-            var step = new Step (GetTestTypeInfo(), GetTestMethodInfos().Last());
+            var step = new Step(GetTestTypeInfo(), GetTestMethodInfos().Last());
 
             var result = step.Meditate();
 

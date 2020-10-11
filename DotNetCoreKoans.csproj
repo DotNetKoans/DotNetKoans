@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>A set of Koans to teach the C# language on .NET Core.</Description>
-    <VersionPrefix>2.0.0</VersionPrefix>
+    <VersionPrefix>3.1.0</VersionPrefix>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <NoWarn>$(NoWarn);CS0162;CS0168;CS0184;CS0219;xUnit2015;xUnit2013</NoWarn>
     <AssemblyName>DotNetCoreKoans</AssemblyName>

@@ -10,7 +10,7 @@ namespace DotNetCoreKoans.Engine
             var reporter = Reporter.Output;
             var sensei = new Sensei(reporter);
             var path = new PathToEnlightenment();
-            
+
             return path.Walk(sensei);
         }
     }
