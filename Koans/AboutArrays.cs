@@ -27,7 +27,7 @@ namespace DotNetCoreKoans.Koans
         public void ArrayLiterals()
         {
             //You don't have to specify a type if the arguments can be inferred
-            var array = new [] { 42 };
+            var array = new[] { 42 };
             Assert.Equal(typeof(int[]), array.GetType());
             Assert.Equal(new int[] { 42 }, array);
 
@@ -38,7 +38,7 @@ namespace DotNetCoreKoans.Koans
             Assert.True(array.IsFixedSize);
 
             //...it means we can't do this: array[1] = 13;
-            Assert.Throws(typeof(FillMeIn), delegate() { array[1] = 13; });
+            Assert.Throws(typeof(FillMeIn), delegate () { array[1] = 13; });
 
             //This is because the array is fixed at length 1. You could write a function
             //which created a new array bigger than the last, copied the elements over, and
@@ -48,7 +48,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(array, dynamicArray.ToArray());
 
             dynamicArray.Add(13);
-            Assert.Equal((new int[] { 42, FILL_ME_IN}), dynamicArray.ToArray());
+            Assert.Equal((new int[] { 42, FILL_ME_IN }), dynamicArray.ToArray());
         }
 
         [Step(3)]
@@ -58,7 +58,7 @@ namespace DotNetCoreKoans.Koans
 
             Assert.Equal(FILL_ME_IN, array[0]);
             Assert.Equal(FILL_ME_IN, array[3]);
-            
+
             //This doesn't work: Assert.Equal(FILL_ME_IN, array[-1]);
         }
 
@@ -67,8 +67,8 @@ namespace DotNetCoreKoans.Koans
         {
             var array = new[] { "peanut", "butter", "and", "jelly" };
 
-			Assert.Equal(new string[] { FILL_ME_IN, FILL_ME_IN }, array.Take(2).ToArray());
-			Assert.Equal(new string[] { FILL_ME_IN, FILL_ME_IN }, array.Skip(1).Take(2).ToArray());
+            Assert.Equal(new string[] { FILL_ME_IN, FILL_ME_IN }, array.Take(2).ToArray());
+            Assert.Equal(new string[] { FILL_ME_IN, FILL_ME_IN }, array.Skip(1).Take(2).ToArray());
         }
 
         [Step(5)]

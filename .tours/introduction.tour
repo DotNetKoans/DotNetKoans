@@ -1,0 +1,70 @@
+{
+  "title": "Introduction",
+  "steps": [
+    {
+      "title": "Introduction",
+      "description": "# Introduction\n\nWelcome to .net core koans!\n\nThe goal of this project is to teach you the basics of the c# programming language by the best possible method; doing.\n\nThe basic steps are as follows:\n\n1. Run the application\n2. Examine the output\n3. Locate and fix the code so that it works\n4. Run the applicaiton again for the next problem\n\n[**Next →**][#2]"
+    },
+    {
+      "title": "Koans Location",
+      "directory": "Koans",
+      "description": "# Koans Location\n\nAll of the code that you will be working with is located in the Koans directory. Each file represents an individual topic in the Path to Enlightenment.\n\n[**Next →**][#3]"
+    },
+    {
+      "title": "Path to Enlightenment",
+      "file": "Koans/PathToEnlightenment.cs",
+      "line": 8,
+      "description": "# Path to Enlightenment\n\nThis is the Path to Enlightenment. It lists the topics you will be working on in the order you will work through them.\n\n[**Next →**][#4]"
+    },
+    {
+      "title": "Path to Enlightenment",
+      "file": "Koans/PathToEnlightenment.cs",
+      "line": 11,
+      "description": "# Path to Enlightenment\n\nYou will start with AboutAsserts.\n\n[**Next →**][#5]"
+    },
+    {
+      "title": "About Asserts",
+      "file": "Koans/AboutAsserts.cs",
+      "line": 6,
+      "description": "# About Asserts\n\nThis is the AboutAsserts Koan.\n\n[**Next →**][#6]"
+    },
+    {
+      "title": "About Asserts",
+      "file": "Koans/AboutAsserts.cs",
+      "line": 14,
+      "description": "# About Asserts\n\nThe first challenge you will face is located here. Based on just looking at the highlighted code, can you figure out how to make it work?\n\n[**Next →**][#7]",
+      "selection": {
+        "start": {
+          "line": 8,
+          "character": 9
+        },
+        "end": {
+          "line": 13,
+          "character": 10
+        }
+      }
+    },
+    {
+      "title": "About Asserts",
+      "file": "Koans/AboutAsserts.cs",
+      "line": 44,
+      "description": "# About Asserts\n\nSometimes, you will see the value FILL_ME_IN. To solve the Koan, you must change the value.\n\n[**Next →**][#8]",
+      "selection": {
+        "start": {
+          "line": 44,
+          "character": 26
+        },
+        "end": {
+          "line": 44,
+          "character": 36
+        }
+      }
+    },
+    {
+      "title": "Running Koans",
+      "description": "# Running Koans\n\nTo run the Koans, bring up the terminal by hitting `Ctrl + ,` on your keyboard. Then enter the following command.\n\n>> dotnet run\n\nClick the above command to see it in action. You may need to resize the terminal pane below to see the entire output."
+    }
+  ],
+  "ref": "master",
+  "isPrimary": true
+}

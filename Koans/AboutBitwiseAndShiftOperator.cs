@@ -1,7 +1,5 @@
 using Xunit;
 using DotNetCoreKoans.Engine;
-using System.Collections.Generic;
-using System;
 
 namespace DotNetCoreKoans.Koans
 {
@@ -16,7 +14,7 @@ namespace DotNetCoreKoans.Koans
             //With & only taking the same one else take 0,so 1 & 3 it becomes 0001.
             //When 0001 convert to int it becomes 1
             int x = 4 & 4;
-            
+
             Assert.Equal(FILL_ME_IN, x);
         }
 
@@ -29,7 +27,7 @@ namespace DotNetCoreKoans.Koans
             //With | it will take any 1 if either one contains 1,so 1 & 3 it becomes 0011.
             //When 0011 convert to int it becomes 3
             int x = 4 | 4;
-            
+
             Assert.Equal(FILL_ME_IN, x);
         }
 
@@ -62,7 +60,7 @@ namespace DotNetCoreKoans.Koans
         {
             int x = ~3 & 8;
 
-			Assert.Equal(FILL_ME_IN, x);
+            Assert.Equal(FILL_ME_IN, x);
         }
 
         [Step(6)]

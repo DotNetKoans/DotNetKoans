@@ -1,6 +1,5 @@
 using Xunit;
 using DotNetCoreKoans.Engine;
-using System.Reflection;
 
 namespace DotNetCoreKoans.Koans
 {
