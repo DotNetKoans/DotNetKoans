@@ -28,8 +28,8 @@ namespace DotNetCoreKoans.Koans
         typeof(AboutLambdas),
         typeof(AboutLinq),
         typeof(AboutBitwiseAndShiftOperator),
-        typeof(AboutGlobalization)
-
+        typeof(AboutGlobalization),
+        typeof(AboutDisposable)
         };
         }
     }
