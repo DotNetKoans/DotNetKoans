@@ -234,6 +234,15 @@
       "contributions": [
         "question"
       ]
+    },
+    {
+      "login": "Ibrahim-Islam",
+      "name": "Ibrahim Islam",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6401874?v=4",
+      "profile": "https://about.me/ibrahim.islam",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
