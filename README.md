@@ -5,7 +5,7 @@
 
 # .Net Core Koans 
 [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-28-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 </div>
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
@@ -91,6 +91,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://about.me/ibrahim.islam"><img src="https://avatars3.githubusercontent.com/u/6401874?v=4" width="100px;" alt=""/><br /><sub><b>Ibrahim Islam</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=Ibrahim-Islam" title="Code">💻</a></td>
     <td align="center"><a href="http://nikiforovall.github.io"><img src="https://avatars2.githubusercontent.com/u/8037439?v=4" width="100px;" alt=""/><br /><sub><b>Nikiforov Alexey</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=NikiforovAll" title="Code">💻</a></td>
     <td align="center"><a href="http://www.ocimen.com"><img src="https://avatars2.githubusercontent.com/u/583585?v=4" width="100px;" alt=""/><br /><sub><b>Ozge Cimendere</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=ocimen" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/jakub-rusek-897968163/"><img src="https://avatars0.githubusercontent.com/u/29798657?v=4" width="100px;" alt=""/><br /><sub><b>Jakub Rusek</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=IRusio" title="Code">💻</a></td>
   </tr>
 </table>
 
