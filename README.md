@@ -1,6 +1,6 @@
-<div style="display:flex; justify-content: center; align-items: center;">
+<p align="center">
 <img width="300px" src="https://raw.githubusercontent.com/NotMyself/DotNetCoreKoans/master/static/img/dot-net-core-koans-logo.svg" />
-</div>
+</p>
 
 
 # .Net Core Koans 
