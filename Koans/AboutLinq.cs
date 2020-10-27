@@ -72,7 +72,28 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, iAfterE);
         }
 
+        
         [Step(5)]
+        public void HowToUseWhereToFilterData()
+        {
+            var numbers = new[] {1, 2, 3, 4};
+            var result = numbers.Where(x => x > 2).ToArray();
+			
+            //What values should be in array?
+            Assert.Equal(FILL_ME_IN, result);
+        }
+		
+        [Step(6)]
+        public void HowToGetInfoIfValueIsGreaterThanUsingSelect()
+        {
+            var numbers = new[] {1, 2, 3, 4};
+            var result = numbers.Select(x => x > 2).ToArray();
+			
+            //What values should be in array?
+            Assert.Equal(FILL_ME_IN, result);
+
+
+        [Step(7)]
         public void GetSumOfTheData()
         {
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
@@ -83,7 +104,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, sum);
         }
 
-        [Step(6)]
+        [Step(8)]
         public void GetMinimumOfTheData()
         {
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
@@ -94,7 +115,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, min);
         }
 
-        [Step(7)]
+        [Step(9)]
         public void GetMaximumOfTheData()
         {
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
@@ -106,7 +127,7 @@ namespace DotNetCoreKoans.Koans
         }
 
 
-        [Step(8)]
+        [Step(10)]
         public void GetAverageOfTheData()
         {
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
