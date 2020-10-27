@@ -243,6 +243,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "NikiforovAll",
+      "name": "Nikiforov Alexey",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8037439?v=4",
+      "profile": "http://nikiforovall.github.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
