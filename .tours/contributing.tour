@@ -1,0 +1,112 @@
+{
+  "title": "contributing",
+  "steps": [
+    {
+      "file": "README.md",
+      "line": 11,
+      "description": "Thanks for your interest in contributing to this project! The Goal of .NET Core Koans is to provide a way to learn C# syntax, structure, and some common functions and libraries available on the .NET Core platform. It is inspired by the [RubyKoans](http://www.rubykoans.com/) from the late great [Jim Weirich](https://www.onestepback.org/).",
+      "selection": {
+        "start": {
+          "line": 11,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 215
+        }
+      }
+    },
+    {
+      "file": "Engine/Program.cs",
+      "line": 10,
+      "description": "Here is the application entry point. You can run the app with the .NET Core CLI with `dotnet restore` then `dotnet run`. `dotnet watch` will re-run the application every time you save changes to a file.",
+      "selection": {
+        "start": {
+          "line": 10,
+          "character": 1
+        },
+        "end": {
+          "line": 14,
+          "character": 37
+        }
+      }
+    },
+    {
+      "file": "Engine/Sensei.cs",
+      "line": 9,
+      "description": "The `Sensei` manages running the tests.",
+      "selection": {
+        "start": {
+          "line": 9,
+          "character": 1
+        },
+        "end": {
+          "line": 9,
+          "character": 24
+        }
+      }
+    },
+    {
+      "file": "Engine/Sensei.cs",
+      "line": 66,
+      "description": "The \"Zen\" statements that the Koans engine speaks come from this method.",
+      "selection": {
+        "start": {
+          "line": 66,
+          "character": 1
+        },
+        "end": {
+          "line": 66,
+          "character": 40
+        }
+      }
+    },
+    {
+      "file": "Koans/PathToEnlightenment.cs",
+      "line": 8,
+      "description": "`PathToEnlightenment` is the hard-coded list of koans. Order matters here, the koans are run first to last. If you want to run a specific koan without writing solutions for all the previous koans, you can move it to the top of the list here.",
+      "selection": {
+        "start": {
+          "line": 8,
+          "character": 9
+        },
+        "end": {
+          "line": 8,
+          "character": 36
+        }
+      }
+    },
+    {
+      "file": "Koans/AboutAsserts.cs",
+      "line": 9,
+      "description": "Each test in a koan runs in order, thanks to the `Step` attribute. The `Sensei` will run the koans, test, by test, until one fails, then report the results.",
+      "selection": {
+        "start": {
+          "line": 9,
+          "character": 9
+        },
+        "end": {
+          "line": 9,
+          "character": 18
+        }
+      }
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "line": 1,
+      "description": "Thanks again for your interest in contributing! If you have any questions, you might find the answers here. Happy Coding!",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 14
+        }
+      }
+    }
+  ],
+  "ref": "master",
+  "isPrimary": false
+}

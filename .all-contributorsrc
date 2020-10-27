@@ -186,7 +186,8 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/1373329?v=4",
       "profile": "https://github.com/dsschnau",
       "contributions": [
-        "bug"
+        "bug",
+        "doc"
       ]
     },
     {
@@ -231,7 +232,26 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/16334582?v=4",
       "profile": "https://www.linkedin.com/in/benjamin-ferrier-95490060/",
       "contributions": [
-        "question"
+        "question",
+        "code"
+      ]
+    },
+    {
+      "login": "Ibrahim-Islam",
+      "name": "Ibrahim Islam",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6401874?v=4",
+      "profile": "https://about.me/ibrahim.islam",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "NikiforovAll",
+      "name": "Nikiforov Alexey",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8037439?v=4",
+      "profile": "http://nikiforovall.github.io",
+      "contributions": [
+        "code"
       ]
     }
   ],
