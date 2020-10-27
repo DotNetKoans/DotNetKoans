@@ -253,6 +253,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ocimen",
+      "name": "Ozge Cimendere",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/583585?v=4",
+      "profile": "http://www.ocimen.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
