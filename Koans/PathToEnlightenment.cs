@@ -29,10 +29,10 @@ namespace DotNetCoreKoans.Koans
         typeof(AboutLambdas),
         typeof(AboutLinq),
         typeof(AboutBitwiseAndShiftOperator),
+        typeof(AboutPatternMatching)
         typeof(AboutTuples),
         typeof(AboutGlobalization),
         typeof(AboutDisposable)
-
         };
 
         }
