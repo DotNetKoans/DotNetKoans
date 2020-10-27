@@ -96,16 +96,20 @@ namespace DotNetCoreKoans.Koans
             public Foo5 Self() =>
                 throw new InvalidOperationException(nameof(Self));
 
-            public override bool Equals(object obj)
-            {
-                return base.Equals(obj);
-            }
-
             public override string ToString()
             {
                 return base.ToString();
             }
 
+            public override bool Equals(object obj)
+            {
+                return base.Equals(obj);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(Val);
+            }
         }
 
         [Step(6)]
