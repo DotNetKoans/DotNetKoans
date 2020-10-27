@@ -22,7 +22,7 @@ namespace DotNetCoreKoans.Koans
 
             //but only if it can. So this doesn't work
             //var array = null;
-            
+
             //It also knows the type, so once the above is in place, this doesn't work:
             //name = 42;
         }

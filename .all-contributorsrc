@@ -186,7 +186,8 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/1373329?v=4",
       "profile": "https://github.com/dsschnau",
       "contributions": [
-        "bug"
+        "bug",
+        "doc"
       ]
     },
     {
@@ -203,6 +204,61 @@
       "name": "Shawn Vause",
       "avatar_url": "https://avatars1.githubusercontent.com/u/8197405?v=4",
       "profile": "https://shawn.vause.us",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jeannienguyen",
+      "name": "Jeannie Nguyen",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/44417397?v=4",
+      "profile": "https://github.com/jeannienguyen",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "A-Scratchy",
+      "name": "Adam",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/25309929?v=4",
+      "profile": "https://github.com/A-Scratchy",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Benjioe",
+      "name": "Ferrier Benjamin",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16334582?v=4",
+      "profile": "https://www.linkedin.com/in/benjamin-ferrier-95490060/",
+      "contributions": [
+        "question",
+        "code"
+      ]
+    },
+    {
+      "login": "Ibrahim-Islam",
+      "name": "Ibrahim Islam",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6401874?v=4",
+      "profile": "https://about.me/ibrahim.islam",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "NikiforovAll",
+      "name": "Nikiforov Alexey",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8037439?v=4",
+      "profile": "http://nikiforovall.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ocimen",
+      "name": "Ozge Cimendere",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/583585?v=4",
+      "profile": "http://www.ocimen.com",
       "contributions": [
         "code"
       ]

@@ -34,7 +34,7 @@ namespace DotNetCoreKoans.Koans
 
             Assert.Equal(122, sum);
         }
-        
+
 
         [Step(2)]
         public void ForBreak()
@@ -67,7 +67,8 @@ namespace DotNetCoreKoans.Koans
             var lastColor = "";
             for (var i = 0; i < colors.Count; i++)
             {
-                if (colors[i] == "Blue") {
+                if (colors[i] == "Blue")
+                {
                     //FILL_ME_IN
                 }
                 new_colors.Add(colors[i]);
@@ -78,7 +79,7 @@ namespace DotNetCoreKoans.Koans
 
 
         [Step(4)]
-        public void WhileLoop() 
+        public void WhileLoop()
         {
             // This loop is sort of like the for loop, but only requires the middle part
             var numbers = new List<int>()
@@ -123,7 +124,7 @@ namespace DotNetCoreKoans.Koans
 
             string lastShark = "";
 
-            foreach (var shark in FILL_ME_IN) 
+            foreach (var shark in FILL_ME_IN)
             {
                 lastShark = shark;
             }

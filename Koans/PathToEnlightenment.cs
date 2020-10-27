@@ -18,18 +18,24 @@ namespace DotNetCoreKoans.Koans
         typeof(AboutArrays),
         typeof(AboutArrayAssignment),
         typeof(AboutEnumerations),
+        typeof(AboutClasses),
         typeof(AboutInheritance),
         typeof(AboutMethods),
         typeof(AboutControlStatements),
         typeof(AboutIteration),
+        typeof(AboutExceptions),
         typeof(AboutGenericContainers),
         typeof(AboutDelegates),
         typeof(AboutLambdas),
         typeof(AboutLinq),
         typeof(AboutBitwiseAndShiftOperator),
-        typeof(AboutGlobalization)
-        
+        typeof(AboutDestructuring)
+        typeof(AboutPatternMatching)
+        typeof(AboutTuples),
+        typeof(AboutGlobalization),
+        typeof(AboutDisposable)
         };
-      }
-   }
+
+        }
+    }
 }

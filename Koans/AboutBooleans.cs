@@ -1,6 +1,5 @@
 ﻿using Xunit;
 using DotNetCoreKoans.Engine;
-using System;
 
 namespace DotNetCoreKoans.Koans
 {
@@ -51,7 +50,7 @@ namespace DotNetCoreKoans.Koans
                 new object[0]
             };
 
-            foreach(var otherType in otherTypes)
+            foreach (var otherType in otherTypes)
             {
                 Assert.True(otherType is bool); // no other type can cast to bool
             }

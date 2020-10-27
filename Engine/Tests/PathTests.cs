@@ -13,7 +13,8 @@ namespace DotNetCoreKoans.Engine.Tests
             var count = 0;
             var path = GetTestPath();
 
-            path.ForEachKoan(t => {
+            path.ForEachKoan(t =>
+            {
                 count++;
                 Assert.Equal(GetTestTypeInfo(), t);
             });
@@ -27,9 +28,10 @@ namespace DotNetCoreKoans.Engine.Tests
             var count = 0;
             var path = GetTestPath();
 
-            path.ForEachStep(s => {
+            path.ForEachStep(s =>
+            {
                 count++;
-                
+
             });
 
             Assert.Equal(GetTestMethodInfos().Count(), count);
@@ -41,10 +43,11 @@ namespace DotNetCoreKoans.Engine.Tests
             var steps = new HashSet<Step>();
             var path = GetTestPath();
 
-            path.ForEachStep(step => {
+            path.ForEachStep(step =>
+            {
                 Assert.DoesNotContain(step, steps);
                 steps.Add(step);
-               
+
             });
 
             Assert.Equal(GetTestMethodInfos().Count(), steps.Count());

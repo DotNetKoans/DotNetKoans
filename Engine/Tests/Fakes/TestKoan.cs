@@ -7,7 +7,7 @@ namespace DotNetCoreKoans.Engine.Tests.Fakes
     {
 
         public bool WasSetup { get; set; }
-        public bool WasToreDown { get; set;}
+        public bool WasToreDown { get; set; }
 
         public override void Setup()
         {
