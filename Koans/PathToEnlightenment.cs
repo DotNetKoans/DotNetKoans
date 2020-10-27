@@ -29,8 +29,8 @@ namespace DotNetCoreKoans.Koans
         typeof(AboutLambdas),
         typeof(AboutLinq),
         typeof(AboutBitwiseAndShiftOperator),
-        typeof(AboutDestructuring)
-        typeof(AboutPatternMatching)
+        typeof(AboutDestructuring),
+        typeof(AboutPatternMatching),
         typeof(AboutTuples),
         typeof(AboutGlobalization),
         typeof(AboutDisposable)

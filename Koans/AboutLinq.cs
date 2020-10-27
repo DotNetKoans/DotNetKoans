@@ -91,7 +91,7 @@ namespace DotNetCoreKoans.Koans
 			
             //What values should be in array?
             Assert.Equal(FILL_ME_IN, result);
-
+        }
 
         [Step(7)]
         public void GetSumOfTheData()
