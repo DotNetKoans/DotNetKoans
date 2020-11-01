@@ -23,7 +23,7 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 <div align="center">
       <a href="https://www.youtube.com/watch?v=ta43g95Hznk">
      <img 
-      src="https://img.youtube.com/vi/ta43g95Hznk/0.jpg" 
+      src="https://s3-us-west-1.amazonaws.com/iamnotmyself-com/2020/11/Screen-Shot-2020-11-01-at-1.05.28-PM.png" 
       alt=".NET Core Koans" 
       style="width:100%;">
       </a>
