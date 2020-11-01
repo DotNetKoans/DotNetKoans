@@ -20,6 +20,10 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 
 ### Getting Started
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ta43g95Hznk?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Running Locally
+
 1. Install [.NET Core SDK 3.1](https://www.microsoft.com/net/core).
 2. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
 3. Clone the repository: `git clone https://github.com/NotMyself/DotNetCoreKoans.git`.
