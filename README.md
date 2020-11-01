@@ -20,7 +20,14 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 
 ### Getting Started
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ta43g95Hznk?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div align="center">
+      <a href="https://www.youtube.com/watch?v=ta43g95Hznk">
+     <img 
+      src="https://img.youtube.com/vi/ta43g95Hznk/0.jpg" 
+      alt=".NET Core Koans" 
+      style="width:100%;">
+      </a>
+    </div>
 
 #### Running Locally
 
