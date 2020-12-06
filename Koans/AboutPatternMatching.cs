@@ -35,11 +35,11 @@ namespace DotNetCoreKoans.Koans
             }
             else if (hero is Batman)
             {
-                return "I'm the dark night, you know me as Batman";
+                return "I'm the Dark Knight, you know me as Batman";
             }
             else
             {
-                return "Nobody know me :'(";
+                return "Nobody knows me :'(";
             }
         }
 
@@ -48,11 +48,11 @@ namespace DotNetCoreKoans.Koans
             switch (hero)
             {
                 case Batman batman:
-                    return "I'm the dark night, you know me as Batman";
+                    return "I'm the Dark Knight, you know me as Batman";
                 case Superman superman:
                     return "I'm Superman";
                 default:
-                    return "Nobody know me :'(";
+                    return "Nobody knows me :'(";
             }
         }
         #endregion
@@ -130,7 +130,7 @@ namespace DotNetCoreKoans.Koans
 
             var message = hero switch
             {
-                Batman batman when batman.lastName == "Wayne" => "Sure, you are batman", // Special case
+                Batman batman when batman.lastName == "Wayne" => "Sure, you are Batman", // Special case
                 Batman batman => "You look like batman, but I don't think you are",
                 _ => "I don't know you" // default case
             };
@@ -147,8 +147,8 @@ namespace DotNetCoreKoans.Koans
 
             var message = hero switch
             {
-                ("Batman", "Wayne", _) => "Sure, you are batman",
-                ("Batman", _, _) => "You look like batman, but I don't think you are",
+                ("Batman", "Wayne", _) => "Sure, you are Batman",
+                ("Batman", _, _) => "You look like Batman, but I don't think you are",
                 _ => "I don't know you" // default case
             };
 
@@ -163,8 +163,8 @@ namespace DotNetCoreKoans.Koans
 
             var message = hero switch
             {
-                { lastName: "Wayne" } => "Sure, you are batman",
-                Batman batman => "You look like batman, but I don't think you are",
+                { lastName: "Wayne" } => "Sure, you are Batman",
+                Batman batman => "You look like Batman, but I don't think you are",
                 _ => "I don't know you" // default case
             };
 
@@ -184,8 +184,8 @@ namespace DotNetCoreKoans.Koans
 
             var message = hero switch
             {
-                Batman batman when batman.lastName != "Wayne" => "You look like batman, but I don't think you are",
-                { lastName: "Wayne" } => "Sure, you are batman",
+                Batman batman when batman.lastName != "Wayne" => "You look like Batman, but I don't think you are",
+                { lastName: "Wayne" } => "Sure, you are Batman",
                 _ => "I don't know you" // default case
             };
 
@@ -202,8 +202,8 @@ namespace DotNetCoreKoans.Koans
 
             var message = hero switch
             {
-                Batman batman when batman.lastName != "Wayne" => "You look like batman, but I don't think you are",
-                Batman batman => "Sure, you are batman",
+                Batman batman when batman.lastName != "Wayne" => "You look like Batman, but I don't think you are",
+                Batman batman => "Sure, you are Batman",
                 _ => "I don't know you" // default case
             };
 

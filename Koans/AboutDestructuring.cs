@@ -13,7 +13,7 @@ namespace DotNetCoreKoans.Koans
 
         #region 1: Destructuring with tuples
 
-        // Tuples can be destrucure
+        // Tuples can be destructured
         [Step(1)]
         public void TupleCanBeDestructured()
         {
@@ -30,7 +30,7 @@ namespace DotNetCoreKoans.Koans
         [Step(2)]
         public void AvoidDestructuringAProperty()
         {
-            // Use _ whn you don't need to extract a property
+            // Use _ when you don't need to extract a property
             var batman = ("Bruce", "Wayne");
 
             var (_, lastName) = batman;
@@ -49,7 +49,7 @@ namespace DotNetCoreKoans.Koans
         {
             var batman = new Batman("Bruce", "Wayne");
 
-            var (firstName, lastName) = batman; // use Deconstruct(out string fistName, out string lastName)
+            var (firstName, lastName) = batman; //uses Deconstruct(out string fistName, out string lastName)
 
             Assert.Equal(FILL_ME_IN, firstName);
             Assert.Equal(FILL_ME_IN, lastName);
@@ -63,7 +63,7 @@ namespace DotNetCoreKoans.Koans
             // Use _ when you don't need to extract a property
             var batman = new Batman("Bruce", "Wayne");
 
-            var (_, lastName) = batman; // use Deconstruct(out string fistName, out string lastName)
+            var (_, lastName) = batman; // uses Deconstruct(out string fistName, out string lastName)
 
             Assert.Equal(FILL_ME_IN, lastName);
         }
@@ -73,10 +73,10 @@ namespace DotNetCoreKoans.Koans
         [Step(5)]
         public void ObjectDestrucuringCanBeConfigure()
         {
-            // Use _ whn you don't need to extract a property
+            // Use _ when you don't need to extract a property
             var batman = new Batman("Bruce", "Wayne");
 
-            var (firstName, _, heroName) = batman; // use Deconstruct(out string firstName, out string lastName, out string heroName)
+            var (firstName, _, heroName) = batman; // uses Deconstruct(out string firstName, out string lastName, out string heroName)
 
             Assert.Equal(FILL_ME_IN, heroName);
 
