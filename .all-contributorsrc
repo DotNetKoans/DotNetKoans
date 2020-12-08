@@ -280,6 +280,15 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "CedricRup",
+      "name": "Cedric Rup",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1677902?v=4",
+      "profile": "https://github.com/CedricRup",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
