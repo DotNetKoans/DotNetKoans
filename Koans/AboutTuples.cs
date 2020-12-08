@@ -58,7 +58,7 @@ namespace DotNetCoreKoans.Koans
             return $"{data.firstName} {data.lastName}";
         }
 
-        // One tuple can contain different types
+        // A tuple can contain different types
         [Step(5)]
         public void TupleCanContainDifferentTypes()
         {
@@ -77,7 +77,7 @@ namespace DotNetCoreKoans.Koans
 
         #region 2: equality
 
-        // Two tuples are equal when they have the sames values
+        // Two tuples are equal when they have the same values
         [Step(6)]
         public void TwoTupleAreEquaWhenHaveSameValuesInSameOrder()
         {
@@ -131,7 +131,7 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, extract.mainEnemy);
             Assert.Equal(FILL_ME_IN, string.Join(",", extract.othersEnemies));
 
-            // What's syntax do you prefere ?
+            // What syntax do you prefer?
         }
 
         private string extractMainEnemyWithOut(string enemies, out List<string> othersEnemies)
@@ -174,8 +174,8 @@ namespace DotNetCoreKoans.Koans
 
             Assert.Equal(FILL_ME_IN, titleTuple);
             /* 
-             What's syntax do you prefere ?
-            If you wants to know more on tuple + extension adventages, look at : https://github.com/MostlyAdequate/mostly-adequate-guide/blob/master/ch03.md
+             What's syntax do you prefer?
+            If you want to know more on tuple + extension advantages, look at : https://github.com/MostlyAdequate/mostly-adequate-guide/blob/master/ch03.md
             */
         }
 
