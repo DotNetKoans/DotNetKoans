@@ -82,7 +82,7 @@ namespace DotNetCoreKoans.Engine
                 console.WriteLine();
             }
 
-            console.WriteLine("Ponder the meaning in theese lines:".Cyan());
+            console.WriteLine("Ponder the meaning in these lines:".Cyan());
             console.WriteLine($"{String.Join('\n', Exception.GetStackTracePaths())}".Cyan());
         }
     }
