@@ -85,7 +85,7 @@ namespace DotNetCoreKoans.Koans
 
         //Remove a key from dictionary and check its value.
         [Step(6)]
-        public void RemoveKeyAndCheckForItsValue()
+        public void RemoveKeyAndCheckIfItExists()
         {
             var dict = new Dictionary<string, string>();
             dict.Add("Bruce", "Wayne");
@@ -99,7 +99,7 @@ namespace DotNetCoreKoans.Koans
             if (dict.ContainsKey(keyToRemove))
                 dict.Remove(keyToRemove);
             
-            Assert.NotNull(dict[keyToRemove]); // How to make this statement true?          
+            Assert.True(dict.ContainsKey(keyToRemove)); // How to make this statement true?          
         }
 
     }
