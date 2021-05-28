@@ -8,6 +8,7 @@ namespace DotNetCoreKoans.Koans
         public PathToEnlightenment()
         {
             Types = new Type[] {
+                typeof(AboutDictionary),
         typeof(AboutAsserts),
         typeof(AboutBooleans),
         typeof(AboutStrings),
@@ -34,6 +35,7 @@ namespace DotNetCoreKoans.Koans
         typeof(AboutTuples),
         typeof(AboutGlobalization),
         typeof(AboutDisposable)
+
         };
 
         }
