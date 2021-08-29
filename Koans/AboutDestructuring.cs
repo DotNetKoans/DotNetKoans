@@ -71,7 +71,7 @@ namespace DotNetCoreKoans.Koans
 
         // You can "configure" object destructuring
         [Step(5)]
-        public void ObjectDestrucuringCanBeConfigure()
+        public void ObjectDestructuringCanBeConfigure()
         {
             // Use _ when you don't need to extract a property
             var batman = new Batman("Bruce", "Wayne");

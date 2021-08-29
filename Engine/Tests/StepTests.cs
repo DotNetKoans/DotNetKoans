@@ -41,8 +41,8 @@ namespace DotNetCoreKoans.Engine.Tests
 
             Assert.IsType<SuccessStepResult>(result);
             Assert.Same(step, result.Step);
-            Assert.True(step.Instance.Cast<TestKoan>().WasSetup, "Koan was unexpectantly setup");
-            Assert.True(step.Instance.Cast<TestKoan>().WasToreDown, "Koan was unexpectantly tore down");
+            Assert.True(step.Instance.Cast<TestKoan>().WasSetup, "Koan was unexpectedly setup");
+            Assert.True(step.Instance.Cast<TestKoan>().WasToreDown, "Koan was unexpectedly tore down");
         }
 
         [Fact]

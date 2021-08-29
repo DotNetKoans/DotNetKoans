@@ -32,7 +32,7 @@ namespace DotNetCoreKoans.Koans
         [Step(1)]
         public void DelegatesAreReferenceTypes()
         {
-            //If you don't initialize a delegate it will be a null value, just as any other refrence type.
+            //If you don't initialize a delegate it will be a null value, just as any other reference type.
             BinaryOp op;
             Assert.Null(FILL_ME_IN);
         }
@@ -136,15 +136,15 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal("Add10", adding.GetMethodInfo().Name);
         }
 
-        private void AssertIntEqualsFourtyTwo(int x)
+        private void AssertIntEqualsFortyTwo(int x)
         {
             Assert.Equal(42, x);
         }
-        private void AssertStringEqualsFourtyTwo(string s)
+        private void AssertStringEqualsFortyTwo(string s)
         {
             Assert.Equal("42", s);
         }
-        private void AssertAddEqualsFourtyTwo(int x, string s)
+        private void AssertAddEqualsFortyTwo(int x, string s)
         {
             int y = int.Parse(s);
             Assert.Equal(42, x + y);
@@ -157,21 +157,21 @@ namespace DotNetCoreKoans.Koans
             //The first is Action<>. Action<> can take a variety of parameters and has a void return type.
             //  public delgate void Action<T>(T obj);
 
-            Action<int> i = AssertIntEqualsFourtyTwo;
+            Action<int> i = AssertIntEqualsFortyTwo;
             i((int)FILL_ME_IN);
         }
         [Step(13)]
         public void BuiltInActionDelegateTakesString()
         {
             // Because the delegate is a template, it also works with any other type. 
-            Action<string> s = AssertStringEqualsFourtyTwo;
+            Action<string> s = AssertStringEqualsFortyTwo;
             s((string)FILL_ME_IN);
         }
         [Step(14)]
         public void BuiltInActionDelegateIsOverloaded()
         {
-            //Action is an overloaded delegate so it can take more than one paramter
-            Action<int, string> a = AssertAddEqualsFourtyTwo;
+            //Action is an overloaded delegate so it can take more than one parametr
+            Action<int, string> a = AssertAddEqualsFortyTwo;
             a(12, (string)FILL_ME_IN);
         }
         public class Seen
@@ -198,11 +198,11 @@ namespace DotNetCoreKoans.Koans
             Assert.Equal(FILL_ME_IN, s.Letters);
         }
 
-        private bool IntEqualsFourtyTwo(int x)
+        private bool IntEqualsFortyTwo(int x)
         {
             return 42 == x;
         }
-        private bool StringEqualsFourtyTwo(string s)
+        private bool StringEqualsFortyTwo(string s)
         {
             return "42" == s;
         }
@@ -272,7 +272,7 @@ namespace DotNetCoreKoans.Koans
             //Is very similar to the Action<> delegate. However, Func<> does not require any parameters, while does require returns a value.
             //The last type parameter specifies the return type. If you only specify a single 
             //type, Func<int>, then the method takes no paramters and returns an int.
-            //If you specify more than one parameter, then you are specifying the paramter types as well.
+            //If you specify more than one parameter, then you are specifying the parametr types as well.
 
             Func<string> d = FirstMonth;
             Assert.Equal(FILL_ME_IN, d());

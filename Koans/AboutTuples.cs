@@ -46,7 +46,7 @@ namespace DotNetCoreKoans.Koans
 
         // A tuple can be used as a function parameter
         [Step(4)]
-        public void TupleCanBeUsedInFuction()
+        public void TupleCanBeUsedInFunction()
         {
             var batman = (firstName: "Bruce", lastName: "Wayne");
 
@@ -187,7 +187,7 @@ namespace DotNetCoreKoans.Koans
     {
         private readonly string firstName;
         private readonly string lastName;
-        private string mainEnemey;
+        private string mainEnemy;
 
         private List<string> enemies = new List<string>();
 
@@ -199,7 +199,7 @@ namespace DotNetCoreKoans.Koans
 
         public void AddMainEnemy(string name)
         {
-            mainEnemey = name;
+            mainEnemy = name;
         }
 
         public void AddAlso(string name)
@@ -209,7 +209,7 @@ namespace DotNetCoreKoans.Koans
 
         public string toStringEnemies()
         {
-            var result = mainEnemey;
+            var result = mainEnemy;
             if (enemies.Any())
             {
                 result += ", " + string.Join(", ", enemies);

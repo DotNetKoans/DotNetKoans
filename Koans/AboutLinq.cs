@@ -109,7 +109,7 @@ namespace DotNetCoreKoans.Koans
         {
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
 
-            //Get minumum of the array.
+            //Get minimum of the array.
             var min = numbers.Min();
 
             Assert.Equal(FILL_ME_IN, min);
