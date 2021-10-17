@@ -4,7 +4,7 @@
 
 
 # .NET Core Koans 
-[![Build & Test](https://github.com/MaxAtoms/DotNetCoreKoans/actions/workflows/build.yml/badge.svg)](https://github.com/MaxAtoms/DotNetCoreKoans/actions/workflows/build.yml) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![Build & Test](https://github.com/NotMyself/DotNetCoreKoans/actions/workflows/build.yml/badge.svg)](https://github.com/NotMyself/DotNetCoreKoans/actions/workflows/build.yml) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-34-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
