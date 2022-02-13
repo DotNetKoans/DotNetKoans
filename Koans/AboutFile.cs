@@ -18,11 +18,11 @@ namespace DotNetCoreKoans.Koans
         {
             string path = IOPath.GetTempFileName();
             
-            Assert.Equal(true, File.Exists(path));
+            Assert.Equal(FILL_ME_IN, File.Exists(path));
 
             File.Delete(path);
 
-            Assert.Equal(false, File.Exists(path));
+            Assert.Equal(FILL_ME_IN, File.Exists(path));
         }
         [Step(2)]
         public void CopyFile()
@@ -33,7 +33,7 @@ namespace DotNetCoreKoans.Koans
             File.Delete(result);
             File.Copy(path, result);
 
-            Assert.Equal(true, File.Exists(result));
+            Assert.Equal(FILL_ME_IN, File.Exists(result));
             
         }
         [Step(3)]
@@ -42,8 +42,8 @@ namespace DotNetCoreKoans.Koans
             string path = IOPath.GetTempFileName();
             FileInfo fileInfo = new FileInfo(path);
 
-            Assert.Equal(true, fileInfo.Exists);
-            Assert.Equal(path, fileInfo.FullName);
+            Assert.Equal(FILL_ME_IN, fileInfo.Exists);
+            Assert.Equal(FILL_ME_IN, fileInfo.FullName);
 
         }
         [Step(4)]
@@ -63,7 +63,7 @@ namespace DotNetCoreKoans.Koans
                     readMessage = temp.GetString(bytes);
                 }
             }
-            Assert.Equal(data, readMessage);
+            Assert.Equal(FILL_ME_IN, readMessage);
         }
 
         [Step(5)]
@@ -75,8 +75,8 @@ namespace DotNetCoreKoans.Koans
 
             var lines = File.ReadAllLines(path);
             
-            Assert.Equal(3, lines.Length);
-            Assert.Equal("Line1", lines[1]);
+            Assert.Equal(FILL_ME_IN, lines.Length);
+            Assert.Equal(FILL_ME_IN, lines[1]);
         }
 
         private string createFileAndFillIN(string data)

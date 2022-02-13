@@ -21,11 +21,11 @@ namespace DotNetCoreKoans.Koans
         {            
             Directory.CreateDirectory(fullPath);
 
-            Assert.Equal(true, Directory.Exists(fullPath));
+            Assert.Equal(FILL_ME_IN, Directory.Exists(fullPath));
 
             Directory.Delete(fullPath);
 
-            Assert.Equal(false, Directory.Exists(fullPath));
+            Assert.Equal(FILL_ME_IN, Directory.Exists(fullPath));
         }
         [Step(2)]
         public void GetDirectoryInfo()
@@ -33,8 +33,8 @@ namespace DotNetCoreKoans.Koans
             var directoryInfo = new DirectoryInfo(fullPath);
             directoryInfo.Create();
 
-            Assert.Equal(true, directoryInfo.Exists);
-            Assert.Equal(directoryName, directoryInfo.Name);
+            Assert.Equal(FILL_ME_IN, directoryInfo.Exists);
+            Assert.Equal(FILL_ME_IN, directoryInfo.Name);
 
             directoryInfo.Delete(false);
         }
@@ -46,7 +46,7 @@ namespace DotNetCoreKoans.Koans
             directoryInfo.CreateSubdirectory("subdirectory1");
             directoryInfo.CreateSubdirectory("subdirectory2");
 
-            Assert.Equal(2, directoryInfo.GetDirectories().Length);
+            Assert.Equal(FILL_ME_IN, directoryInfo.GetDirectories().Length);
 
             directoryInfo.Delete(true);
 
@@ -61,7 +61,7 @@ namespace DotNetCoreKoans.Koans
             using (File.Create(IOPath.Combine(fullPath, "file1")));
             using(File.Create(IOPath.Combine(fullPath, "file2")));
 
-            Assert.Equal(2, directoryInfo.GetFiles().Length);
+            Assert.Equal(FILL_ME_IN, directoryInfo.GetFiles().Length);
 
             directoryInfo.Delete(true);
 
