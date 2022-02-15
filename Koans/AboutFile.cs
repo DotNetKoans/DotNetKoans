@@ -13,27 +13,29 @@ namespace DotNetCoreKoans.Koans
 {
     public class AboutFile : Koan
     {
+        //File is async c# class that provides static methods for creating, copying, deleting, moving, and opening files, and helps create a FileStream object.
+
         [Step(1)]
         public void CreatingAndDeletingFile()
         {
-            string path = IOPath.GetTempFileName();
+            string path = IOPath.GetTempFileName(); // GetTempFileName() Creates a uniquely named, zero-byte temporary file on disk and returns the full path of that file.
             
-            Assert.Equal(FILL_ME_IN, File.Exists(path));
+            Assert.Equal(FILL_ME_IN, File.Exists(path)); // How to make this statement true? 
 
             File.Delete(path);
 
-            Assert.Equal(FILL_ME_IN, File.Exists(path));
+            Assert.Equal(FILL_ME_IN, File.Exists(path)); // How to make this statement true? 
         }
         [Step(2)]
         public void CopyFile()
         {
             string path = IOPath.GetTempFileName();
-            string result = IOPath.Combine(IOPath.GetTempPath(), "newFile.txt");
+            string newPath = IOPath.Combine(IOPath.GetTempPath(), "newFile.txt");
 
-            File.Delete(result);
-            File.Copy(path, result);
+            File.Delete(newPath);
+            File.Copy(path, newPath);
 
-            Assert.Equal(FILL_ME_IN, File.Exists(result));
+            Assert.Equal(FILL_ME_IN, File.Exists(newPath)); // How to make this statement true? 
             
         }
         [Step(3)]
@@ -42,8 +44,8 @@ namespace DotNetCoreKoans.Koans
             string path = IOPath.GetTempFileName();
             FileInfo fileInfo = new FileInfo(path);
 
-            Assert.Equal(FILL_ME_IN, fileInfo.Exists);
-            Assert.Equal(FILL_ME_IN, fileInfo.FullName);
+            Assert.Equal(FILL_ME_IN, fileInfo.Exists); // How to make this statement true? 
+            Assert.Equal(FILL_ME_IN, fileInfo.FullName); // what is the file name?
 
         }
         [Step(4)]
@@ -63,7 +65,7 @@ namespace DotNetCoreKoans.Koans
                     readMessage = temp.GetString(bytes);
                 }
             }
-            Assert.Equal(FILL_ME_IN, readMessage);
+            Assert.Equal(FILL_ME_IN, readMessage); // what is the message?
         }
 
         [Step(5)]
@@ -75,8 +77,8 @@ namespace DotNetCoreKoans.Koans
 
             var lines = File.ReadAllLines(path);
             
-            Assert.Equal(FILL_ME_IN, lines.Length);
-            Assert.Equal(FILL_ME_IN, lines[1]);
+            Assert.Equal(FILL_ME_IN, lines.Length); // what is the number of lines?
+            Assert.Equal(FILL_ME_IN, lines[1]); // what is written in the line No.2 ?
         }
 
         private string createFileAndFillIN(string data)
