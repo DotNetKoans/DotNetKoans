@@ -289,6 +289,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Ochuwa-sophie",
+      "name": "Sophie Obomighie",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25169298?v=4",
+      "profile": "https://github.com/Ochuwa-sophie",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -296,5 +305,6 @@
   "projectOwner": "NotMyself",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
