@@ -1,55 +1,31 @@
 {
-  "name": ".net core koans",
-  "extensions": [
-	"vsls-contrib.codetour",
-	"ms-dotnettools.csharp",
-	"GitHub.vscode-pull-request-github",
-	"MS-vsliveshare.vsliveshare",
-	"VisualStudioExptTeam.vscodeintellicode"
-],
-  "settings": {
-	"terminal.integrated.shell.linux": "/bin/bash",
-	"go.useGoProxyToCheckForToolUpdates": false,
-	"go.useLanguageServer": true,
-	"go.gopath": "/go",
-	"go.goroot": "/usr/local/go",
-	"go.toolsGopath": "/go/bin",
-	"python.pythonPath": "/opt/python/latest/bin/python",
-	"python.linting.enabled": true,
-	"python.linting.pylintEnabled": true,
-	"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
-	"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
-	"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
-	"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
-	"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
-	"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
-	"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
-	"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
-	"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
-	"lldb.executable": "/usr/bin/lldb",
-	"files.watcherExclude": {
-		"**/target/**": true
+	"name": ".NET Core Koans",
+	"runArgs": [
+		"--init"
+	],
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "6.0-bullseye"
+		}
 	},
-	"files.exclude": {
-		"**/CODE_OF_CONDUCT.md": true,
-		"**/CONTRIBUTING.md": true,
-		"**/appveyor.yml": true,
-		".all-contributorsrc": true
-	}
-},
-"build": {
-	"dockerfile": "Dockerfile",
-	"args": {
-		"INSTALL_DOCKER": "true"
-	}
-},
-"mounts": [
-	"source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
-],
-"runArgs": [
-	"--cap-add=SYS_PTRACE",
-	"--security-opt",
-	"seccomp=unconfined"
-],
-"remoteUser": "codespace"
+	"extensions": [
+		"vsls-contrib.codetour",
+		"ms-dotnettools.csharp",
+		"GitHub.vscode-pull-request-github",
+		"MS-vsliveshare.vsliveshare",
+		"VisualStudioExptTeam.vscodeintellicode"
+	],
+	"settings": {
+		"files.watcherExclude": {
+			"**/target/**": true
+		},
+		"files.exclude": {
+			"**/CODE_OF_CONDUCT.md": true,
+			"**/CONTRIBUTING.md": true,
+			"**/appveyor.yml": true,
+			".all-contributorsrc": true
+		}
+	},
+	"remoteUser": "vscode"
 }
