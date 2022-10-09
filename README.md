@@ -7,7 +7,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-32-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-</div>
+
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
 
 ### The Structure
@@ -108,6 +108,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://www.linkedin.com/in/jakub-rusek-897968163/"><img src="https://avatars0.githubusercontent.com/u/29798657?v=4?s=100" width="100px;" alt="Jakub Rusek"/><br /><sub><b>Jakub Rusek</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=IRusio" title="Code">💻</a></td>
       <td align="center"><a href="https://github.com/RAFAELDEV2016"><img src="https://avatars1.githubusercontent.com/u/29690569?v=4?s=100" width="100px;" alt="RAFAELDEV2016"/><br /><sub><b>RAFAELDEV2016</b></sub></a><br /><a href="#design-RAFAELDEV2016" title="Design">🎨</a></td>
       <td align="center"><a href="https://github.com/CedricRup"><img src="https://avatars3.githubusercontent.com/u/1677902?v=4?s=100" width="100px;" alt="Cedric Rup"/><br /><sub><b>Cedric Rup</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=CedricRup" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/Ochuwa-sophie"><img src="https://avatars.githubusercontent.com/u/25169298?v=4?s=100" width="100px;" alt="Sophie Obomighie"/><br /><sub><b>Sophie Obomighie</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/pulls?q=is%3Apr+reviewed-by%3AOchuwa-sophie" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center"><a href="https://scottmilliorn.netlify.app"><img src="https://avatars.githubusercontent.com/u/39207179?v=4?s=100" width="100px;" alt="Scott Milliorn"/><br /><sub><b>Scott Milliorn</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=milliorn" title="Documentation">📖</a></td>
       <td align="center"><a href="https://github.com/MaxAtoms"><img src="https://avatars.githubusercontent.com/u/7847075?v=4?s=100" width="100px;" alt="Thomas M. Schöller"/><br /><sub><b>Thomas M. Schöller</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=MaxAtoms" title="Code">💻</a></td>
     </tr>
   </tbody>
