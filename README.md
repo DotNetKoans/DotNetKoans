@@ -110,6 +110,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://github.com/CedricRup"><img src="https://avatars3.githubusercontent.com/u/1677902?v=4?s=100" width="100px;" alt="Cedric Rup"/><br /><sub><b>Cedric Rup</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=CedricRup" title="Code">💻</a></td>
       <td align="center"><a href="https://github.com/Ochuwa-sophie"><img src="https://avatars.githubusercontent.com/u/25169298?v=4?s=100" width="100px;" alt="Sophie Obomighie"/><br /><sub><b>Sophie Obomighie</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/pulls?q=is%3Apr+reviewed-by%3AOchuwa-sophie" title="Reviewed Pull Requests">👀</a></td>
       <td align="center"><a href="https://scottmilliorn.netlify.app"><img src="https://avatars.githubusercontent.com/u/39207179?v=4?s=100" width="100px;" alt="Scott Milliorn"/><br /><sub><b>Scott Milliorn</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=milliorn" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/MaxAtoms"><img src="https://avatars.githubusercontent.com/u/7847075?v=4?s=100" width="100px;" alt="Thomas M. Schöller"/><br /><sub><b>Thomas M. Schöller</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=MaxAtoms" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
