@@ -71,7 +71,7 @@ class AboutDestructuring : Koan
 
 	// You can "configure" object destructuring
 	[Step(5)]
-	public void ObjectDestrucuringCanBeConfigure()
+	public void ObjectDestructuringCanBeConfigured()
 	{
 		// Use _ when you don't need to extract a property
 		var batman = new Batman("Bruce", "Wayne");

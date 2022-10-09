@@ -10,7 +10,7 @@ public class AboutDisposable : Koan
 {
 	/*
 	IDisposable is an interface that contains only 1 method, Dispose().
-	It should be implemented by types that use umanagmed resources
+        It should be implemented by types that use unmanaged resources
 	e.g. streams, files, etc. so that memory can be reclaimed by the
 	runtime's garbage collector.
 

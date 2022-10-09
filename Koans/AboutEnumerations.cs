@@ -9,9 +9,9 @@ public class AboutEnumerations : Koan
 	/*
 	An enumeration is a value type that represents a set of named constants
 	whose underlying type is an integral numeric. You create an enumeration
-	using the enum keywoard and a title followed by the enum's members.
+    using the enum keyword and a title followed by the enum's members.
 
-	Following are three definitions of enums that we will be using througout
+	Following are three definitions of enums that we will be using throughout
 	the Koans. Review them first and notice how they're defined, what the
 	structure and syntax looks like, how they are cased, how they are assigned
 	values and then move on to the first step.
