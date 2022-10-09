@@ -3,7 +3,7 @@
 </p>
 
 
-# .Net Core Koans 
+# .NET Core Koans 
 [![Build status](https://ci.appveyor.com/api/projects/status/j0ykx336513hmnep/branch/master?svg=true)](https://ci.appveyor.com/project/NotMyself/dotnetcorekoans/branch/master)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-31-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -31,14 +31,14 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 
 #### Running Locally
 
-1. Install [.NET Core SDK 3.1](https://www.microsoft.com/net/core).
+1. Install [.NET SDK 6.0](https://dotnet.microsoft.com/en-us/download).
 2. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
 3. Clone the repository: `git clone https://github.com/NotMyself/DotNetCoreKoans.git`.
 4. Change directory into the cloned repository `cd DotNetCoreKoans`.
 5. Restore packages: `dotnet restore`.
 6. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
 7. Run the koans in watch mode: `dotnet watch --quiet run`.
-   - **Note:** The `--quiet` flag is used here to suppress mesages from the watch framework.
+   - **Note:** The `--quiet` flag is used here to suppress messages from the watch framework.
 8. Follow along with the instructions printed to your console. Each time you save a \*.cs file, the project will be built and run again for you automatically.
 
 ### Contributing
