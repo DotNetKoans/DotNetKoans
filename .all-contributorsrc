@@ -298,6 +298,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "milliorn",
+      "name": "Scott Milliorn",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39207179?v=4",
+      "profile": "https://scottmilliorn.netlify.app",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
