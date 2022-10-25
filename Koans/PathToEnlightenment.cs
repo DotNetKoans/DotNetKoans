@@ -18,6 +18,7 @@ public class PathToEnlightenment : Path
 			typeof(AboutArrays),
 			typeof(AboutArrayAssignment),
 			typeof(AboutEnumerations),
+			typeof(AboutDictionary),
 			typeof(AboutClasses),
 			typeof(AboutInheritance),
 			typeof(AboutMethods),
