@@ -5,7 +5,7 @@
 
 # .NET Core Koans 
 [![Build & Test](https://github.com/NotMyself/DotNetCoreKoans/actions/workflows/build.yml/badge.svg)](https://github.com/NotMyself/DotNetCoreKoans/actions/workflows/build.yml) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-34-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-35-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The .NET Core Koans walk you along the path to enlightenment in order to learn C# on .NET Core. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET Core platform. .NET Core is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
@@ -111,6 +111,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://github.com/Ochuwa-sophie"><img src="https://avatars.githubusercontent.com/u/25169298?v=4?s=100" width="100px;" alt="Sophie Obomighie"/><br /><sub><b>Sophie Obomighie</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/pulls?q=is%3Apr+reviewed-by%3AOchuwa-sophie" title="Reviewed Pull Requests">👀</a></td>
       <td align="center"><a href="https://scottmilliorn.netlify.app"><img src="https://avatars.githubusercontent.com/u/39207179?v=4?s=100" width="100px;" alt="Scott Milliorn"/><br /><sub><b>Scott Milliorn</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=milliorn" title="Documentation">📖</a></td>
       <td align="center"><a href="https://github.com/MaxAtoms"><img src="https://avatars.githubusercontent.com/u/7847075?v=4?s=100" width="100px;" alt="Thomas M. Schöller"/><br /><sub><b>Thomas M. Schöller</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=MaxAtoms" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/coder2213"><img src="https://avatars.githubusercontent.com/u/29541956?v=4?s=100" width="100px;" alt="coder2213"/><br /><sub><b>coder2213</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetCoreKoans/commits?author=coder2213" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
