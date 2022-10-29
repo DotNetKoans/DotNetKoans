@@ -289,6 +289,42 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Ochuwa-sophie",
+      "name": "Sophie Obomighie",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25169298?v=4",
+      "profile": "https://github.com/Ochuwa-sophie",
+      "contributions": [
+        "review"
+      ]
+    },
+    {
+      "login": "milliorn",
+      "name": "Scott Milliorn",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39207179?v=4",
+      "profile": "https://scottmilliorn.netlify.app",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "MaxAtoms",
+      "name": "Thomas M. Schöller",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7847075?v=4",
+      "profile": "https://github.com/MaxAtoms",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "coder2213",
+      "name": "coder2213",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29541956?v=4",
+      "profile": "https://github.com/coder2213",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -296,5 +332,6 @@
   "projectOwner": "NotMyself",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
