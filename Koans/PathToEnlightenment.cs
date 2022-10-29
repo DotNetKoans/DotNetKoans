@@ -7,7 +7,8 @@ public class PathToEnlightenment : Path
 {
 	public PathToEnlightenment()
 	{
-		Types = new Type[] {
+		Types = new Type[]
+		{
 			typeof(AboutAsserts),
 			typeof(AboutBooleans),
 			typeof(AboutStrings),
@@ -28,6 +29,8 @@ public class PathToEnlightenment : Path
 			typeof(AboutGenericContainers),
 			typeof(AboutDelegates),
 			typeof(AboutLambdas),
+			typeof(AboutDirectory),
+			typeof(AboutFile),
 			typeof(AboutLinq),
 			typeof(AboutBitwiseAndShiftOperator),
 			typeof(AboutDestructuring),
@@ -36,6 +39,5 @@ public class PathToEnlightenment : Path
 			typeof(AboutGlobalization),
 			typeof(AboutDisposable)
 		};
-
 	}
 }
