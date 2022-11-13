@@ -1,4 +1,3 @@
 {
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": true
+  "editor.minimap.enabled": false
 }
