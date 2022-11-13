@@ -126,8 +126,9 @@ broken line";
 		var originalString = strA;
 		var strB = "World";
 		strA += strB;
+		
 		Assert.Equal(FILL_ME_IN, originalString);
-
+		Assert.False(Object.ReferenceEquals(FILL_ME_IN, originalString));
 		//What just happened? Well, the string concatenation actually
 		//takes strA and strB and creates a *new* string in memory
 		//that has the new value. It does *not* modify the original
