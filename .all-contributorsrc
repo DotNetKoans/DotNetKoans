@@ -334,6 +334,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "cestrand",
+      "name": "Marcin Kolenda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6875883?v=4",
+      "profile": "https://github.com/cestrand",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
