@@ -140,79 +140,6 @@ broken line";
 	}
 
 	[Step(12)]
-	public void YouDoNotNeedConcatenationToInsertVariablesInAString()
-	{
-		var world = "World";
-		var str = String.Format("Hello, {0}", world);
-		Assert.Equal(FILL_ME_IN, str);
-	}
-
-	[Step(13)]
-	public void AnyExpressionCanBeUsedInFormatString()
-	{
-		var str = String.Format("The square root of 9 is {0}", Math.Sqrt(9));
-		Assert.Equal(FILL_ME_IN, str);
-	}
-
-	[Step(14)]
-	public void StringsCanBePaddedToTheLeft()
-	{
-		//You can modify the value inserted into the result
-		var str = string.Format("{0,3:}", "x");
-		Assert.Equal(FILL_ME_IN, str);
-	}
-
-	[Step(15)]
-	public void StringsCanBePaddedToTheRight()
-	{
-		var str = string.Format("{0,-3:}", "x");
-		Assert.Equal(FILL_ME_IN, str);
-	}
-
-	[Step(16)]
-	public void SeparatorsCanBeAdded()
-	{
-		var str = string.Format("{0:n}", 123456);
-		Assert.Equal(FILL_ME_IN, str);
-	}
-
-	[Step(17)]
-	public void CurrencyDesignatorsCanBeAdded()
-	{
-		var str = string.Format("{0:c}", 123456);
-		Assert.Equal(FILL_ME_IN, str);
-	}
-
-	[Step(18)]
-	public void NumberOfDisplayedDecimalsCanBeControlled()
-	{
-		var str = string.Format("{0:.##}", 12.3456);
-		Assert.Equal(FILL_ME_IN, str);
-	}
-
-	[Step(19)]
-	public void MinimumNumberOfDisplayedDecimalsCanBeControlled()
-	{
-		var str = string.Format("{0:.00}", 12.3);
-		Assert.Equal(FILL_ME_IN, str);
-	}
-
-	[Step(20)]
-	public void BuiltInDateFormatters()
-	{
-		var str = string.Format("{0:t}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
-		Assert.Equal(FILL_ME_IN, str);
-	}
-
-	[Step(21)]
-	public void CustomDateFormatters()
-	{
-		var str = string.Format("{0:t m}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
-		Assert.Equal(FILL_ME_IN, str);
-	}
-	//These are just a few of the formatters available. Dig some and you may find what you need.
-
-	[Step(22)]
 	public void ABetterWayToConcatenateLotsOfStrings()
 	{
 		//Concatenating lots of strings is a Bad Idea(tm). If you need to do that, then consider StringBuilder.
@@ -229,8 +156,84 @@ broken line";
 		var str = strBuilder.ToString();
 		Assert.Equal(FILL_ME_IN, str);
 
-		//String.Format and StringBuilder will be more efficient than concatenation. Prefer them.
+		//When doing lots and lots of concatenation in a loop, StringBuilder will be more efficient than concatenation using the +-operator.
+		//However, even in the above example simple concatenation would actually be more efficient.
 	}
+	
+	[Step(13)]
+	public void YouCouldAlsoUseStringFormatToConcatenate()
+	{
+		var world = "World";
+		var str = String.Format("Hello, {0}", world);
+		Assert.Equal(FILL_ME_IN, str);
+		// Note that string concatenation and interpolation is more efficient than string.Format
+	}
+
+	[Step(14)]
+	public void AnyExpressionCanBeUsedInFormatString()
+	{
+		var str = String.Format("The square root of 9 is {0}", Math.Sqrt(9));
+		Assert.Equal(FILL_ME_IN, str);
+	}
+
+	[Step(15)]
+	public void StringsCanBePaddedToTheLeft()
+	{
+		//You can modify the value inserted into the result
+		var str = string.Format("{0,3:}", "x");
+		Assert.Equal(FILL_ME_IN, str);
+	}
+
+	[Step(16)]
+	public void StringsCanBePaddedToTheRight()
+	{
+		var str = string.Format("{0,-3:}", "x");
+		Assert.Equal(FILL_ME_IN, str);
+	}
+
+	[Step(17)]
+	public void SeparatorsCanBeAdded()
+	{
+		var str = string.Format("{0:n}", 123456);
+		Assert.Equal(FILL_ME_IN, str);
+	}
+
+	[Step(18)]
+	public void CurrencyDesignatorsCanBeAdded()
+	{
+		var str = string.Format("{0:c}", 123456);
+		Assert.Equal(FILL_ME_IN, str);
+	}
+
+	[Step(19)]
+	public void NumberOfDisplayedDecimalsCanBeControlled()
+	{
+		var str = string.Format("{0:.##}", 12.3456);
+		Assert.Equal(FILL_ME_IN, str);
+	}
+
+	[Step(20)]
+	public void MinimumNumberOfDisplayedDecimalsCanBeControlled()
+	{
+		var str = string.Format("{0:.00}", 12.3);
+		Assert.Equal(FILL_ME_IN, str);
+	}
+
+	[Step(21)]
+	public void BuiltInDateFormatters()
+	{
+		var str = string.Format("{0:t}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
+		Assert.Equal(FILL_ME_IN, str);
+	}
+
+	[Step(22)]
+	public void CustomDateFormatters()
+	{
+		var str = string.Format("{0:t m}", DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture));
+		Assert.Equal(FILL_ME_IN, str);
+	}
+	//These are just a few of the formatters available. Dig some and you may find what you need.
+
 
 	[Step(23)]
 	public void StringBuilderCanUseFormatAsWell()
@@ -322,6 +325,13 @@ broken line";
 		var name = "John Doe";
 		var age = 33;
 		var str = $"Mr. {name} is {age} years old";
+		Assert.Equal(FILL_ME_IN, str);
+	}
+	
+	[Step(34)]
+	public void InterpolationSupportsFormatAsWell()
+	{
+		var str = $"{DateTime.Parse("12/16/2011 2:35:02 PM", CultureInfo.InvariantCulture):t m}";
 		Assert.Equal(FILL_ME_IN, str);
 	}
 }
