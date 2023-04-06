@@ -1,7 +1,7 @@
 ﻿using Xunit;
-using DotNetCoreKoans.Engine;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutBooleans : Koan
 {

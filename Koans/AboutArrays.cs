@@ -4,10 +4,10 @@ using System.Reflection;
 using System.Collections;
 using System.Collections.Generic;
 using Xunit;
-using DotNetCoreKoans.Engine;
+using DotNetKoans.Engine;
 
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutArrays : Koan
 {

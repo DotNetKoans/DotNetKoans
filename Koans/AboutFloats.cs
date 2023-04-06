@@ -1,8 +1,8 @@
 using System.Globalization;
 using Xunit;
-using DotNetCoreKoans.Engine;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutFloats : Koan
 {

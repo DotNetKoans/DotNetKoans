@@ -1,9 +1,9 @@
 using Xunit;
-using DotNetCoreKoans.Engine;
 using System;
 using System.Globalization;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutStrings : Koan
 {

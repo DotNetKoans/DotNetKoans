@@ -1,11 +1,11 @@
 using Xunit;
 using System.Reflection;
-using DotNetCoreKoans.Engine;
 using System;
 using System.Text;
 using System.Linq;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutDelegates : Koan
 {

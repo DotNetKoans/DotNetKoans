@@ -1,10 +1,10 @@
 using System;
 using System.Linq;
-using DotNetCoreKoans.Engine.Tests.Fakes;
+using DotNetKoans.Engine.Tests.Fakes;
 using Xunit;
 using Xunit.Sdk;
 
-namespace DotNetCoreKoans.Engine.Tests
+namespace DotNetKoans.Engine.Tests
 {
     public class StepTests : TestBase
     {

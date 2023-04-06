@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace DotNetCoreKoans.Engine.Tests
+namespace DotNetKoans.Engine.Tests
 {
     public class SenseiTests
     {

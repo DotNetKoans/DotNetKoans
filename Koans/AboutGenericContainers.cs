@@ -1,10 +1,10 @@
 using Xunit;
-using DotNetCoreKoans.Engine;
 using System.Collections.Generic;
 using System;
 using System.Collections;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutGenericContainers : Koan
 {
