@@ -32,7 +32,7 @@ public class AboutFloats : Koan
 	{
 		Assert.Equal(typeof(float), typeof(FillMeIn));
 
-		//.NET Core doesn't have a type called `float`
+		//.NET doesn't have a type called `float`
 		//Instead, it has a "Single Precision Floating Point Number" type:
 		//`System.Single`
 		//CoreCLR Languages, like C#, sometimes define language aliases for types.
@@ -47,7 +47,7 @@ public class AboutFloats : Koan
 		//what will the result type be?
 		Assert.Equal(typeof(FillMeIn), result.GetType());
 
-		//.NET Core kindly stores the result of the math in a float
+		//.NET kindly stores the result of the math in a float
 		//so you don't lose the extra information in your floating point value
 	}
 
@@ -80,7 +80,7 @@ public class AboutFloats : Koan
 		//It means that they are actually only precisely accurate up to 7 significant digits,
 		//because they only use so much memory (32 bits) to store their value and decimal position.
 
-		//.NET Core does have a more precise (64 bits) floating point type called `System.Double`
+		//.NET does have a more precise (64 bits) floating point type called `System.Double`
 		//or `double` in C#.
 
 		//Floating point numbers round values that are beyond their precision.

@@ -2,7 +2,7 @@ using Xunit;
 
 namespace DotNetCoreKoans.Engine.Tests
 {
-    public class SensiTests
+    public class SenseiTests
     {
         [Fact]
         public void TrueShouldBeTrue()

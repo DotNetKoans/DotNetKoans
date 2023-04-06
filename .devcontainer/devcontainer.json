@@ -1,5 +1,5 @@
 {
-	"name": ".NET Core Koans",
+	"name": ".NET Koans",
 	"runArgs": [
 		"--init"
 	],
