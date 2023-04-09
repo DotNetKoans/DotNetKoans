@@ -13,7 +13,7 @@
             "stopAtEntry": false
         },
         {
-            "name": ".NET Core Attach",
+            "name": ".NET Attach",
             "type": "coreclr",
             "request": "attach",
             "processId": 0
