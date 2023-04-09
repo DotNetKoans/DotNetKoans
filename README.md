@@ -33,7 +33,7 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 
 1. Install [.NET SDK 6.0](https://dotnet.microsoft.com/en-us/download).
 2. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
-3. Clone the repository: `git clone https://github.com/NotMyself/DotNetCoreKoans.git`.
+3. Clone the repository: `git clone https://github.com/NotMyself/DotNetCoreKoans.git DotNetKoans/`.
 4. Change directory into the cloned repository `cd DotNetKoans`.
 5. Restore packages: `dotnet restore`.
 6. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
