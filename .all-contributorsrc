@@ -343,10 +343,19 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "KGonzalezASC",
+      "name": "Keith Gonzalez",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52670448?v=4",
+      "profile": "https://github.com/KGonzalezASC",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "DotNetKoans",
+  "projectName": "DotNetCoreKoans",
   "projectOwner": "NotMyself",
   "repoType": "github",
   "repoHost": "https://github.com",
