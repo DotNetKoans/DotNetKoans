@@ -1,8 +1,8 @@
 using Xunit;
-using DotNetCoreKoans.Engine;
 using System;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutLambdas : Koan
 {

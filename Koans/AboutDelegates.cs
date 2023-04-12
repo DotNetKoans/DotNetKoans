@@ -1,11 +1,11 @@
 using Xunit;
 using System.Reflection;
-using DotNetCoreKoans.Engine;
 using System;
 using System.Text;
 using System.Linq;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutDelegates : Koan
 {
@@ -152,7 +152,7 @@ public class AboutDelegates : Koan
 	[Step(12)]
 	public void BuiltInActionDelegateTakesInt()
 	{
-		//With the release of generics in .Net 2.0 we got some delegates which will cover most of our needs. 
+		//With the release of generics in .NET 2.0 we got some delegates which will cover most of our needs. 
 		//You will see them in the base class libraries, so knowing about them will be helpful. 
 		//The first is Action<>. Action<> can take a variety of parameters and has a void return type.
 		//  public delgate void Action<T>(T obj);

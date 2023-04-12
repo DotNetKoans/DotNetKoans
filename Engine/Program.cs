@@ -1,7 +1,7 @@
-﻿using DotNetCoreKoans.Koans;
+﻿using DotNetKoans.Koans;
 using Microsoft.DotNet.Cli.Utils;
 
-namespace DotNetCoreKoans.Engine
+namespace DotNetKoans.Engine
 {
     public class Program
     {

@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace DotNetCoreKoans.Engine.Tests.Fakes
+namespace DotNetKoans.Engine.Tests.Fakes
 {
     internal class TestKoan : Koan
     {

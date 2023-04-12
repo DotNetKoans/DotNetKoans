@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace DotNetCoreKoans.Engine
+namespace DotNetKoans.Engine
 {
     public abstract class Path : IEnumerable<Type>
     {

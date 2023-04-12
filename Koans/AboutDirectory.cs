@@ -1,9 +1,9 @@
 using System.IO;
-using DotNetCoreKoans.Engine;
+using DotNetKoans.Engine;
 using Xunit;
 using IOPath = System.IO.Path;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutDirectory : Koan
 {

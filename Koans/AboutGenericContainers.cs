@@ -1,10 +1,10 @@
 using Xunit;
-using DotNetCoreKoans.Engine;
 using System.Collections.Generic;
 using System;
 using System.Collections;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutGenericContainers : Koan
 {
@@ -66,8 +66,8 @@ public class AboutGenericContainers : Koan
 		Assert.Equal(s, os);
 
 		//While it is true that everything is an object and all the above passes, not everything is quite as it seems.
-		//Under the covers .Net allocates memory for all value type objects (int, double, bool,...) on the stack. This is 
-		//considerably more efficient than a heap allocation. .Net also has the ability to put a value type onto the heap.
+		//Under the covers .NET allocates memory for all value type objects (int, double, bool,...) on the stack. This is 
+		//considerably more efficient than a heap allocation. .NET also has the ability to put a value type onto the heap.
 		//(for calling methods and other reasons). The process of putting stack data into the heap is called "boxing". The 
 		//process of taking the value type off the heap is called "unboxing". We won't go into the details (see Jeffrey 
 		//Richter's book if you want details). This subject comes up because every time you put a value type into an 
@@ -78,7 +78,7 @@ public class AboutGenericContainers : Koan
 	[Step(6)]
 	public void ABetterDynamicSizeContainer()
 	{
-		//ArrayList is a .Net 1.0 container. With .Net 2.0 generics were introduced and with it a new set of collections in
+		//ArrayList is a .NET 1.0 container. With .NET 2.0 generics were introduced and with it a new set of collections in
 		//System.Collections.Generic The array like container is List<T>. List<T> (read "list of T") is a generic class. 
 		//The "T" in the definition of List<T> is the type argument. You cannot declare an instance of List<T> without also
 		//supplying a type in place of T.
@@ -213,7 +213,7 @@ public class AboutGenericContainers : Koan
 	[Step(19)]
 	public void AddingToADictionary()
 	{
-		//Dictionary<TKey, TValue> is .Net's key value store. The key and the value do not need to be the same types.
+		//Dictionary<TKey, TValue> is .NET's key value store. The key and the value do not need to be the same types.
 		Dictionary<int, string> dictionary = new Dictionary<int, string>();
 		Assert.Equal(FILL_ME_IN, dictionary.Count);
 		dictionary[1] = "one";

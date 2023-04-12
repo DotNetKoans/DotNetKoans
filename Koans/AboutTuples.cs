@@ -1,11 +1,11 @@
-using DotNetCoreKoans.Engine;
 using Xunit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Transactions;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutTuples : Koan
 {

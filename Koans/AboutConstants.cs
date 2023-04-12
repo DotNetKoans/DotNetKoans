@@ -1,7 +1,7 @@
-using DotNetCoreKoans.Engine;
+using DotNetKoans.Engine;
 using Xunit;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutConstants : Koan
 {

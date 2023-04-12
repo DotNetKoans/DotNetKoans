@@ -1,13 +1,13 @@
 using System;
-using DotNetCoreKoans.Engine;
+using DotNetKoans.Engine;
 using Xunit;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutExceptions : Koan
 {
-	// Exceptions are 'thrown' when a program runs into somthing that it wasn't expecting. 
-	// Most of the time, these exceptions will cause the programme to 'break' or stop excecuting.
+	// Exceptions are 'thrown' when a program runs into something that it wasn't expecting. 
+	// Most of the time, these exceptions will cause the programme to 'break' or stop executing.
 	// We can use 'exception handling' to specify exactly what we want to happen when we run into an issue.
 	// Exceptions are types which inherit from the base 'System.Exception' class
 

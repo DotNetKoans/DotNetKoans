@@ -1,10 +1,10 @@
 using Xunit;
-using DotNetCoreKoans.Engine;
 using System.IO;
 using System.Text;
+using DotNetKoans.Engine;
 using IOPath = System.IO.Path;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutFile : Koan
 {

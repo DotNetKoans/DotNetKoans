@@ -1,6 +1,6 @@
 using System;
 
-namespace DotNetCoreKoans.Engine.Tests.Fakes
+namespace DotNetKoans.Engine.Tests.Fakes
 {
     public class TestPath : Path
     {

@@ -1,11 +1,11 @@
 ﻿#pragma warning disable xUnit2009
 using Xunit;
-using DotNetCoreKoans.Engine;
 using System.Threading;
 using System;
 using System.Globalization;
+using DotNetKoans.Engine;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 class AboutGlobalization : Koan
 {

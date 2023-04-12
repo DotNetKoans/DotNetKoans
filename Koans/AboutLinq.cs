@@ -1,8 +1,8 @@
-﻿using DotNetCoreKoans.Engine;
-using System.Linq;
+﻿using System.Linq;
+using DotNetKoans.Engine;
 using Xunit;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutLinq : Koan
 {

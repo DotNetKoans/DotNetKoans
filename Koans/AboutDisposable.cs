@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-using DotNetCoreKoans.Engine;
+using DotNetKoans.Engine;
 using Xunit;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutDisposable : Koan
 {

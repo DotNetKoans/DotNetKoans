@@ -1,9 +1,9 @@
-﻿using DotNetCoreKoans.Engine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using DotNetKoans.Engine;
 using Xunit;
 
-namespace DotNetCoreKoans.Koans;
+namespace DotNetKoans.Koans;
 
 public class AboutDictionary : Koan
 {

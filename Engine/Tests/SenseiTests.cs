@@ -1,8 +1,8 @@
 using Xunit;
 
-namespace DotNetCoreKoans.Engine.Tests
+namespace DotNetKoans.Engine.Tests
 {
-    public class SensiTests
+    public class SenseiTests
     {
         [Fact]
         public void TrueShouldBeTrue()

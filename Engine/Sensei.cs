@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.DotNet.Cli.Utils;
 
-namespace DotNetCoreKoans.Engine
+namespace DotNetKoans.Engine
 {
     public class Sensei
     {

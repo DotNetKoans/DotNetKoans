@@ -1,6 +1,6 @@
 using System;
 
-namespace DotNetCoreKoans.Engine
+namespace DotNetKoans.Engine
 {
     public class Koan
     {
