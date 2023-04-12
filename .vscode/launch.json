@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/bin/Debug/net6.0/DotNetCoreKoans.dll",
+            "program": "${workspaceRoot}/bin/Debug/net6.0/DotNetKoans.dll",
             "args": [],
             "cwd": "${workspaceRoot}",
             "console": "internalConsole",
