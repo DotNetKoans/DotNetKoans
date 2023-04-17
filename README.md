@@ -1,10 +1,10 @@
 <p align="center">
-<img width="300px" src="https://raw.githubusercontent.com/NotMyself/DotNetCoreKoans/master/static/img/dot-net-koans-logo.svg" />
+<img width="300px" src="https://raw.githubusercontent.com/NotMyself/DotNetKoans/master/static/img/dot-net-koans-logo.svg" />
 </p>
 
 
 # .NET Koans 
-[![Build & Test](https://github.com/NotMyself/DotNetCoreKoans/actions/workflows/build.yml/badge.svg)](https://github.com/NotMyself/DotNetCoreKoans/actions/workflows/build.yml) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![Build & Test](https://github.com/NotMyself/DotNetKoans/actions/workflows/build.yml/badge.svg)](https://github.com/NotMyself/DotNetKoans/actions/workflows/build.yml) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-38-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -33,7 +33,7 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 
 1. Install [.NET SDK 6.0](https://dotnet.microsoft.com/en-us/download).
 2. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
-3. Clone the repository: `git clone https://github.com/NotMyself/DotNetCoreKoans.git DotNetKoans/`.
+3. Clone the repository: `git clone https://github.com/NotMyself/DotNetKoans.git`.
 4. Change directory into the cloned repository `cd DotNetKoans`.
 5. Restore packages: `dotnet restore`.
 6. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
@@ -45,11 +45,11 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 
 Want to contribute? Check out our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing](CONTRIBUTING.md) docs. This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-There are many topics yet to be covered by this set of koans. I have added a handful of needed topics as [issues](https://github.com/NotMyself/DotNetCoreKoans/issues) and tagged them as [Up for Grabs](https://github.com/NotMyself/DotNetCoreKoans/issues?q=is%3Aopen+is%3Aissue+label%3A%22Up+for+Grabs%22). There are even some specifically tagged as [Beginner Friendly](https://github.com/NotMyself/DotNetCoreKoans/issues?q=is%3Aopen+is%3Aissue+label%3A%22Beginner+Friendly%22).
+There are many topics yet to be covered by this set of koans. I have added a handful of needed topics as [issues](https://github.com/NotMyself/DotNetKoans/issues) and tagged them as [Up for Grabs](https://github.com/NotMyself/DotNetKoans/issues?q=is%3Aopen+is%3Aissue+label%3A%22Up+for+Grabs%22). There are even some specifically tagged as [Beginner Friendly](https://github.com/NotMyself/DotNetKoans/issues?q=is%3Aopen+is%3Aissue+label%3A%22Beginner+Friendly%22).
 
 If you have never contributed to an open source project, let those be your first. I promise to work with you to get your contribution into the repository and be friendly and encouraging about it. It is what Jim would have done.
 
-If you think a topic is missing, propose it's inclusion by [submitting an issue](https://github.com/NotMyself/DotNetCoreKoans/issues/new) yourself. Or better yet submit the issue and an accompanying pull request with how you think the topic should be introduced. Think about beginners in your effort; be clear and informative, be concise and most of all be playful with your examples.
+If you think a topic is missing, propose it's inclusion by [submitting an issue](https://github.com/NotMyself/DotNetKoans/issues/new) yourself. Or better yet submit the issue and an accompanying pull request with how you think the topic should be introduced. Think about beginners in your effort; be clear and informative, be concise and most of all be playful with your examples.
 
 ### About Koans
 
