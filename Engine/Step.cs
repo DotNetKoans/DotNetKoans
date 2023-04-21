@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Reflection;
+using DotNetKoans.Engine.Extensions;
 using Microsoft.DotNet.Cli.Utils;
 using Xunit.Sdk;
 
