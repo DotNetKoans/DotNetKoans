@@ -84,7 +84,7 @@ namespace DotNetKoans.Engine
             }
 
             console.WriteLine("Ponder the meaning in these lines:".Cyan());
-            console.WriteLine($"{String.Join('\n', Exception.GetStackTracePaths())}".Cyan());
+            console.WriteLine($"{String.Join('\n', Exception.GetStackTracePathsKoans())}".Cyan());
             
             
             Console.WriteLine("\nAnd for further readings you could look at these lines from the xUnit Test Framework (note that this is not necessary to complete the Koans right now)".Yellow());
