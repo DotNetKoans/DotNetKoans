@@ -9,6 +9,7 @@ public class PathToEnlightenment : Path
 	{
 		Types = new Type[]
 		{
+			typeof(AboutThreads),
 			typeof(AboutAsserts),
 			typeof(AboutBooleans),
 			typeof(AboutStrings),
