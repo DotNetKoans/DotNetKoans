@@ -37,7 +37,8 @@ public class PathToEnlightenment : Path
 			typeof(AboutPatternMatching),
 			typeof(AboutTuples),
 			typeof(AboutGlobalization),
-			typeof(AboutDisposable)
-		};
+			typeof(AboutDisposable),
+            typeof(AboutThreads)
+        };
 	}
 }
