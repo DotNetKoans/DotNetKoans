@@ -5,7 +5,7 @@
 
 # .NET Koans 
 [![Build & Test](https://github.com/NotMyself/DotNetKoans/actions/workflows/build.yml/badge.svg)](https://github.com/NotMyself/DotNetKoans/actions/workflows/build.yml) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-38-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-39-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The .NET Koans walk you along the path to enlightenment in order to learn C# on .NET. The goal is to learn C# syntax, structure and some common functions and libraries available on the .NET platform. .NET is a cross platform environment that runs happily on Windows, OS X and Linux. It is super simple to get started learning.
@@ -117,6 +117,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/LeilaZarban"><img src="https://avatars.githubusercontent.com/u/67684543?v=4?s=100" width="100px;" alt="Leila"/><br /><sub><b>Leila</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetKoans/commits?author=LeilaZarban" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/cestrand"><img src="https://avatars.githubusercontent.com/u/6875883?v=4?s=100" width="100px;" alt="Marcin Kolenda"/><br /><sub><b>Marcin Kolenda</b></sub></a><br /><a href="#maintenance-cestrand" title="Maintenance">🚧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/KGonzalezASC"><img src="https://avatars.githubusercontent.com/u/52670448?v=4?s=100" width="100px;" alt="Keith Gonzalez"/><br /><sub><b>Keith Gonzalez</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetKoans/commits?author=KGonzalezASC" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/farbodsr"><img src="https://avatars.githubusercontent.com/u/30260983?v=4?s=100" width="100px;" alt="farbodsr"/><br /><sub><b>farbodsr</b></sub></a><br /><a href="https://github.com/NotMyself/DotNetKoans/commits?author=farbodsr" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
