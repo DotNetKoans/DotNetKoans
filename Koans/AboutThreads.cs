@@ -1,12 +1,6 @@
 ﻿using Xunit;
 using System.Threading;
 using DotNetKoans.Engine;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using System.Text;
-using System;
-using System.Reflection.Metadata;
-using System.Timers;
-using System.Transactions;
 
 namespace DotNetKoans.Koans
 {
@@ -40,6 +34,8 @@ namespace DotNetKoans.Koans
             {
                 Thread.CurrentThread.Name = "OtherThread";
                 //Block execution path of the current thread
+                //Remove this statement after you are done with this koan because
+                //it can cause other koans to take longer to run.
                 Thread.Sleep(1000);
                 result += Thread.CurrentThread.Name;
             });
@@ -122,7 +118,8 @@ namespace DotNetKoans.Koans
             int SumResult = 0;
 
             //We have to do this several times because
-            //the result is not predictable
+            //the result is not predictable and sometimes might seem correct
+            //although it is not reliable
             for (int i = 0; i < 5; i++)
             {
                 // Create two threads that call Sum simultaneously
@@ -143,6 +140,8 @@ namespace DotNetKoans.Koans
             {
                 for (int i = 0; i < length; i++)
                 {
+                    //Remove this statement after you are done with this koan because
+                    //it can cause other koans to take longer to run.
                     Thread.Sleep(100);
 
                     //Just uncomment this code
