@@ -23,11 +23,11 @@ We love pull requests from everyone.
 
 Fork, then clone the repo:
 
-    git clone git@github.com:your-username/DotNetCoreKoans.git
+    git clone git@github.com:your-username/DotNetKoans.git
 
 **All changes should be based from the `master` branch.**
 
-Push to your fork and [submit a pull request](https://github.com/notmyself/dotnetcorekoans/compare/) against the `master` branch.
+Push to your fork and [submit a pull request](https://github.com/notmyself/dotnetkoans/compare/) against the `master` branch.
 
 At this point you're waiting on us. We like to at least comment on pull requests
 within three days (and, typically, one day). We may suggest
