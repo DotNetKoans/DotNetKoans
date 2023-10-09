@@ -49,6 +49,7 @@ public class AboutReflection : Koan
 
 		Type[] types = a.GetTypes();
 
+		Assert.Contains(typeof(Assert), types);
 	}
 
 
