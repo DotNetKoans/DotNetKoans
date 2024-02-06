@@ -1,17 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>A set of Koans to teach the C# language on .NET.</Description>
-    <VersionPrefix>3.1.0</VersionPrefix>
     <TargetFramework>net6.0</TargetFramework>
     <NoWarn>$(NoWarn);CS0649;CS0162;CS0168;CS0184;CS0219;xUnit2015;xUnit2013</NoWarn>
     <AssemblyName>DotNetKoans</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>DotNetKoans</PackageId>
     <PackageTags>C#;Koans;Learning</PackageTags>
-    <PackageLicenseUrl>https://github.com/NotMyself/DotNetKoans/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl>https://github.com/DotNetKoans/DotNetKoans/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/NotMyself/DotNetKoans</RepositoryUrl>
-    <ReleaseVersion>2.1.0.0</ReleaseVersion>
+    <RepositoryUrl>https://github.com/DotNetKoans/DotNetKoans</RepositoryUrl>
     <RootNamespace>DotNetKoans</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
