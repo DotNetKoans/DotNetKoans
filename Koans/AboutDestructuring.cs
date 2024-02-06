@@ -49,7 +49,7 @@ class AboutDestructuring : Koan
 	{
 		var batman = new Batman("Bruce", "Wayne");
 
-		var (firstName, lastName) = batman; //uses Deconstruct(out string fistName, out string lastName)
+		var (firstName, lastName) = batman; //uses Deconstruct(out string firstName, out string lastName)
 
 		Assert.Equal(FILL_ME_IN, firstName);
 		Assert.Equal(FILL_ME_IN, lastName);
@@ -63,7 +63,7 @@ class AboutDestructuring : Koan
 		// Use _ when you don't need to extract a property
 		var batman = new Batman("Bruce", "Wayne");
 
-		var (_, lastName) = batman; // uses Deconstruct(out string fistName, out string lastName)
+		var (_, lastName) = batman; // uses Deconstruct(out string firstName, out string lastName)
 
 		Assert.Equal(FILL_ME_IN, lastName);
 	}
@@ -95,9 +95,9 @@ class AboutDestructuring : Koan
 		}
 
 
-		public void Deconstruct(out string fistName, out string lastName)
+		public void Deconstruct(out string firstName, out string lastName)
 		{
-			fistName = this.firstName;
+			firstName = this.firstName;
 			lastName = this.lastName;
 		}
 
