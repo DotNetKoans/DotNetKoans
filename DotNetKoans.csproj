@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>A set of Koans to teach the C# language on .NET.</Description>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <NoWarn>$(NoWarn);CS0649;CS0162;CS0168;CS0184;CS0219;xUnit2015;xUnit2013</NoWarn>
     <AssemblyName>DotNetKoans</AssemblyName>
     <OutputType>Exe</OutputType>
@@ -11,6 +11,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/DotNetKoans/DotNetKoans</RepositoryUrl>
     <RootNamespace>DotNetKoans</RootNamespace>
+    <LangVersion>latestmajor</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="microsoft.dotnet.cli.utils" Version="2.0.0" />
