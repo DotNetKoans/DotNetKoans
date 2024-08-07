@@ -1,4 +1,5 @@
 {
+  "$schema": "https://aka.ms/codetour-schema",
   "title": "contributing",
   "steps": [
     {
@@ -77,7 +78,7 @@
       }
     },
     {
-      "file": "Koans/AboutAsserts.cs",
+      "file": "Koans/1_AboutAsserts.cs",
       "line": 9,
       "description": "Each test in a koan runs in order, thanks to the `Step` attribute. The `Sensei` will run the koans, test, by test, until one fails, then report the results.",
       "selection": {
