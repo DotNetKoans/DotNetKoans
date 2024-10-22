@@ -75,10 +75,10 @@ namespace DotNetKoans.Engine
             console.WriteLine($"{Step.Name} has damaged your karma.".Bold().Red());
             console.WriteLine();
 
-            if (Exception is AssertActualExpectedException assertException)
+            if (Exception is XunitException xunitException)
             {
                 console.WriteLine("The truth you are looking for...".Bold().Green());
-                console.WriteLine($"{assertException.Actual} is not {assertException.Expected}".Bold().Green());
+                console.WriteLine($"{xunitException.Message}".Bold().Green());
                 console.WriteLine();
             }
 
