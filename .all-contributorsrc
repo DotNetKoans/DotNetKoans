@@ -370,6 +370,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "tommcgee",
+      "name": "Tom McGee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4809447?v=4",
+      "profile": "https://github.com/tommcgee",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
