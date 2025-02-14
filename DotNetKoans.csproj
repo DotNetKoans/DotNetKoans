@@ -11,7 +11,6 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/DotNetKoans/DotNetKoans</RepositoryUrl>
     <RootNamespace>DotNetKoans</RootNamespace>
-    <LangVersion>latestmajor</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="microsoft.dotnet.cli.utils" Version="2.0.0" />
