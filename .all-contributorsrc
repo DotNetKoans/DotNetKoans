@@ -361,13 +361,23 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "teobaranga",
+      "name": "Teo Baranga",
+      "avatar_url": "https://avatars.githubusercontent.com/u/139957?v=4",
+      "profile": "https://github.com/teobaranga",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "DotNetKoans",
-  "projectOwner": "NotMyself",
+  "projectOwner": "DotNetKoans",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true,
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }
