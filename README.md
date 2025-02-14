@@ -31,7 +31,7 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 
 #### Running Locally
 
-1. Install [.NET SDK 6.0](https://dotnet.microsoft.com/en-us/download).
+1. Install [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download).
 2. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
 3. Clone the repository: `git clone https://github.com/NotMyself/DotNetKoans.git`.
 4. Change directory into the cloned repository `cd DotNetKoans`.
