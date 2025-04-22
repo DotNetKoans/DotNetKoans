@@ -155,7 +155,7 @@ public class AboutDelegates : Koan
 		//With the release of generics in .NET 2.0 we got some delegates which will cover most of our needs. 
 		//You will see them in the base class libraries, so knowing about them will be helpful. 
 		//The first is Action<>. Action<> can take a variety of parameters and has a void return type.
-		//  public delgate void Action<T>(T obj);
+		//  public delegate void Action<T>(T obj);
 
 		Action<int> i = AssertIntEqualsFortyTwo;
 		i((int)FILL_ME_IN);
@@ -210,7 +210,7 @@ public class AboutDelegates : Koan
 	public void BuiltInPredicateDelegateIntSatisfied()
 	{
 		//The Predicate<T> delegate 
-		//  public delgate bool Predicate<T>(T obj);
+		//  public delegate bool Predicate<T>(T obj);
 		//Predicate allows you to codify a condition and pass it around. 
 		//You use it to determine if an object satisfies some criteria. 
 
