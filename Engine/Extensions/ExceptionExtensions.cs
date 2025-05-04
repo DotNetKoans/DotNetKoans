@@ -1,15 +1,33 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace System
+
+namespace DotNetKoans.Engine.Extensions;
+
+public static class ExceptionExtensions
 {
-    public static class ExceptionExtensions
+    public record StackTracePaths(IEnumerable<string> KoanPaths, IEnumerable<string> OtherPaths);
+        
+    private static readonly Regex ExceptionPathRegex = new(@"\w*\.cs:line \d+", RegexOptions.Compiled);
+
+    public static StackTracePaths GetStackTracePaths(this Exception exception)
     {
-        private static readonly Regex exceptionPathRegex = new Regex(@"(\w*\.cs:line \d*)");
+        var stackTracePaths = ExceptionPathRegex.Matches(exception.StackTrace ?? String.Empty)
+            .Select(x => x.Value)
+            .Aggregate(new StackTracePaths(Enumerable.Empty<string>(), Enumerable.Empty<string>()),
+                (acc, path) =>
+                {
+                    if (path.StartsWith("About"))
+                    {
+                        return acc with { KoanPaths = acc.KoanPaths.Append(path) };
+                    }
 
-        public static IEnumerable<string> GetStackTracePaths(this Exception exception) =>
+                    return acc with { OtherPaths = acc.OtherPaths.Append(path) };
+                });
 
-            exceptionPathRegex.Matches(exception.StackTrace).Select(x => x.Value);
+        return stackTracePaths;
     }
+
 }
