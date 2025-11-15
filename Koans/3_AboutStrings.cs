@@ -239,8 +239,8 @@ broken line";
 	public void StringBuilderCanUseFormatAsWell()
 	{
 		var strBuilder = new System.Text.StringBuilder();
-		strBuilder.AppendFormat("{0} {1} {2}", "The", "quick", "brown");
-		strBuilder.AppendFormat("{0} {1} {2}", "jumped", "over", "the");
+		strBuilder.AppendFormat("{0} {1} {2} {3}", "The", "quick", "brown", "fox ");
+		strBuilder.AppendFormat("{0} {1} {2}", "jumped", "over", "the ");
 		strBuilder.AppendFormat("{0} {1}.", "lazy", "dog");
 		var str = strBuilder.ToString();
 		Assert.Equal(FILL_ME_IN, str);
