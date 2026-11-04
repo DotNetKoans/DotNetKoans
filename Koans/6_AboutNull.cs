@@ -1,5 +1,7 @@
 using Xunit;
 using DotNetKoans.Engine;
+using Xunit.Sdk;
+using System;
 
 namespace DotNetKoans.Koans;
 
@@ -8,7 +10,7 @@ public class AboutNull : Koan
 	[Step(1)]
 	public void NullIsNotAnObject()
 	{
-		Assert.True(null is object);
+		Assert.False(null is object);
 
 		// The `is` operator returns false if the object (first parameter)
 		// is null, no matter what the type (second parameter) is.
@@ -21,7 +23,7 @@ public class AboutNull : Koan
 		//Don't be confused by the code below. It is using Anonymous Delegates which we will
 		//cover later on. 
 		object nothing = null;
-		Assert.Throws(typeof(FillMeIn), delegate () { nothing.ToString(); });
+		Assert.Throws(typeof(NullReferenceException), delegate () { nothing.ToString(); });
 
 		//What's the message of the exception? What substring or pattern could you test
 		//against in order to have a good idea of what the string is?
@@ -31,7 +33,7 @@ public class AboutNull : Koan
 		}
 		catch (System.Exception ex)
 		{
-			Assert.Contains(FILL_ME_IN as string, ex.Message);
+			Assert.Contains("Object reference not set to an instance of an object.", ex.Message);
 		}
 	}
 
@@ -39,20 +41,20 @@ public class AboutNull : Koan
 	public void CheckingThatAnObjectIsNull()
 	{
 		object obj = null;
-		Assert.True(obj == FILL_ME_IN);
+		Assert.True(obj == null);
 	}
 
 	[Step(4)]
 	public void ABetterWayToCheckThatAnObjectIsNull()
 	{
 		object obj = null;
-		Assert.Null(FILL_ME_IN);
+		Assert.Null(obj);
 	}
 
 	[Step(5)]
 	public void AWayNotToCheckThatAnObjectIsNull()
 	{
 		object obj = null;
-		Assert.True(obj.Equals(null));
+		Assert.False(obj != null);
 	}
 }
