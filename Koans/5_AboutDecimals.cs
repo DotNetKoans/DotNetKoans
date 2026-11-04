@@ -58,12 +58,12 @@ public class AboutDecimals : Koan
 		// Even the zen of the decimal has its limits...
 		Assert.Throws(typeof(OverflowException), () =>
 		{
-			var d = decimal.Parse("79,228,162,514,264,337,593,543,950,336",CultureInfo.InvariantCulture);
+			var d = decimal.Parse("79,228,162,514,264,337,593,543,950,336,336,78,544,545,154", CultureInfo.InvariantCulture);
 		});
 
 		Assert.Throws(typeof(OverflowException), () =>
 		{
-			var d = decimal.Parse("-79,228,162,514,264,337,593,543,950,336",CultureInfo.InvariantCulture);
+			var d = decimal.Parse("-79,228,162,514,264,337,593,543,950,336,78,544,545,154",CultureInfo.InvariantCulture);
 		});
 	}
 
