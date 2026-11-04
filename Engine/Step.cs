@@ -1,7 +1,6 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using System.Threading;
 using Microsoft.DotNet.Cli.Utils;
 using Xunit.Sdk;
 
@@ -9,7 +8,6 @@ namespace DotNetKoans.Engine
 {
     public class Step
     {
-
         public Step(TypeInfo typeInfo, MethodInfo methodInfo)
         {
             TypeInfo = typeInfo;
@@ -20,10 +18,10 @@ namespace DotNetKoans.Engine
         public MethodInfo MethodInfo { get; }
 
         public string Name { get { return $"{TypeInfo.Name} {MethodInfo.Name}"; } }
+
         public StepResult Meditate()
         {
-            long stepNumber = NextStep();
-            Console.WriteLine($"Executing step {stepNumber}: {MethodInfo.Name}");
+            AnnounceStep();
 
             var koan = GetKoan();
             var setupResult = Try(() => koan.Setup());
@@ -70,24 +68,46 @@ namespace DotNetKoans.Engine
             return Instance ?? (Instance = Activator.CreateInstance(TypeInfo.AsType()) as Koan);
         }
 
-        private static long _globalStepCounter;
+        // ---- Per-module step tracking ----
+        private static readonly object _stepLock = new object();
+        private static string _currentModule;
+        private static long _stepCounter;
 
         /// <summary>
-        /// Gets the number of steps executed globally.
+        /// Gets the number of steps executed so far in the current module.
         /// </summary>
-        public static long CurrentStep => Interlocked.Read(ref _globalStepCounter);
-
-        private static long NextStep()
+        public static long CurrentStep
         {
-            return Interlocked.Increment(ref _globalStepCounter);
+            get { lock (_stepLock) { return _stepCounter; } }
         }
 
-        // Update the step execution method:
+        /// <summary>
+        /// Prints the module header when entering a new module (resetting the
+        /// counter to zero), then prints the numbered step line.
+        /// </summary>
+        private void AnnounceStep()
+        {
+            lock (_stepLock)
+            {
+                var module = TypeInfo.FullName;
+
+                if (_currentModule != module)
+                {
+                    _currentModule = module;
+                    _stepCounter = 0;
+
+                    Console.WriteLine();
+                    Console.WriteLine($"=== Module: {TypeInfo.Name} ===");
+                }
+
+                _stepCounter++;
+                Console.WriteLine($"Executing step {_stepCounter}: {MethodInfo.Name}");
+            }
+        }
+
         public void Run()
         {
-            long stepNumber = NextStep();
-
-            Console.WriteLine($"Executing step {stepNumber}: {MethodInfo.Name}");
+            AnnounceStep();
 
             var koan = GetKoan();
             MethodInfo.Invoke(koan, Array.Empty<object>());
