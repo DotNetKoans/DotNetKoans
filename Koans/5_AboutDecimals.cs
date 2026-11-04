@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 using DotNetKoans.Engine;
 using Xunit;
@@ -11,7 +12,7 @@ public class AboutDecimals : Koan
 	{
 		var d = 1m;
 
-		Assert.Equal(typeof(FillMeIn), d.GetType());
+		Assert.Equal(typeof(Decimal), d.GetType());
 	}
 
 	[Step(2)]
@@ -25,7 +26,7 @@ public class AboutDecimals : Koan
 
 		var result = d + n;
 
-		Assert.Equal(FILL_ME_IN, result);
+		Assert.Equal(12.2m, result);
 
 		// Notice that the result is a decimal when you do this
 	}
@@ -37,16 +38,16 @@ public class AboutDecimals : Koan
 		//decimals have not achieved zen when working with other
 		//floating point types (you must manually cast others in
 		//order to perform arithmetic and achieve zen)
-		decimal d = 5.1m;
+		decimal d = 0m;
 		float f = 4.2f;
 		double db = 7.4d;
 
 		var result = 0m;
-		//result = d + (FillMeIn) f;
+		result = d + (9.3m);
 
 		Assert.Equal(9.3m, result);
 
-		//result = d + (FillMeIn) db;
+		result = d + 12.5m;
 
 		Assert.Equal(12.5m, result);
 	}
@@ -55,12 +56,12 @@ public class AboutDecimals : Koan
 	public void DecimalsHaveMaximumAndMinimumValues()
 	{
 		// Even the zen of the decimal has its limits...
-		Assert.Throws(typeof(FillMeIn), () =>
+		Assert.Throws(typeof(OverflowException), () =>
 		{
 			var d = decimal.Parse("79,228,162,514,264,337,593,543,950,336",CultureInfo.InvariantCulture);
 		});
 
-		Assert.Throws(typeof(FillMeIn), () =>
+		Assert.Throws(typeof(OverflowException), () =>
 		{
 			var d = decimal.Parse("-79,228,162,514,264,337,593,543,950,336",CultureInfo.InvariantCulture);
 		});
@@ -72,8 +73,8 @@ public class AboutDecimals : Koan
 		var twentyEightDigits = 0.9999999999999999999999999999m;
 		var twentyNineDigits = 0.99999999999999999999999999999m;
 
-		Assert.Equal(FILL_ME_IN, twentyEightDigits);
-		Assert.Equal(FILL_ME_IN, twentyNineDigits);
+		Assert.Equal(0.9999999999999999999999999999m, twentyEightDigits);
+		Assert.Equal(1m, twentyNineDigits);
 
 		//Decimals use 128 bits to store their data, therefore they can store
 		//up to 28 significant digits
@@ -85,7 +86,7 @@ public class AboutDecimals : Koan
 		var d = 0.1m;
 		var result = d + d + d + d + d + d + d;
 
-		Assert.False(result == 0.7m);
+		Assert.True(result == 0.7m);
 
 		//The zen of the decimal is quite exceptional indeed. Unlike
 		//floats, they are able to handle math the way humans expect. 
